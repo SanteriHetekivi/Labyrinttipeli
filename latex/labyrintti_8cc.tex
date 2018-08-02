@@ -1,0 +1,84 @@
+\hypertarget{labyrintti_8cc}{}\section{valmiiden\+\_\+toteutus/labyrintti.cc File Reference}
+\label{labyrintti_8cc}\index{valmiiden\+\_\+toteutus/labyrintti.\+cc@{valmiiden\+\_\+toteutus/labyrintti.\+cc}}
+
+
+Labyrintti pelin pääohjelma (.  
+
+
+{\ttfamily \#include \char`\"{}include/include.\+hh\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{labyrintti_8cc_a378aeeb672b80a25e90dc77119c1e899}{}std\+::string {\bfseries lue\+Argumentit} (std\+::deque$<$ std\+::string $>$ parametrit)\label{labyrintti_8cc_a378aeeb672b80a25e90dc77119c1e899}
+
+\item 
+int \hyperlink{labyrintti_8cc_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Labyrintti-\/pelin pääohjelma. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{labyrintti_8cc_a5ad882d6f14bd292c7e85995f7648d27}{}const unsigned int {\bfseries M\+A\+X\+\_\+\+P\+A\+R\+A\+M\+E\+T\+R\+E\+J\+A} = 4\label{labyrintti_8cc_a5ad882d6f14bd292c7e85995f7648d27}
+
+\item 
+bool \hyperlink{labyrintti_8cc_ab9eefb6ae2797c531d0b6e8c8264cdfa}{debug\+\_\+output} = false
+\begin{DoxyCompactList}\small\item\em Globaali debug-\/lippu. \end{DoxyCompactList}\item 
+\hypertarget{labyrintti_8cc_acd7b4a56f70b037a4543b080aeb2dcf0}{}bool {\bfseries debug\+\_\+naytto} = false\label{labyrintti_8cc_acd7b4a56f70b037a4543b080aeb2dcf0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Labyrintti pelin pääohjelma (. 
+
+\begin{DoxyVersion}{Version}
+
+\end{DoxyVersion}
+\begin{DoxyParagraph}{Id}
+\hyperlink{labyrintti_8cc}{labyrintti.\+cc} 1802 2011-\/02-\/07 09\+:17\+:58\+Z salone58 
+\end{DoxyParagraph}
+
+
+\begin{DoxyParagraph}{Revision}
+1802 
+\end{DoxyParagraph}
+) \begin{DoxyAuthor}{Author}
+©2011 Eero Salonen \href{mailto:eero.j.salonen@tut.fi}{\tt eero.\+j.\+salonen@tut.\+fi} 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{labyrintti_8cc_a3c04138a5bfe5d72780bb7e82a18e627}{}\index{labyrintti.\+cc@{labyrintti.\+cc}!main@{main}}
+\index{main@{main}!labyrintti.\+cc@{labyrintti.\+cc}}
+\subsubsection[{main(int argc, char $\ast$$\ast$argv)}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}\label{labyrintti_8cc_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Labyrintti-\/pelin pääohjelma. 
+
+Käyttöjärjestelmä kutsuu tätä funktiota ja käynnistää labyrintti-\/pelin.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & komentorivi argumenttien määrä. \\
+\hline
+{\em argv} & komentorivi argumentit.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tiedon onnistuiko ohjelman suoritus vai epäonnistuiko se. 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\hypertarget{labyrintti_8cc_ab9eefb6ae2797c531d0b6e8c8264cdfa}{}\index{labyrintti.\+cc@{labyrintti.\+cc}!debug\+\_\+output@{debug\+\_\+output}}
+\index{debug\+\_\+output@{debug\+\_\+output}!labyrintti.\+cc@{labyrintti.\+cc}}
+\subsubsection[{debug\+\_\+output}]{\setlength{\rightskip}{0pt plus 5cm}bool debug\+\_\+output = false}\label{labyrintti_8cc_ab9eefb6ae2797c531d0b6e8c8264cdfa}
+
+
+Globaali debug-\/lippu. 
+
+Pääohjelma asettaa tämän lipun, jos ohjelma on käynnistetty debug-\/optiolla 

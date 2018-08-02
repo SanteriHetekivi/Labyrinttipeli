@@ -1,0 +1,250 @@
+\hypertarget{class_julkinen_1_1_virhe}{}\section{Julkinen\+:\+:Virhe Class Reference}
+\label{class_julkinen_1_1_virhe}\index{Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}}
+
+
+Labyrintin poikkeusten kantaluokka.  
+
+
+
+
+{\ttfamily \#include $<$virhe.\+hh$>$}
+
+Inheritance diagram for Julkinen\+:\+:Virhe\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.160221cm]{class_julkinen_1_1_virhe}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_julkinen_1_1_virhe_a5a745aa6f700e7ea3a9b7f09e9ca5455}{Virhe} (std\+::string const \&virheviesti)
+\begin{DoxyCompactList}\small\item\em Kopioidulla viestillä. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_virhe_a019192eb91000290fd9a36999532fb4b}{Virhe} (char const $\ast$virheviesti)
+\begin{DoxyCompactList}\small\item\em Muualla tallessa olevalla viestillä. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_virhe_aba36e3156c54aa1281dc5be29b76af0a}{Virhe} (\hyperlink{class_julkinen_1_1_virhe}{Virhe} const \&toinen)
+\begin{DoxyCompactList}\small\item\em Kopiorakentaja. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_julkinen_1_1_virhe_ab71f7f303930ccd1b48bda352412d625}{$\sim$\+Virhe} ()
+\begin{DoxyCompactList}\small\item\em Purkaja. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_virhe}{Virhe} \& \hyperlink{class_julkinen_1_1_virhe_ad5ee9d8d642c20d464c6188088722492}{operator=} (\hyperlink{class_julkinen_1_1_virhe}{Virhe} const \&toinen)
+\begin{DoxyCompactList}\small\item\em Sijoitusoperaattori. \end{DoxyCompactList}\item 
+char const $\ast$ \hyperlink{class_julkinen_1_1_virhe_a14738e633b74fce18efbaf1086403013}{viesti} () const 
+\begin{DoxyCompactList}\small\item\em Virheeseen liittyva ilmoitus. \end{DoxyCompactList}\item 
+virtual std\+::basic\+\_\+ostream$<$ char $>$ \& \hyperlink{class_julkinen_1_1_virhe_a36a2644943038f9760b5d76a1960b00d}{tulosta} (std\+::basic\+\_\+ostream$<$ char $>$ \&tuloste) const 
+\begin{DoxyCompactList}\small\item\em Tulosta virheen viesti virtaan. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Related Functions}
+(Note that these are not member functions.) \begin{DoxyCompactItemize}
+\item 
+basic\+\_\+ostream$<$ char $>$ \& \hyperlink{class_julkinen_1_1_virhe_acc4933b244f9606f5349e6eb8ce37433}{operator$<$$<$} (basic\+\_\+ostream$<$ char $>$ \&tuloste, \hyperlink{class_julkinen_1_1_virhe}{Virhe} const \&virhe)
+\begin{DoxyCompactList}\small\item\em Tulosta virhe. \end{DoxyCompactList}\item 
+std\+::basic\+\_\+ostream$<$ char $>$ \& \hyperlink{class_julkinen_1_1_virhe_a41b6619bca23ba8db922973fdba25fc1}{operator$<$$<$} (std\+::basic\+\_\+ostream$<$ char $>$ \&tuloste, \hyperlink{class_julkinen_1_1_virhe}{Virhe} const \&virhe)
+\begin{DoxyCompactList}\small\item\em Tulosta virhe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Labyrintin poikkeusten kantaluokka. 
+
+Virheilmoitus voidaan antaa joko std\+::string-\/oliona kopioitavaksi, jolloin olion rakentaminesta voi tulla poikkeus, tai osoittimena C-\/merkkijonovakioon, jolloin rakentaminen on no-\/throw.
+
+Mikäli virheilmoitukseen tarvitsee liittää muutakin kuin viesti, periytä luokasta uusi tyyppi, jolle tarvittavat tiedot voi antaa ja uudelleenmäärittele \hyperlink{class_julkinen_1_1_virhe_a36a2644943038f9760b5d76a1960b00d}{tulosta()}-\/metodi käyttämään näitä tietoja. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_julkinen_1_1_virhe_a5a745aa6f700e7ea3a9b7f09e9ca5455}{}\index{Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}!Virhe@{Virhe}}
+\index{Virhe@{Virhe}!Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}}
+\subsubsection[{Virhe(std\+::string const \&virheviesti)}]{\setlength{\rightskip}{0pt plus 5cm}Virhe\+::\+Virhe (
+\begin{DoxyParamCaption}
+\item[{std\+::string const \&}]{virheviesti}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_julkinen_1_1_virhe_a5a745aa6f700e7ea3a9b7f09e9ca5455}
+
+
+Kopioidulla viestillä. 
+
+\begin{DoxyPostcond}{Postcondition}
+Perustakuu poikkeuksen sattuessa. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em virheviesti} & Merkkijono, joka kopioidaan poikkeuksen viestiksi. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & Ei saatu varattua muistia viestiä varten. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_julkinen_1_1_virhe_a019192eb91000290fd9a36999532fb4b}{}\index{Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}!Virhe@{Virhe}}
+\index{Virhe@{Virhe}!Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}}
+\subsubsection[{Virhe(char const $\ast$virheviesti)}]{\setlength{\rightskip}{0pt plus 5cm}Virhe\+::\+Virhe (
+\begin{DoxyParamCaption}
+\item[{char const $\ast$}]{virheviesti}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_julkinen_1_1_virhe_a019192eb91000290fd9a36999532fb4b}
+
+
+Muualla tallessa olevalla viestillä. 
+
+H\+U\+O\+M! Tämä luokka {\itshape ei} ota vastuuta osoittimen päässä olevan olion tuhoamisesta, eikä tee osoittimen osoittamasta tiedosta kopiota. Tarkoituksena on antaa osoitin esim. käännösyksikön tai luokan sisäiseen virheviestivakioon, jotta tämä rakentaja voi tarjota no-\/throw -\/takuun.
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw -\/takuu. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em virheviesti} & Osoitin oikeaan C-\/merkkijonovakioon tai vakioisen {\ttfamily std\+::string}-\/olion {\ttfamily c\+\_\+str()} metodin palauttamaan arvoon. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_julkinen_1_1_virhe_aba36e3156c54aa1281dc5be29b76af0a}{}\index{Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}!Virhe@{Virhe}}
+\index{Virhe@{Virhe}!Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}}
+\subsubsection[{Virhe(\+Virhe const \&toinen)}]{\setlength{\rightskip}{0pt plus 5cm}Virhe\+::\+Virhe (
+\begin{DoxyParamCaption}
+\item[{{\bf Virhe} const \&}]{toinen}
+\end{DoxyParamCaption}
+)}\label{class_julkinen_1_1_virhe_aba36e3156c54aa1281dc5be29b76af0a}
+
+
+Kopiorakentaja. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw -\/takuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em toinen} & Kopioitava {\ttfamily \hyperlink{class_julkinen_1_1_virhe}{Virhe}}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_julkinen_1_1_virhe_ab71f7f303930ccd1b48bda352412d625}{}\index{Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}!````~Virhe@{$\sim$\+Virhe}}
+\index{````~Virhe@{$\sim$\+Virhe}!Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}}
+\subsubsection[{$\sim$\+Virhe()}]{\setlength{\rightskip}{0pt plus 5cm}Virhe\+::$\sim$\+Virhe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_julkinen_1_1_virhe_ab71f7f303930ccd1b48bda352412d625}
+
+
+Purkaja. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw -\/takuu. 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_julkinen_1_1_virhe_ad5ee9d8d642c20d464c6188088722492}{}\index{Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}!operator=@{operator=}}
+\index{operator=@{operator=}!Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}}
+\subsubsection[{operator=(\+Virhe const \&toinen)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Virhe} \& Virhe\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Virhe} const \&}]{toinen}
+\end{DoxyParamCaption}
+)}\label{class_julkinen_1_1_virhe_ad5ee9d8d642c20d464c6188088722492}
+
+
+Sijoitusoperaattori. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw -\/takuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em toinen} & Sijoitettava {\ttfamily \hyperlink{class_julkinen_1_1_virhe}{Virhe}}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_julkinen_1_1_virhe_a36a2644943038f9760b5d76a1960b00d}{}\index{Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}!tulosta@{tulosta}}
+\index{tulosta@{tulosta}!Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}}
+\subsubsection[{tulosta(std\+::basic\+\_\+ostream$<$ char $>$ \&tuloste) const }]{\setlength{\rightskip}{0pt plus 5cm}basic\+\_\+ostream$<$ char $>$ \& Virhe\+::tulosta (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+ostream$<$ char $>$ \&}]{tuloste}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_julkinen_1_1_virhe_a36a2644943038f9760b5d76a1960b00d}
+
+
+Tulosta virheen viesti virtaan. 
+
+Tulostaa virheen viestin virtaan, eikä tee muuta.
+
+\begin{DoxyPostcond}{Postcondition}
+Vahva poikkeustakuu. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em tuloste} & Virta, jonne viesti tulostetaan. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily tuloste} 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_julkinen_1_1_toimintovirhe_a6a3078478f0bbf08821d0d5357df2c6a}{Julkinen\+::\+Toimintovirhe}, \hyperlink{class_julkinen_1_1_komentovirhe_a51d6d273b79074b6c8ea8d0b1ef2fe65}{Julkinen\+::\+Komentovirhe}, \hyperlink{class_julkinen_1_1_alustusvirhe_a22b50252a516b339d126261978fb62c1}{Julkinen\+::\+Alustusvirhe}, \hyperlink{class_julkinen_1_1_vaittamavirhe_a5ca289035ecde35b1b1576d1c9219acd}{Julkinen\+::\+Vaittamavirhe}, \hyperlink{class_julkinen_1_1_nayttovirhe_ae8e4d0a5f98c3f61afc72dfed2af967f}{Julkinen\+::\+Nayttovirhe}, \hyperlink{class_julkinen_1_1_logiikkavirhe_a298ce4b9c3d1887d5be431bea89645da}{Julkinen\+::\+Logiikkavirhe}, \hyperlink{class_julkinen_1_1_esiehtovirhe_a333610e4679e467075bd02c37b9e49bf}{Julkinen\+::\+Esiehtovirhe}, \hyperlink{class_julkinen_1_1_invarianttivirhe_ac0f90f4d0915c90c14d752a64da5196a}{Julkinen\+::\+Invarianttivirhe}, and \hyperlink{class_julkinen_1_1_jalkiehtovirhe_a5cbdae2671dfaa4700a9118048c7570e}{Julkinen\+::\+Jalkiehtovirhe}.
+
+\hypertarget{class_julkinen_1_1_virhe_a14738e633b74fce18efbaf1086403013}{}\index{Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}!viesti@{viesti}}
+\index{viesti@{viesti}!Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}}
+\subsubsection[{viesti() const }]{\setlength{\rightskip}{0pt plus 5cm}char const $\ast$ Virhe\+::viesti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_julkinen_1_1_virhe_a14738e633b74fce18efbaf1086403013}
+
+
+Virheeseen liittyva ilmoitus. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw -\/takuu. 
+\end{DoxyPostcond}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_julkinen_1_1_virhe_acc4933b244f9606f5349e6eb8ce37433}{}\index{Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}}
+\subsubsection[{operator$<$$<$(basic\+\_\+ostream$<$ char $>$ \&tuloste, Virhe const \&virhe)}]{\setlength{\rightskip}{0pt plus 5cm}basic\+\_\+ostream$<$ char $>$ \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{basic\+\_\+ostream$<$ char $>$ \&}]{tuloste, }
+\item[{{\bf Virhe} const \&}]{virhe}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{class_julkinen_1_1_virhe_acc4933b244f9606f5349e6eb8ce37433}
+
+
+Tulosta virhe. 
+
+\hyperlink{class_julkinen_1_1_virhe}{Virhe} tulostetaan \hyperlink{class_julkinen_1_1_virhe_a36a2644943038f9760b5d76a1960b00d}{Virhe\+::tulosta()}-\/metodilla.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em tuloste} & Virta jonne tulostetaan. \\
+\hline
+\mbox{\tt in}  & {\em virhe} & Tulostettava \hyperlink{class_julkinen_1_1_virhe}{Virhe}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily tuloste} 
+\end{DoxyReturn}
+\hypertarget{class_julkinen_1_1_virhe_a41b6619bca23ba8db922973fdba25fc1}{}\index{Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Julkinen\+::\+Virhe@{Julkinen\+::\+Virhe}}
+\subsubsection[{operator$<$$<$(std\+::basic\+\_\+ostream$<$ char $>$ \&tuloste, Virhe const \&virhe)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::basic\+\_\+ostream$<$ char $>$ \& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+ostream$<$ char $>$ \&}]{tuloste, }
+\item[{{\bf Virhe} const \&}]{virhe}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [related]}}\label{class_julkinen_1_1_virhe_a41b6619bca23ba8db922973fdba25fc1}
+
+
+Tulosta virhe. 
+
+\hyperlink{class_julkinen_1_1_virhe}{Virhe} tulostetaan \hyperlink{class_julkinen_1_1_virhe_a36a2644943038f9760b5d76a1960b00d}{Virhe\+::tulosta()}-\/metodilla.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em tuloste} & Virta jonne tulostetaan. \\
+\hline
+\mbox{\tt in}  & {\em virhe} & Tulostettava virhe. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily tuloste} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{virhe_8hh}{virhe.\+hh}\item 
+valmiiden\+\_\+toteutus/\hyperlink{virhe_8cc}{virhe.\+cc}\end{DoxyCompactItemize}

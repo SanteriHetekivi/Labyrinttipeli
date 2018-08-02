@@ -1,0 +1,186 @@
+\hypertarget{class_julkinen_1_1_logiikkavirhe}{}\section{Julkinen\+:\+:Logiikkavirhe Class Reference}
+\label{class_julkinen_1_1_logiikkavirhe}\index{Julkinen\+::\+Logiikkavirhe@{Julkinen\+::\+Logiikkavirhe}}
+
+
+\hyperlink{class_julkinen_1_1_virhe}{Virhe} toimintalogiikka virhetilanteita varten.  
+
+
+
+
+{\ttfamily \#include $<$logiikkavirhe.\+hh$>$}
+
+Inheritance diagram for Julkinen\+:\+:Logiikkavirhe\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_julkinen_1_1_logiikkavirhe}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_julkinen_1_1_logiikkavirhe_afbf716c9c72439df3d8638576942d14d}{Virhekoodi} \{ \hyperlink{class_julkinen_1_1_logiikkavirhe_afbf716c9c72439df3d8638576942d14da327478ab895f92a6e547db21b050ab8f}{V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N}
+ \}\begin{DoxyCompactList}\small\item\em Tunnisteet esimääritellyille virhetilanteille käyttäjän antamissa komennoissa. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_julkinen_1_1_logiikkavirhe_a95b0e31452062d57a34d5ee1e7b1545b}{Logiikkavirhe} (std\+::string const \&virheviesti)
+\begin{DoxyCompactList}\small\item\em Tunnistamaton virhetilanne kopioidulla viestillä. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_logiikkavirhe_a82c17b4ae69d3701def7dee519b69024}{Logiikkavirhe} (\hyperlink{class_julkinen_1_1_logiikkavirhe_afbf716c9c72439df3d8638576942d14d}{Virhekoodi} virhekoodi)
+\begin{DoxyCompactList}\small\item\em Esimääritelty virhetilanne. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_logiikkavirhe_a2ff42b2fc57b19638aebc7b8aa6f62d8}{Logiikkavirhe} (\hyperlink{class_julkinen_1_1_logiikkavirhe}{Logiikkavirhe} const \&toinen)
+\begin{DoxyCompactList}\small\item\em Kopiorakentaja. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_logiikkavirhe}{Logiikkavirhe} \& \hyperlink{class_julkinen_1_1_logiikkavirhe_a9e680776140205960612e4b3b3be8e28}{operator=} (\hyperlink{class_julkinen_1_1_logiikkavirhe}{Logiikkavirhe} const \&toinen)
+\begin{DoxyCompactList}\small\item\em Sijoitusoperaattori. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_logiikkavirhe_afbf716c9c72439df3d8638576942d14d}{Virhekoodi} \hyperlink{class_julkinen_1_1_logiikkavirhe_a453d06482aa51a80b27ab043d9efffaa}{virhe} () const 
+\begin{DoxyCompactList}\small\item\em Sattuneen virhetilanteen virhekoodi. \end{DoxyCompactList}\item 
+virtual std\+::basic\+\_\+ostream$<$ char $>$ \& \hyperlink{class_julkinen_1_1_logiikkavirhe_a298ce4b9c3d1887d5be431bea89645da}{tulosta} (std\+::basic\+\_\+ostream$<$ char $>$ \&tuloste) const 
+\begin{DoxyCompactList}\small\item\em Tulosta virheen viesti virtaan. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_julkinen_1_1_virhe}{Virhe} toimintalogiikka virhetilanteita varten. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_julkinen_1_1_logiikkavirhe_afbf716c9c72439df3d8638576942d14d}{}\index{Julkinen\+::\+Logiikkavirhe@{Julkinen\+::\+Logiikkavirhe}!Virhekoodi@{Virhekoodi}}
+\index{Virhekoodi@{Virhekoodi}!Julkinen\+::\+Logiikkavirhe@{Julkinen\+::\+Logiikkavirhe}}
+\subsubsection[{Virhekoodi}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Julkinen\+::\+Logiikkavirhe\+::\+Virhekoodi}}\label{class_julkinen_1_1_logiikkavirhe_afbf716c9c72439df3d8638576942d14d}
+
+
+Tunnisteet esimääritellyille virhetilanteille käyttäjän antamissa komennoissa. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N@{V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N}!Julkinen\+::\+Logiikkavirhe@{Julkinen\+::\+Logiikkavirhe}}\index{Julkinen\+::\+Logiikkavirhe@{Julkinen\+::\+Logiikkavirhe}!V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N@{V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N}}\item[{\em 
+\hypertarget{class_julkinen_1_1_logiikkavirhe_afbf716c9c72439df3d8638576942d14da327478ab895f92a6e547db21b050ab8f}{}V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N\label{class_julkinen_1_1_logiikkavirhe_afbf716c9c72439df3d8638576942d14da327478ab895f92a6e547db21b050ab8f}
+}]Tunnistamaton virhe. \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_julkinen_1_1_logiikkavirhe_a95b0e31452062d57a34d5ee1e7b1545b}{}\index{Julkinen\+::\+Logiikkavirhe@{Julkinen\+::\+Logiikkavirhe}!Logiikkavirhe@{Logiikkavirhe}}
+\index{Logiikkavirhe@{Logiikkavirhe}!Julkinen\+::\+Logiikkavirhe@{Julkinen\+::\+Logiikkavirhe}}
+\subsubsection[{Logiikkavirhe(std\+::string const \&virheviesti)}]{\setlength{\rightskip}{0pt plus 5cm}Logiikkavirhe\+::\+Logiikkavirhe (
+\begin{DoxyParamCaption}
+\item[{std\+::string const \&}]{virheviesti}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_julkinen_1_1_logiikkavirhe_a95b0e31452062d57a34d5ee1e7b1545b}
+
+
+Tunnistamaton virhetilanne kopioidulla viestillä. 
+
+Käytä tätä vain, jos kyseessä ei ole mikään esimääritellyistä virheistä.
+
+\begin{DoxyPostcond}{Postcondition}
+Perustakuu poikkeuksen sattuessa. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em virheviesti} & Merkkijono, joka kopioidaan poikkeuksen viestiksi. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & Ei saatu varattua muistia viestiä varten. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_julkinen_1_1_logiikkavirhe_a82c17b4ae69d3701def7dee519b69024}{}\index{Julkinen\+::\+Logiikkavirhe@{Julkinen\+::\+Logiikkavirhe}!Logiikkavirhe@{Logiikkavirhe}}
+\index{Logiikkavirhe@{Logiikkavirhe}!Julkinen\+::\+Logiikkavirhe@{Julkinen\+::\+Logiikkavirhe}}
+\subsubsection[{Logiikkavirhe(\+Virhekoodi virhekoodi)}]{\setlength{\rightskip}{0pt plus 5cm}Logiikkavirhe\+::\+Logiikkavirhe (
+\begin{DoxyParamCaption}
+\item[{{\bf Virhekoodi}}]{virhekoodi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_julkinen_1_1_logiikkavirhe_a82c17b4ae69d3701def7dee519b69024}
+
+
+Esimääritelty virhetilanne. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw -\/takuu. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em virhekoodi} & Virhetilanteen tunniste. Mikäli koodi on V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N, tulee viestiksi \char`\"{}\+Tunnistamaton virhe.\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_julkinen_1_1_logiikkavirhe_a2ff42b2fc57b19638aebc7b8aa6f62d8}{}\index{Julkinen\+::\+Logiikkavirhe@{Julkinen\+::\+Logiikkavirhe}!Logiikkavirhe@{Logiikkavirhe}}
+\index{Logiikkavirhe@{Logiikkavirhe}!Julkinen\+::\+Logiikkavirhe@{Julkinen\+::\+Logiikkavirhe}}
+\subsubsection[{Logiikkavirhe(\+Logiikkavirhe const \&toinen)}]{\setlength{\rightskip}{0pt plus 5cm}Logiikkavirhe\+::\+Logiikkavirhe (
+\begin{DoxyParamCaption}
+\item[{{\bf Logiikkavirhe} const \&}]{toinen}
+\end{DoxyParamCaption}
+)}\label{class_julkinen_1_1_logiikkavirhe_a2ff42b2fc57b19638aebc7b8aa6f62d8}
+
+
+Kopiorakentaja. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw -\/takuu. 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_julkinen_1_1_logiikkavirhe_a9e680776140205960612e4b3b3be8e28}{}\index{Julkinen\+::\+Logiikkavirhe@{Julkinen\+::\+Logiikkavirhe}!operator=@{operator=}}
+\index{operator=@{operator=}!Julkinen\+::\+Logiikkavirhe@{Julkinen\+::\+Logiikkavirhe}}
+\subsubsection[{operator=(\+Logiikkavirhe const \&toinen)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Logiikkavirhe} \& Logiikkavirhe\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Logiikkavirhe} const \&}]{toinen}
+\end{DoxyParamCaption}
+)}\label{class_julkinen_1_1_logiikkavirhe_a9e680776140205960612e4b3b3be8e28}
+
+
+Sijoitusoperaattori. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw -\/takuu. 
+\end{DoxyPostcond}
+\hypertarget{class_julkinen_1_1_logiikkavirhe_a298ce4b9c3d1887d5be431bea89645da}{}\index{Julkinen\+::\+Logiikkavirhe@{Julkinen\+::\+Logiikkavirhe}!tulosta@{tulosta}}
+\index{tulosta@{tulosta}!Julkinen\+::\+Logiikkavirhe@{Julkinen\+::\+Logiikkavirhe}}
+\subsubsection[{tulosta(std\+::basic\+\_\+ostream$<$ char $>$ \&tuloste) const }]{\setlength{\rightskip}{0pt plus 5cm}basic\+\_\+ostream$<$ char $>$ \& Logiikkavirhe\+::tulosta (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+ostream$<$ char $>$ \&}]{tuloste}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_julkinen_1_1_logiikkavirhe_a298ce4b9c3d1887d5be431bea89645da}
+
+
+Tulosta virheen viesti virtaan. 
+
+Tulostaa virheen viestin virtaan, eikä tee muuta.
+
+\begin{DoxyPostcond}{Postcondition}
+Vahva poikkeustakuu. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em tuloste} & Virta, jonne viesti tulostetaan. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily tuloste} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_julkinen_1_1_virhe_a36a2644943038f9760b5d76a1960b00d}{Julkinen\+::\+Virhe}.
+
+\hypertarget{class_julkinen_1_1_logiikkavirhe_a453d06482aa51a80b27ab043d9efffaa}{}\index{Julkinen\+::\+Logiikkavirhe@{Julkinen\+::\+Logiikkavirhe}!virhe@{virhe}}
+\index{virhe@{virhe}!Julkinen\+::\+Logiikkavirhe@{Julkinen\+::\+Logiikkavirhe}}
+\subsubsection[{virhe() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Logiikkavirhe\+::\+Virhekoodi} Logiikkavirhe\+::virhe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_julkinen_1_1_logiikkavirhe_a453d06482aa51a80b27ab043d9efffaa}
+
+
+Sattuneen virhetilanteen virhekoodi. 
+
+\begin{DoxyReturn}{Returns}
+Palauttaa virheen {\ttfamily Virhekoodi}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{logiikkavirhe_8hh}{logiikkavirhe.\+hh}\item 
+valmiiden\+\_\+toteutus/\hyperlink{logiikkavirhe_8cc}{logiikkavirhe.\+cc}\end{DoxyCompactItemize}

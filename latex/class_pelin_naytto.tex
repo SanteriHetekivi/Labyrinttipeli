@@ -1,0 +1,216 @@
+\hypertarget{class_pelin_naytto}{}\section{Pelin\+Naytto Class Reference}
+\label{class_pelin_naytto}\index{Pelin\+Naytto@{Pelin\+Naytto}}
+
+
+Labyrintti-\/pelin pelin toimintojen näyttöön piirtäjä.  
+
+
+
+
+{\ttfamily \#include $<$Pelin\+Naytto.\+hpp$>$}
+
+Inheritance diagram for Pelin\+Naytto\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pelin_naytto}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_pelin_naytto_a69dd5937c265b77376e79368a066dd99}{Pelin\+Naytto} (\hyperlink{class_julkinen_1_1_nayttorajapinta}{Julkinen\+::\+Nayttorajapinta} $\ast$naytto)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_pelin_naytto}{Pelin\+Naytto} rakentaja. \end{DoxyCompactList}\item 
+\hyperlink{class_pelin_naytto_a9d8dbd0f5e10e826d97cee98fd47247d}{$\sim$\+Pelin\+Naytto} ()
+\begin{DoxyCompactList}\small\item\em Purkaja. \end{DoxyCompactList}\item 
+void \hyperlink{class_pelin_naytto_a2f155f89cfe6200a727fd45c8aead8c9}{aseta\+Data} (\hyperlink{class_data}{Data} const data)
+\begin{DoxyCompactList}\small\item\em Pelidatan asettaja. \end{DoxyCompactList}\item 
+void \hyperlink{class_pelin_naytto_a97b89437cac4b6d4edcdb8eb7fe59be4}{aloita\+Rakennus} ()
+\begin{DoxyCompactList}\small\item\em Rakennuksen aloittaja. \end{DoxyCompactList}\item 
+void \hyperlink{class_pelin_naytto_a2c925cc22e2a633889a8bcebd40e9708}{lopeta\+Rakennus} ()
+\begin{DoxyCompactList}\small\item\em Rakennuksen lopettaja. \end{DoxyCompactList}\item 
+void \hyperlink{class_pelin_naytto_adc943c511334eb5be52dc93e4eccb52c}{vuorossa} (std\+::string const \&nimi)
+\begin{DoxyCompactList}\small\item\em Vuorossa olevan tulostaja. \end{DoxyCompactList}\item 
+void \hyperlink{class_pelin_naytto_a06f0e63f3e8bfe7010f4a2f599e8b3b6}{ilmoitus\+Erikoispalaan\+Astuttu} (\hyperlink{class_pala}{Pala} const pala, \hyperlink{class_pelaaja}{Pelaaja} const pelaaja)
+\begin{DoxyCompactList}\small\item\em Erikoispalaan astumisesta ilmoittaja. \end{DoxyCompactList}\item 
+void \hyperlink{class_pelin_naytto_adf20b1b8e047f0f2c0c774e1919b413e}{ilmoitus\+Esine\+Poimittu} (\hyperlink{class_esine}{Esine} const esine)
+\begin{DoxyCompactList}\small\item\em Esineen poiminnasta ilmoittaja. \end{DoxyCompactList}\item 
+void \hyperlink{class_pelin_naytto_a9c79b538f5e79bfd42a93c10340d7369}{tulosta\+Virhe} (\hyperlink{class_julkinen_1_1_toimintovirhe}{Julkinen\+::\+Toimintovirhe} virhe)
+\begin{DoxyCompactList}\small\item\em Virheen tulostaja. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Labyrintti-\/pelin pelin toimintojen näyttöön piirtäjä. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_pelin_naytto_a69dd5937c265b77376e79368a066dd99}{}\index{Pelin\+Naytto@{Pelin\+Naytto}!Pelin\+Naytto@{Pelin\+Naytto}}
+\index{Pelin\+Naytto@{Pelin\+Naytto}!Pelin\+Naytto@{Pelin\+Naytto}}
+\subsubsection[{Pelin\+Naytto(\+Julkinen\+::\+Nayttorajapinta $\ast$naytto)}]{\setlength{\rightskip}{0pt plus 5cm}Pelin\+Naytto\+::\+Pelin\+Naytto (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Nayttorajapinta} $\ast$}]{naytto}
+\end{DoxyParamCaption}
+)}\label{class_pelin_naytto_a69dd5937c265b77376e79368a066dd99}
+
+
+\hyperlink{class_pelin_naytto}{Pelin\+Naytto} rakentaja. 
+
+\begin{DoxyPrecond}{Precondition}
+Annettu osoite näyttöön on kelvollinen.
+\end{DoxyPrecond}
+Asettaa käytettävän näytön.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em naytto} & Käytettävä näyttö {\ttfamily \hyperlink{class_julkinen_1_1_nayttorajapinta}{Julkinen\+::\+Nayttorajapinta}}-\/luokkan osoitteena. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pelin_naytto_a9d8dbd0f5e10e826d97cee98fd47247d}{}\index{Pelin\+Naytto@{Pelin\+Naytto}!````~Pelin\+Naytto@{$\sim$\+Pelin\+Naytto}}
+\index{````~Pelin\+Naytto@{$\sim$\+Pelin\+Naytto}!Pelin\+Naytto@{Pelin\+Naytto}}
+\subsubsection[{$\sim$\+Pelin\+Naytto()}]{\setlength{\rightskip}{0pt plus 5cm}Pelin\+Naytto\+::$\sim$\+Pelin\+Naytto (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pelin_naytto_a9d8dbd0f5e10e826d97cee98fd47247d}
+
+
+Purkaja. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw takuu. 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pelin_naytto_a97b89437cac4b6d4edcdb8eb7fe59be4}{}\index{Pelin\+Naytto@{Pelin\+Naytto}!aloita\+Rakennus@{aloita\+Rakennus}}
+\index{aloita\+Rakennus@{aloita\+Rakennus}!Pelin\+Naytto@{Pelin\+Naytto}}
+\subsubsection[{aloita\+Rakennus()}]{\setlength{\rightskip}{0pt plus 5cm}void Pelin\+Naytto\+::aloita\+Rakennus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pelin_naytto_a97b89437cac4b6d4edcdb8eb7fe59be4}
+
+
+Rakennuksen aloittaja. 
+
+Käskee osoitettua {\ttfamily \hyperlink{class_julkinen_1_1_nayttorajapinta}{Julkinen\+::\+Nayttorajapinta}}-\/luokkaa aloittamaan rakennuksen.
+
+\begin{DoxyPostcond}{Postcondition}
+Osoitettua {\ttfamily \hyperlink{class_julkinen_1_1_nayttorajapinta}{Julkinen\+::\+Nayttorajapinta}}-\/luokka rakennus tilassa. 
+\end{DoxyPostcond}
+\hypertarget{class_pelin_naytto_a2f155f89cfe6200a727fd45c8aead8c9}{}\index{Pelin\+Naytto@{Pelin\+Naytto}!aseta\+Data@{aseta\+Data}}
+\index{aseta\+Data@{aseta\+Data}!Pelin\+Naytto@{Pelin\+Naytto}}
+\subsubsection[{aseta\+Data(\+Data const data)}]{\setlength{\rightskip}{0pt plus 5cm}void Pelin\+Naytto\+::aseta\+Data (
+\begin{DoxyParamCaption}
+\item[{{\bf Data} const}]{data}
+\end{DoxyParamCaption}
+)}\label{class_pelin_naytto_a2f155f89cfe6200a727fd45c8aead8c9}
+
+
+Pelidatan asettaja. 
+
+Asettaa käytettävän datan.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & Käytettävä data {\ttfamily \hyperlink{class_data}{Data}}-\/luokkana. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pelin_naytto_a06f0e63f3e8bfe7010f4a2f599e8b3b6}{}\index{Pelin\+Naytto@{Pelin\+Naytto}!ilmoitus\+Erikoispalaan\+Astuttu@{ilmoitus\+Erikoispalaan\+Astuttu}}
+\index{ilmoitus\+Erikoispalaan\+Astuttu@{ilmoitus\+Erikoispalaan\+Astuttu}!Pelin\+Naytto@{Pelin\+Naytto}}
+\subsubsection[{ilmoitus\+Erikoispalaan\+Astuttu(\+Pala const pala, Pelaaja const pelaaja)}]{\setlength{\rightskip}{0pt plus 5cm}void Pelin\+Naytto\+::ilmoitus\+Erikoispalaan\+Astuttu (
+\begin{DoxyParamCaption}
+\item[{{\bf Pala} const}]{pala, }
+\item[{{\bf Pelaaja} const}]{pelaaja}
+\end{DoxyParamCaption}
+)}\label{class_pelin_naytto_a06f0e63f3e8bfe7010f4a2f599e8b3b6}
+
+
+Erikoispalaan astumisesta ilmoittaja. 
+
+Kertoo {\ttfamily \hyperlink{class_julkinen_1_1_nayttorajapinta}{Julkinen\+::\+Nayttorajapinta}}-\/luokkalle kuka astui mihin erikoispalaan.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pala} & Astuttu pala {\ttfamily \hyperlink{class_pala}{Pala}}-\/luokkana. \\
+\hline
+\mbox{\tt in}  & {\em pelaaja} & Astunut pelaaja {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokkana \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pelin_naytto_adf20b1b8e047f0f2c0c774e1919b413e}{}\index{Pelin\+Naytto@{Pelin\+Naytto}!ilmoitus\+Esine\+Poimittu@{ilmoitus\+Esine\+Poimittu}}
+\index{ilmoitus\+Esine\+Poimittu@{ilmoitus\+Esine\+Poimittu}!Pelin\+Naytto@{Pelin\+Naytto}}
+\subsubsection[{ilmoitus\+Esine\+Poimittu(\+Esine const esine)}]{\setlength{\rightskip}{0pt plus 5cm}void Pelin\+Naytto\+::ilmoitus\+Esine\+Poimittu (
+\begin{DoxyParamCaption}
+\item[{{\bf Esine} const}]{esine}
+\end{DoxyParamCaption}
+)}\label{class_pelin_naytto_adf20b1b8e047f0f2c0c774e1919b413e}
+
+
+Esineen poiminnasta ilmoittaja. 
+
+Kertoo {\ttfamily \hyperlink{class_julkinen_1_1_nayttorajapinta}{Julkinen\+::\+Nayttorajapinta}}-\/luokkalle kuka poimi minkä esineen.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em esine} & Poimittu esine {\ttfamily \hyperlink{class_esine}{Esine}}-\/luokkana. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pelin_naytto_a2c925cc22e2a633889a8bcebd40e9708}{}\index{Pelin\+Naytto@{Pelin\+Naytto}!lopeta\+Rakennus@{lopeta\+Rakennus}}
+\index{lopeta\+Rakennus@{lopeta\+Rakennus}!Pelin\+Naytto@{Pelin\+Naytto}}
+\subsubsection[{lopeta\+Rakennus()}]{\setlength{\rightskip}{0pt plus 5cm}void Pelin\+Naytto\+::lopeta\+Rakennus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pelin_naytto_a2c925cc22e2a633889a8bcebd40e9708}
+
+
+Rakennuksen lopettaja. 
+
+\begin{DoxyPrecond}{Precondition}
+Osoitettu {\ttfamily \hyperlink{class_julkinen_1_1_nayttorajapinta}{Julkinen\+::\+Nayttorajapinta}}-\/luokka on rakennustilassa.
+\end{DoxyPrecond}
+Asettaa kaiken datan näytölle ja lopettaa rakennuksen.
+
+\begin{DoxyPostcond}{Postcondition}
+Kaikki data näytöllä. Osoitettua {\ttfamily \hyperlink{class_julkinen_1_1_nayttorajapinta}{Julkinen\+::\+Nayttorajapinta}}-\/luokka tulostus tilassa. 
+\end{DoxyPostcond}
+\hypertarget{class_pelin_naytto_a9c79b538f5e79bfd42a93c10340d7369}{}\index{Pelin\+Naytto@{Pelin\+Naytto}!tulosta\+Virhe@{tulosta\+Virhe}}
+\index{tulosta\+Virhe@{tulosta\+Virhe}!Pelin\+Naytto@{Pelin\+Naytto}}
+\subsubsection[{tulosta\+Virhe(\+Julkinen\+::\+Toimintovirhe virhe)}]{\setlength{\rightskip}{0pt plus 5cm}void Pelin\+Naytto\+::tulosta\+Virhe (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Toimintovirhe}}]{virhe}
+\end{DoxyParamCaption}
+)}\label{class_pelin_naytto_a9c79b538f5e79bfd42a93c10340d7369}
+
+
+Virheen tulostaja. 
+
+Tulostaa toimintavirheen.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em virhe} & Tulostettava virhe {\ttfamily \hyperlink{class_julkinen_1_1_toimintovirhe}{Julkinen\+::\+Toimintovirhe}}-\/luokkana. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pelin_naytto_adc943c511334eb5be52dc93e4eccb52c}{}\index{Pelin\+Naytto@{Pelin\+Naytto}!vuorossa@{vuorossa}}
+\index{vuorossa@{vuorossa}!Pelin\+Naytto@{Pelin\+Naytto}}
+\subsubsection[{vuorossa(std\+::string const \&nimi)}]{\setlength{\rightskip}{0pt plus 5cm}void Pelin\+Naytto\+::vuorossa (
+\begin{DoxyParamCaption}
+\item[{std\+::string const \&}]{nimi}
+\end{DoxyParamCaption}
+)}\label{class_pelin_naytto_adc943c511334eb5be52dc93e4eccb52c}
+
+
+Vuorossa olevan tulostaja. 
+
+Kertoo {\ttfamily \hyperlink{class_julkinen_1_1_nayttorajapinta}{Julkinen\+::\+Nayttorajapinta}}-\/luokkalle kuka on vuorossa.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nimi} & {\ttfamily Vuorossa} olevan pelaajan nimi. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_pelin_naytto_8hpp}{Pelin\+Naytto.\+hpp}\item 
+Pelin\+Naytto.\+cpp\end{DoxyCompactItemize}

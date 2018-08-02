@@ -1,0 +1,187 @@
+\hypertarget{class_bittikartta}{}\section{Bittikartta Class Reference}
+\label{class_bittikartta}\index{Bittikartta@{Bittikartta}}
+
+
+{\ttfamily \#include $<$Bittikartta.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_bittikartta_a6ba90dfc35beaace33ed8db98138f938}{Bittikartta} (\hyperlink{_bittikartta_8hh_a3de8ab5c710592d442741fc105c483aa}{Dim} leveys, \hyperlink{_bittikartta_8hh_a3de8ab5c710592d442741fc105c483aa}{Dim} korkeus)
+\item 
+\hyperlink{class_bittikartta_a633060ae1338842a3d175cae80a9fde6}{$\sim$\+Bittikartta} ()
+\item 
+void \hyperlink{class_bittikartta_a139d5c1072e015fbf1ef6d283b278e77}{vaakateksti} (\hyperlink{_bittikartta_8hh_a3de8ab5c710592d442741fc105c483aa}{Dim} x, \hyperlink{_bittikartta_8hh_a3de8ab5c710592d442741fc105c483aa}{Dim} y, std\+::string const \&teksti)
+\item 
+void \hyperlink{class_bittikartta_a7886d157f711dec0b44fdbc9a9a5ee92}{pystyteksti} (\hyperlink{_bittikartta_8hh_a3de8ab5c710592d442741fc105c483aa}{Dim} x, \hyperlink{_bittikartta_8hh_a3de8ab5c710592d442741fc105c483aa}{Dim} y, std\+::string const \&teksti)
+\item 
+void \hyperlink{class_bittikartta_a3c01a7b0f71cc48899b1a300c3f5dfb9}{suorakaide} (\hyperlink{_bittikartta_8hh_a3de8ab5c710592d442741fc105c483aa}{Dim} x, \hyperlink{_bittikartta_8hh_a3de8ab5c710592d442741fc105c483aa}{Dim} y, \hyperlink{_bittikartta_8hh_a3de8ab5c710592d442741fc105c483aa}{Dim} lev, \hyperlink{_bittikartta_8hh_a3de8ab5c710592d442741fc105c483aa}{Dim} kork, char merkki)
+\item 
+void \hyperlink{class_bittikartta_acb0ee37ce104c9337233896b5f157063}{tyhjenna} ()
+\item 
+void \hyperlink{class_bittikartta_a484bf5feefcc803a039937c704f34a17}{tulosta} (std\+::ostream \&virta) const 
+\item 
+void \hyperlink{class_bittikartta_a063f6631901b378de7d5212683ed15a0}{vaakaviiva} (\hyperlink{_bittikartta_8hh_a3de8ab5c710592d442741fc105c483aa}{Dim} x, \hyperlink{_bittikartta_8hh_a3de8ab5c710592d442741fc105c483aa}{Dim} y, \hyperlink{_bittikartta_8hh_a3de8ab5c710592d442741fc105c483aa}{Dim} lev, char merkki)
+\item 
+void \hyperlink{class_bittikartta_a134b78d3c6cf7be361bfdebbd297787a}{pystyviiva} (\hyperlink{_bittikartta_8hh_a3de8ab5c710592d442741fc105c483aa}{Dim} x, \hyperlink{_bittikartta_8hh_a3de8ab5c710592d442741fc105c483aa}{Dim} y, \hyperlink{_bittikartta_8hh_a3de8ab5c710592d442741fc105c483aa}{Dim} kork, char merkki)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Bittikartta-\/luokka mahdollistaa tulostusten tekemisen vaiheittain Bittikartta-\/luokan olioon ja vasta lopuksi tulostamisen ruudulle.
+
+{\bfseries Huom!} Bittikartta-\/luokan origo (0,0) on {\itshape vasemmassa yl‰nurkassa} ja y-\/suunta kasvaa alasp‰in. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_bittikartta_a6ba90dfc35beaace33ed8db98138f938}{}\index{Bittikartta@{Bittikartta}!Bittikartta@{Bittikartta}}
+\index{Bittikartta@{Bittikartta}!Bittikartta@{Bittikartta}}
+\subsubsection[{Bittikartta(\+Dim leveys, Dim korkeus)}]{\setlength{\rightskip}{0pt plus 5cm}Bittikartta\+::\+Bittikartta (
+\begin{DoxyParamCaption}
+\item[{{\bf Dim}}]{leveys, }
+\item[{{\bf Dim}}]{korkeus}
+\end{DoxyParamCaption}
+)}\label{class_bittikartta_a6ba90dfc35beaace33ed8db98138f938}
+
+\begin{DoxyParams}{Parameters}
+{\em leveys} & piirtoalueen leveys \\
+\hline
+{\em korkeus} & piirtoalueen korkeus \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_bittikartta_a633060ae1338842a3d175cae80a9fde6}{}\index{Bittikartta@{Bittikartta}!````~Bittikartta@{$\sim$\+Bittikartta}}
+\index{````~Bittikartta@{$\sim$\+Bittikartta}!Bittikartta@{Bittikartta}}
+\subsubsection[{$\sim$\+Bittikartta()}]{\setlength{\rightskip}{0pt plus 5cm}Bittikartta\+::$\sim$\+Bittikartta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_bittikartta_a633060ae1338842a3d175cae80a9fde6}
+Purkaja 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_bittikartta_a7886d157f711dec0b44fdbc9a9a5ee92}{}\index{Bittikartta@{Bittikartta}!pystyteksti@{pystyteksti}}
+\index{pystyteksti@{pystyteksti}!Bittikartta@{Bittikartta}}
+\subsubsection[{pystyteksti(\+Dim x, Dim y, std\+::string const \&teksti)}]{\setlength{\rightskip}{0pt plus 5cm}void Bittikartta\+::pystyteksti (
+\begin{DoxyParamCaption}
+\item[{{\bf Dim}}]{x, }
+\item[{{\bf Dim}}]{y, }
+\item[{std\+::string const \&}]{teksti}
+\end{DoxyParamCaption}
+)}\label{class_bittikartta_a7886d157f711dec0b44fdbc9a9a5ee92}
+Kirjoittaa alueelle pystytekstin, joka alkaa koordinaateista (x, y). Viimeinen merkki tulee pisteeseen (x, y + tekstin pituus). Bittikartta-\/luokan origo (0,0) on {\itshape vasemmassa yl‰nurkassa} ja y-\/suunta kasvaa alasp‰in. 
+\begin{DoxyParams}{Parameters}
+{\em x} & alkupisteen x-\/koordinaatti \\
+\hline
+{\em y} & alkupisteen y-\/koordinaatti \\
+\hline
+{\em teksti} & kirjoitettava teksti \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_bittikartta_a134b78d3c6cf7be361bfdebbd297787a}{}\index{Bittikartta@{Bittikartta}!pystyviiva@{pystyviiva}}
+\index{pystyviiva@{pystyviiva}!Bittikartta@{Bittikartta}}
+\subsubsection[{pystyviiva(\+Dim x, Dim y, Dim kork, char merkki)}]{\setlength{\rightskip}{0pt plus 5cm}void Bittikartta\+::pystyviiva (
+\begin{DoxyParamCaption}
+\item[{{\bf Dim}}]{x, }
+\item[{{\bf Dim}}]{y, }
+\item[{{\bf Dim}}]{kork, }
+\item[{char}]{merkki}
+\end{DoxyParamCaption}
+)}\label{class_bittikartta_a134b78d3c6cf7be361bfdebbd297787a}
+Piirt‰‰ vertikaalisen viivan eli pystyviivan. Bittikartta-\/luokan origo (0,0) on {\itshape vasemmassa yl‰nurkassa} ja y-\/suunta kasvaa alasp‰in. 
+\begin{DoxyParams}{Parameters}
+{\em x} & alkupisteen x-\/koordinaatti \\
+\hline
+{\em y} & alkupisteen y-\/koordinaatti \\
+\hline
+{\em kork} & viivan korkeus \\
+\hline
+{\em merkki} & viivan piirtoon k‰ytett‰v‰ merkki \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_bittikartta_a3c01a7b0f71cc48899b1a300c3f5dfb9}{}\index{Bittikartta@{Bittikartta}!suorakaide@{suorakaide}}
+\index{suorakaide@{suorakaide}!Bittikartta@{Bittikartta}}
+\subsubsection[{suorakaide(\+Dim x, Dim y, Dim lev, Dim kork, char merkki)}]{\setlength{\rightskip}{0pt plus 5cm}void Bittikartta\+::suorakaide (
+\begin{DoxyParamCaption}
+\item[{{\bf Dim}}]{x, }
+\item[{{\bf Dim}}]{y, }
+\item[{{\bf Dim}}]{lev, }
+\item[{{\bf Dim}}]{kork, }
+\item[{char}]{merkki}
+\end{DoxyParamCaption}
+)}\label{class_bittikartta_a3c01a7b0f71cc48899b1a300c3f5dfb9}
+Piirt‰‰ suorakaiteen, jonka vasen yl‰kulma on pisteess‰ (x, y). Reunat piirret‰‰n annetulla merkill‰. Bittikartta-\/luokan origo (0,0) on {\itshape vasemmassa yl‰nurkassa} ja y-\/suunta kasvaa alasp‰in. 
+\begin{DoxyParams}{Parameters}
+{\em x} & alkupisteen x-\/koordinaatti \\
+\hline
+{\em y} & alkupisteen y-\/koordinaatti \\
+\hline
+{\em lev} & suorakaiteen leveys \\
+\hline
+{\em kork} & suorakaiteen korkeus \\
+\hline
+{\em merkki} & alueen ‰‰riviivojen piirt‰miseen k‰ytett‰v‰ merkki \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_bittikartta_a484bf5feefcc803a039937c704f34a17}{}\index{Bittikartta@{Bittikartta}!tulosta@{tulosta}}
+\index{tulosta@{tulosta}!Bittikartta@{Bittikartta}}
+\subsubsection[{tulosta(std\+::ostream \&virta) const }]{\setlength{\rightskip}{0pt plus 5cm}void Bittikartta\+::tulosta (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{virta}
+\end{DoxyParamCaption}
+) const}\label{class_bittikartta_a484bf5feefcc803a039937c704f34a17}
+Tulostaa bittikartan sis‰llˆn annettuun virtaan. 
+\begin{DoxyParams}{Parameters}
+{\em virta} & virta, johon bittikartta tulostetaan \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_bittikartta_acb0ee37ce104c9337233896b5f157063}{}\index{Bittikartta@{Bittikartta}!tyhjenna@{tyhjenna}}
+\index{tyhjenna@{tyhjenna}!Bittikartta@{Bittikartta}}
+\subsubsection[{tyhjenna()}]{\setlength{\rightskip}{0pt plus 5cm}void Bittikartta\+::tyhjenna (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_bittikartta_acb0ee37ce104c9337233896b5f157063}
+Pyyhkii piirtoalueen eli korvaa kaikki piirretyt merkit v‰lilyˆnneill‰. \hypertarget{class_bittikartta_a139d5c1072e015fbf1ef6d283b278e77}{}\index{Bittikartta@{Bittikartta}!vaakateksti@{vaakateksti}}
+\index{vaakateksti@{vaakateksti}!Bittikartta@{Bittikartta}}
+\subsubsection[{vaakateksti(\+Dim x, Dim y, std\+::string const \&teksti)}]{\setlength{\rightskip}{0pt plus 5cm}void Bittikartta\+::vaakateksti (
+\begin{DoxyParamCaption}
+\item[{{\bf Dim}}]{x, }
+\item[{{\bf Dim}}]{y, }
+\item[{std\+::string const \&}]{teksti}
+\end{DoxyParamCaption}
+)}\label{class_bittikartta_a139d5c1072e015fbf1ef6d283b278e77}
+Kirjoittaa alueelle vaakatekstin, joka alkaa koordinaateista (x, y). Viimeinen merkki tulee pisteeseen (x + tekstin pituus, y). Bittikartta-\/luokan origo (0,0) on {\itshape vasemmassa yl‰nurkassa} ja y-\/suunta kasvaa alasp‰in. 
+\begin{DoxyParams}{Parameters}
+{\em x} & alkupisteen x-\/koordinaatti \\
+\hline
+{\em y} & alkupisteen y-\/koordinaatti \\
+\hline
+{\em teksti} & kirjoitettava teksti \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_bittikartta_a063f6631901b378de7d5212683ed15a0}{}\index{Bittikartta@{Bittikartta}!vaakaviiva@{vaakaviiva}}
+\index{vaakaviiva@{vaakaviiva}!Bittikartta@{Bittikartta}}
+\subsubsection[{vaakaviiva(\+Dim x, Dim y, Dim lev, char merkki)}]{\setlength{\rightskip}{0pt plus 5cm}void Bittikartta\+::vaakaviiva (
+\begin{DoxyParamCaption}
+\item[{{\bf Dim}}]{x, }
+\item[{{\bf Dim}}]{y, }
+\item[{{\bf Dim}}]{lev, }
+\item[{char}]{merkki}
+\end{DoxyParamCaption}
+)}\label{class_bittikartta_a063f6631901b378de7d5212683ed15a0}
+Piirt‰‰ horisontaalisen viivan eli vaakaviivan. Bittikartta-\/luokan origo (0,0) on {\itshape vasemmassa yl‰nurkassa} ja y-\/suunta kasvaa alasp‰in. 
+\begin{DoxyParams}{Parameters}
+{\em x} & alkupisteen x-\/koordinaatti \\
+\hline
+{\em y} & alkupisteen y-\/koordinaatti \\
+\hline
+{\em lev} & viivan leveys \\
+\hline
+{\em merkki} & viivan piirtoon k‰ytett‰v‰ merkki \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+valmiiden\+\_\+toteutus/include/\hyperlink{_bittikartta_8hh}{Bittikartta.\+hh}\item 
+valmiiden\+\_\+toteutus/\hyperlink{_bittikartta_8cc}{Bittikartta.\+cc}\end{DoxyCompactItemize}

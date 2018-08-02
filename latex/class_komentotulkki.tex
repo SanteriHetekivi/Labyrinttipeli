@@ -1,0 +1,93 @@
+\hypertarget{class_komentotulkki}{}\section{Komentotulkki Class Reference}
+\label{class_komentotulkki}\index{Komentotulkki@{Komentotulkki}}
+
+
+Komentotulkin toteuttava luokka.  
+
+
+
+
+{\ttfamily \#include $<$komentotulkki.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_komentotulkki_a3c9372e77cf9e4dbd741572f6445a106}{kaynnista\+Komentotulkki} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_julkinen_1_1_pelirajapinta}{Julkinen\+::\+Pelirajapinta} $>$ peli)
+\begin{DoxyCompactList}\small\item\em Metodi komentotulkin käynnistämiseen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::shared\+\_\+ptr$<$ \hyperlink{class_komentotulkki}{Komentotulkki} $>$ \hyperlink{class_komentotulkki_ad7a004ae7aac2fe0b28a21d84c9a0fb9}{uusi\+Komentotulkki} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_naytto}{Naytto} $>$ naytto)
+\begin{DoxyCompactList}\small\item\em Luo {\ttfamily \hyperlink{class_komentotulkki}{Komentotulkki}} olion ja palauttaa osoittimen siihen. \end{DoxyCompactList}\item 
+static void \hyperlink{class_komentotulkki_ae87386f32d344bdb497a68da55a9a718}{aseta\+Raakile\+Tilaan} ()
+\begin{DoxyCompactList}\small\item\em Asettaa komentotulkin raakile tilaan. \end{DoxyCompactList}\item 
+\hypertarget{class_komentotulkki_a96d3141f3af61972998c5c6deb64c2ac}{}static bool \hyperlink{class_komentotulkki_a96d3141f3af61972998c5c6deb64c2ac}{onko\+Raakile\+Tilassa} ()\label{class_komentotulkki_a96d3141f3af61972998c5c6deb64c2ac}
+
+\begin{DoxyCompactList}\small\item\em Kysyy, onko komentotulkki raakiletilassa. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Komentotulkin toteuttava luokka. 
+
+Jos kääntäjä on G\+N\+U\+G pohjainen esim. gcc tai tutg++ käytetään tr1/memory kirjastoa. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_komentotulkki_ae87386f32d344bdb497a68da55a9a718}{}\index{Komentotulkki@{Komentotulkki}!aseta\+Raakile\+Tilaan@{aseta\+Raakile\+Tilaan}}
+\index{aseta\+Raakile\+Tilaan@{aseta\+Raakile\+Tilaan}!Komentotulkki@{Komentotulkki}}
+\subsubsection[{aseta\+Raakile\+Tilaan()}]{\setlength{\rightskip}{0pt plus 5cm}void Komentotulkki\+::aseta\+Raakile\+Tilaan (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_komentotulkki_ae87386f32d344bdb497a68da55a9a718}
+
+
+Asettaa komentotulkin raakile tilaan. 
+
+\begin{DoxyPostcond}{Postcondition}
+\hyperlink{class_komentotulkki}{Komentotulkki} on raakile tilassa. 
+\end{DoxyPostcond}
+\hypertarget{class_komentotulkki_a3c9372e77cf9e4dbd741572f6445a106}{}\index{Komentotulkki@{Komentotulkki}!kaynnista\+Komentotulkki@{kaynnista\+Komentotulkki}}
+\index{kaynnista\+Komentotulkki@{kaynnista\+Komentotulkki}!Komentotulkki@{Komentotulkki}}
+\subsubsection[{kaynnista\+Komentotulkki(std\+::shared\+\_\+ptr$<$ Julkinen\+::\+Pelirajapinta $>$ peli)}]{\setlength{\rightskip}{0pt plus 5cm}void Komentotulkki\+::kaynnista\+Komentotulkki (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Julkinen\+::\+Pelirajapinta} $>$}]{peli}
+\end{DoxyParamCaption}
+)}\label{class_komentotulkki_a3c9372e77cf9e4dbd741572f6445a106}
+
+
+Metodi komentotulkin käynnistämiseen. 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_peli}{Peli} on pelitilassa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\hyperlink{class_komentotulkki}{Komentotulkki} on käynnistetty.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em peli} & Osoitin peliin. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_komentotulkki_ad7a004ae7aac2fe0b28a21d84c9a0fb9}{}\index{Komentotulkki@{Komentotulkki}!uusi\+Komentotulkki@{uusi\+Komentotulkki}}
+\index{uusi\+Komentotulkki@{uusi\+Komentotulkki}!Komentotulkki@{Komentotulkki}}
+\subsubsection[{uusi\+Komentotulkki(std\+::shared\+\_\+ptr$<$ Naytto $>$ naytto)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::shared\+\_\+ptr$<$ {\bf Komentotulkki} $>$ Komentotulkki\+::uusi\+Komentotulkki (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Naytto} $>$}]{naytto}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_komentotulkki_ad7a004ae7aac2fe0b28a21d84c9a0fb9}
+
+
+Luo {\ttfamily \hyperlink{class_komentotulkki}{Komentotulkki}} olion ja palauttaa osoittimen siihen. 
+
+\begin{DoxyPostcond}{Postcondition}
+Palauttanut jaetunosoittiminen \hyperlink{class_komentotulkki}{Komentotulkki} -\/osoittimeen.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Palauttaa osoittimen komenttotulkki olioon. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+valmiiden\+\_\+toteutus/include/\hyperlink{komentotulkki_8hh}{komentotulkki.\+hh}\item 
+valmiiden\+\_\+toteutus/\hyperlink{komentotulkki_8cc}{komentotulkki.\+cc}\end{DoxyCompactItemize}

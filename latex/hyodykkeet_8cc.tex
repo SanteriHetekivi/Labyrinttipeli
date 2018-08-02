@@ -1,0 +1,113 @@
+\hypertarget{hyodykkeet_8cc}{}\section{valmiiden\+\_\+toteutus/hyodykkeet.cc File Reference}
+\label{hyodykkeet_8cc}\index{valmiiden\+\_\+toteutus/hyodykkeet.\+cc@{valmiiden\+\_\+toteutus/hyodykkeet.\+cc}}
+
+
+Apufunktioiden toteutukset.  
+
+
+{\ttfamily \#include \char`\"{}hyodykkeet.\+hh\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename Char\+T , typename T $>$ }\\bool \hyperlink{hyodykkeet_8cc_acb3ccef14aa9c4a9e71e4eb4eaf7e1cf}{muunna\+Merkkijono} (std\+::basic\+\_\+string$<$ Char\+T $>$ const \&lahde, T \&kohde)
+\begin{DoxyCompactList}\small\item\em Lue merkkijono tyypin T olioon. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename Char\+T $>$ }\\std\+::tr1\+::shared\+\_\+ptr$<$ Char\+T $>$ \hyperlink{hyodykkeet_8cc_a861c5d6d3983229a4215095837e481eb}{c\+Merkkijonoksi} (std\+::basic\+\_\+string$<$ Char\+T $>$ const \&merkkijono)
+\begin{DoxyCompactList}\small\item\em Varaa dynaamisesti C-\/merkkijono ja sijoita siihen merkkijonon arvo. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T1 , typename T2 $>$ }\\T2 \hyperlink{hyodykkeet_8cc_ac8ec0c03c0ca6f3f93b88118264d289a}{muunna} (T1 muunnettava, std\+::map$<$ T1, T2 $>$ const \&muuntaja, T1 tunnistamaton)
+\begin{DoxyCompactList}\small\item\em Muunna arvo toiseksi std\+::mapin avulla. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Apufunktioiden toteutukset. 
+
+\begin{DoxyAuthor}{Author}
+©2010 Jarmo Jaakkola \href{mailto:jarmo.jaakkola@tut.fi}{\tt jarmo.\+jaakkola@tut.\+fi}, T\+T\+Y Ohjelmistotekniikka 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{hyodykkeet_8cc_a861c5d6d3983229a4215095837e481eb}{}\index{hyodykkeet.\+cc@{hyodykkeet.\+cc}!c\+Merkkijonoksi@{c\+Merkkijonoksi}}
+\index{c\+Merkkijonoksi@{c\+Merkkijonoksi}!hyodykkeet.\+cc@{hyodykkeet.\+cc}}
+\subsubsection[{c\+Merkkijonoksi(std\+::basic\+\_\+string$<$ Char\+T $>$ const \&merkkijono)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Char\+T $>$ std\+::tr1\+::shared\+\_\+ptr$<$Char\+T$>$ c\+Merkkijonoksi (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+string$<$ Char\+T $>$ const \&}]{merkkijono}
+\end{DoxyParamCaption}
+)}\label{hyodykkeet_8cc_a861c5d6d3983229a4215095837e481eb}
+
+
+Varaa dynaamisesti C-\/merkkijono ja sijoita siihen merkkijonon arvo. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Char\+T} & Merkkijonon sisältämien merkkien tyyppi. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em merkkijono} & Merkkijono, jonka sisältö kopioidaan. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dynaamisesti varattu C-\/merkkijono. 
+\end{DoxyReturn}
+\hypertarget{hyodykkeet_8cc_ac8ec0c03c0ca6f3f93b88118264d289a}{}\index{hyodykkeet.\+cc@{hyodykkeet.\+cc}!muunna@{muunna}}
+\index{muunna@{muunna}!hyodykkeet.\+cc@{hyodykkeet.\+cc}}
+\subsubsection[{muunna(\+T1 muunnettava, std\+::map$<$ T1, T2 $>$ const \&muuntaja, T1 tunnistamaton)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T1 , typename T2 $>$ T2 muunna (
+\begin{DoxyParamCaption}
+\item[{T1}]{muunnettava, }
+\item[{std\+::map$<$ T1, T2 $>$ const \&}]{muuntaja, }
+\item[{T1}]{tunnistamaton}
+\end{DoxyParamCaption}
+)}\label{hyodykkeet_8cc_ac8ec0c03c0ca6f3f93b88118264d289a}
+
+
+Muunna arvo toiseksi std\+::mapin avulla. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T1} & Muunnoksen lähtötyyppi. \\
+\hline
+{\em T2} & Muunnoksen kohdetyyppi. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em muunnettava} & Muunnettava arvo. \\
+\hline
+{\em muuntaja} & Muunnos tehdään tätä hyväksi käyttäen. \\
+\hline
+{\em tunnistamaton} & Arvo, jota mapista haetaan, jos {\ttfamily muunnettava} ei sieltä löytynyt. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Haettua vastaava arvo, jos se löytyy. Jos ei löydy, niin tunnistamatonta arvoa vastaava. Jos sitäkään ei löydy niin, T2(). 
+\end{DoxyReturn}
+\hypertarget{hyodykkeet_8cc_acb3ccef14aa9c4a9e71e4eb4eaf7e1cf}{}\index{hyodykkeet.\+cc@{hyodykkeet.\+cc}!muunna\+Merkkijono@{muunna\+Merkkijono}}
+\index{muunna\+Merkkijono@{muunna\+Merkkijono}!hyodykkeet.\+cc@{hyodykkeet.\+cc}}
+\subsubsection[{muunna\+Merkkijono(std\+::basic\+\_\+string$<$ Char\+T $>$ const \&lahde, T \&kohde)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Char\+T , typename T $>$ bool muunna\+Merkkijono (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+string$<$ Char\+T $>$ const \&}]{lahde, }
+\item[{T \&}]{kohde}
+\end{DoxyParamCaption}
+)}\label{hyodykkeet_8cc_acb3ccef14aa9c4a9e71e4eb4eaf7e1cf}
+
+
+Lue merkkijono tyypin T olioon. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Char\+T} & Merkkijonon sisältämien merkkien tyyppi. \\
+\hline
+{\em T} & Luettavan tyypin arvo. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em lahde} & Merkkijono, josta arvo luetaan. \\
+\hline
+{\em kohde} & Olio, johon muunnettu arvo luetaan. Täytyy olla luettavissa std\+::basic\+\_\+ostream$<$char$>$-\/oliosta $>$$>$-\/operaattorilla. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Arvo {\ttfamily true} jos ja vain jos arvon muuntaminen onnistui sen lukeminen kulutti {\itshape koko} merkkijonon. 
+\end{DoxyReturn}

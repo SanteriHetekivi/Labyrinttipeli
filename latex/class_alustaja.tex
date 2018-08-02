@@ -1,0 +1,216 @@
+\hypertarget{class_alustaja}{}\section{Alustaja Class Reference}
+\label{class_alustaja}\index{Alustaja@{Alustaja}}
+
+
+{\ttfamily \#include $<$Alustaja.\+hh$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_alustaja_ad5c91c3cf20c888f7705ea8fdf78424c}{Ruututyyppi} \{ \hyperlink{class_alustaja_ad5c91c3cf20c888f7705ea8fdf78424cadbf3000df3ba5b2ac0aad6c357e716bd}{I}, 
+\hyperlink{class_alustaja_ad5c91c3cf20c888f7705ea8fdf78424caf81d65ed787b717d5db42aa9dca8e2ab}{L}, 
+\hyperlink{class_alustaja_ad5c91c3cf20c888f7705ea8fdf78424ca9c203c0d276c6ccbc30c0000b9c4bffa}{T}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_alustaja_a6bd26a8062ef372d7bd08d62f08de80d}{Alustaja} (unsigned int pelaajia)
+\item 
+\hyperlink{class_alustaja_a681ffa64c06e41d38db6a1fa941b7154}{Alustaja} (unsigned int pelaajia, unsigned long int siemen)
+\item 
+\hyperlink{class_alustaja_aaf1c9a749d768f441052ff21bd8dbd4c}{$\sim$\+Alustaja} ()
+\item 
+\hyperlink{class_alustaja_ad5c91c3cf20c888f7705ea8fdf78424c}{Ruututyyppi} \hyperlink{class_alustaja_a8c107f149914e9ea469648c459cc5ec7}{anna\+Irtopalan\+Tyyppi} () const 
+\item 
+\hyperlink{class_alustaja_ad5c91c3cf20c888f7705ea8fdf78424c}{Ruututyyppi} \hyperlink{class_alustaja_aca526de765bb68ae0e63dfb68e3ade9e}{anna\+Koordinaatin\+Ruututyyppi} (unsigned int x, unsigned int y) const 
+\item 
+unsigned int \hyperlink{class_alustaja_acc7a418a4ff4b375dc8e95efbd31ed36}{anna\+Koordinaatin\+Rotaatio} (unsigned int x, unsigned int y) const 
+\item 
+char \hyperlink{class_alustaja_adafe996b7a7059ae1c8783ac19f89737}{anna\+Koordinaatin\+Esine} (unsigned int x, unsigned int y) const 
+\item 
+\hypertarget{class_alustaja_a539ebfecca066cdaf08f18373efe55cd}{}char {\bfseries anna\+Koordinaatin\+Erikoispala} (unsigned int x, unsigned int y) const \label{class_alustaja_a539ebfecca066cdaf08f18373efe55cd}
+
+\item 
+std\+::vector$<$ char $>$ \hyperlink{class_alustaja_a7e6ed8a1e9cf75ac5d3344f3037697f6}{anna\+Pelaajan\+Esinelista} (unsigned int pelaaja) const 
+\item 
+unsigned long int \hyperlink{class_alustaja_a6b1f3bba567b71268675aa7c3e6a6225}{anna\+Siemenluku} () const 
+\item 
+\hypertarget{class_alustaja_a1af681290b868efd31f5cd3342ab0f0c}{}\hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} {\bfseries anna\+Seuraava\+Kohde} ()\label{class_alustaja_a1af681290b868efd31f5cd3342ab0f0c}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_alustaja_ace19a0ef2f5ebe2ab78c35133620b1f5}{}static unsigned int const \hyperlink{class_alustaja_ace19a0ef2f5ebe2ab78c35133620b1f5}{L\+A\+B\+Y\+R\+I\+N\+T\+I\+N\+\_\+\+K\+O\+R\+K\+E\+U\+S} = 5\label{class_alustaja_ace19a0ef2f5ebe2ab78c35133620b1f5}
+
+\begin{DoxyCompactList}\small\item\em M‰‰ritt‰‰ y-\/koordinaatin maksimiarvon. \end{DoxyCompactList}\item 
+\hypertarget{class_alustaja_ace329057210e2051964e48a59dc03ca9}{}static unsigned int const \hyperlink{class_alustaja_ace329057210e2051964e48a59dc03ca9}{L\+A\+B\+Y\+R\+I\+N\+T\+I\+N\+\_\+\+L\+E\+V\+E\+Y\+S} = 5\label{class_alustaja_ace329057210e2051964e48a59dc03ca9}
+
+\begin{DoxyCompactList}\small\item\em M‰‰ritt‰‰ x-\/koordinaatin maksimiarvon. \end{DoxyCompactList}\item 
+\hypertarget{class_alustaja_a0ddd04ed6bdb8183464e0e92b89a69dc}{}static char const \hyperlink{class_alustaja_a0ddd04ed6bdb8183464e0e92b89a69dc}{E\+I\+\_\+\+E\+S\+I\+N\+E\+T\+T\+A} = \textquotesingle{}x\textquotesingle{}\label{class_alustaja_a0ddd04ed6bdb8183464e0e92b89a69dc}
+
+\begin{DoxyCompactList}\small\item\em Merkki, jonka anna\+Koordinaatin\+Esine palauttaa, kun ruudussa ei ole esinett‰ \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Alustaja-\/luokka huolehtii alkutilanteen luomisesta peli‰ varten.
+
+{\bfseries Huom!} Alustaja-\/luokan origo (0,0) on {\itshape vasemmassa alanurkassa} ja y-\/suunta kasvaa ylˆsp‰in. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_alustaja_ad5c91c3cf20c888f7705ea8fdf78424c}{}\index{Alustaja@{Alustaja}!Ruututyyppi@{Ruututyyppi}}
+\index{Ruututyyppi@{Ruututyyppi}!Alustaja@{Alustaja}}
+\subsubsection[{Ruututyyppi}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Alustaja\+::\+Ruututyyppi}}\label{class_alustaja_ad5c91c3cf20c888f7705ea8fdf78424c}
+M‰‰ritt‰‰ ruudun tyypin eri vaihtoehdot. \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{I@{I}!Alustaja@{Alustaja}}\index{Alustaja@{Alustaja}!I@{I}}\item[{\em 
+\hypertarget{class_alustaja_ad5c91c3cf20c888f7705ea8fdf78424cadbf3000df3ba5b2ac0aad6c357e716bd}{}I\label{class_alustaja_ad5c91c3cf20c888f7705ea8fdf78424cadbf3000df3ba5b2ac0aad6c357e716bd}
+}]Kyseess‰ on harjoitustyˆohjeen I-\/ruutu \index{L@{L}!Alustaja@{Alustaja}}\index{Alustaja@{Alustaja}!L@{L}}\item[{\em 
+\hypertarget{class_alustaja_ad5c91c3cf20c888f7705ea8fdf78424caf81d65ed787b717d5db42aa9dca8e2ab}{}L\label{class_alustaja_ad5c91c3cf20c888f7705ea8fdf78424caf81d65ed787b717d5db42aa9dca8e2ab}
+}]Kyseess‰ on harjoitustyˆohjeen L-\/ruutu \index{T@{T}!Alustaja@{Alustaja}}\index{Alustaja@{Alustaja}!T@{T}}\item[{\em 
+\hypertarget{class_alustaja_ad5c91c3cf20c888f7705ea8fdf78424ca9c203c0d276c6ccbc30c0000b9c4bffa}{}T\label{class_alustaja_ad5c91c3cf20c888f7705ea8fdf78424ca9c203c0d276c6ccbc30c0000b9c4bffa}
+}]Kyseess‰ on harjoitustyˆohjeen T-\/ruutu \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_alustaja_a6bd26a8062ef372d7bd08d62f08de80d}{}\index{Alustaja@{Alustaja}!Alustaja@{Alustaja}}
+\index{Alustaja@{Alustaja}!Alustaja@{Alustaja}}
+\subsubsection[{Alustaja(unsigned int pelaajia)}]{\setlength{\rightskip}{0pt plus 5cm}Alustaja\+::\+Alustaja (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{pelaajia}
+\end{DoxyParamCaption}
+)}\label{class_alustaja_a6bd26a8062ef372d7bd08d62f08de80d}
+
+\begin{DoxyParams}{Parameters}
+{\em pelaajia} & Peliss‰ mukana olevien pelaajien m‰‰r‰. Pit‰‰ olla v‰lill‰ 2-\/4.\\
+\hline
+\end{DoxyParams}
+Jos k‰‰nt‰j‰ on G\+N\+U\+G pohjainen esim. gcc tai tutg++ esitell‰‰n luokkavakiot. \hypertarget{class_alustaja_a681ffa64c06e41d38db6a1fa941b7154}{}\index{Alustaja@{Alustaja}!Alustaja@{Alustaja}}
+\index{Alustaja@{Alustaja}!Alustaja@{Alustaja}}
+\subsubsection[{Alustaja(unsigned int pelaajia, unsigned long int siemen)}]{\setlength{\rightskip}{0pt plus 5cm}Alustaja\+::\+Alustaja (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{pelaajia, }
+\item[{unsigned long int}]{siemen}
+\end{DoxyParamCaption}
+)}\label{class_alustaja_a681ffa64c06e41d38db6a1fa941b7154}
+
+\begin{DoxyParams}{Parameters}
+{\em pelaajia} & Peliss‰ mukana olevien pelaajien m‰‰r‰. Pit‰‰ olla v‰lill‰ 2-\/4. \\
+\hline
+{\em siemen} & Satunnaislukugeneraattorille annettava alustusarvo. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_alustaja_aaf1c9a749d768f441052ff21bd8dbd4c}{}\index{Alustaja@{Alustaja}!````~Alustaja@{$\sim$\+Alustaja}}
+\index{````~Alustaja@{$\sim$\+Alustaja}!Alustaja@{Alustaja}}
+\subsubsection[{$\sim$\+Alustaja()}]{\setlength{\rightskip}{0pt plus 5cm}Alustaja\+::$\sim$\+Alustaja (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_alustaja_aaf1c9a749d768f441052ff21bd8dbd4c}
+Purkaja 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_alustaja_a8c107f149914e9ea469648c459cc5ec7}{}\index{Alustaja@{Alustaja}!anna\+Irtopalan\+Tyyppi@{anna\+Irtopalan\+Tyyppi}}
+\index{anna\+Irtopalan\+Tyyppi@{anna\+Irtopalan\+Tyyppi}!Alustaja@{Alustaja}}
+\subsubsection[{anna\+Irtopalan\+Tyyppi() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alustaja\+::\+Ruututyyppi} Alustaja\+::anna\+Irtopalan\+Tyyppi (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_alustaja_a8c107f149914e9ea469648c459cc5ec7}
+\begin{DoxyReturn}{Returns}
+Palauttaa alkutilanteen irtopalan tyypin. 
+\end{DoxyReturn}
+\hypertarget{class_alustaja_adafe996b7a7059ae1c8783ac19f89737}{}\index{Alustaja@{Alustaja}!anna\+Koordinaatin\+Esine@{anna\+Koordinaatin\+Esine}}
+\index{anna\+Koordinaatin\+Esine@{anna\+Koordinaatin\+Esine}!Alustaja@{Alustaja}}
+\subsubsection[{anna\+Koordinaatin\+Esine(unsigned int x, unsigned int y) const }]{\setlength{\rightskip}{0pt plus 5cm}char Alustaja\+::anna\+Koordinaatin\+Esine (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{x, }
+\item[{unsigned int}]{y}
+\end{DoxyParamCaption}
+) const}\label{class_alustaja_adafe996b7a7059ae1c8783ac19f89737}
+Alustaja-\/luokan origo (0,0) on {\itshape vasemmassa alanurkassa} ja y-\/suunta kasvaa ylˆsp‰in.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Labyrintin x-\/koordinaatti. Pit‰‰ olla v‰lill‰ 1-\/\+L\+A\+B\+Y\+R\+I\+N\+T\+I\+N\+\_\+\+L\+E\+V\+E\+Y\+S. \\
+\hline
+{\em y} & Labyrintin y-\/koordinaatti. Pit‰‰ olla v‰lill‰ 1-\/\+L\+A\+B\+Y\+R\+I\+N\+T\+I\+N\+\_\+\+K\+O\+R\+K\+E\+U\+S. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Palauttaa joko ruudussa olevaa esinett‰ vastaavan merkin v‰lilt‰ a-\/l tai vaihtoehtoisesti vakion E\+I\+\_\+\+E\+S\+I\+N\+E\+T\+T\+A, jos ruutu on tyhj‰. 
+\end{DoxyReturn}
+\hypertarget{class_alustaja_acc7a418a4ff4b375dc8e95efbd31ed36}{}\index{Alustaja@{Alustaja}!anna\+Koordinaatin\+Rotaatio@{anna\+Koordinaatin\+Rotaatio}}
+\index{anna\+Koordinaatin\+Rotaatio@{anna\+Koordinaatin\+Rotaatio}!Alustaja@{Alustaja}}
+\subsubsection[{anna\+Koordinaatin\+Rotaatio(unsigned int x, unsigned int y) const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Alustaja\+::anna\+Koordinaatin\+Rotaatio (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{x, }
+\item[{unsigned int}]{y}
+\end{DoxyParamCaption}
+) const}\label{class_alustaja_acc7a418a4ff4b375dc8e95efbd31ed36}
+Alustaja-\/luokan origo (0,0) on {\itshape vasemmassa alanurkassa} ja y-\/suunta kasvaa ylˆsp‰in.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Labyrintin x-\/koordinaatti. Pit‰‰ olla v‰lill‰ 1-\/\+L\+A\+B\+Y\+R\+I\+N\+T\+I\+N\+\_\+\+L\+E\+V\+E\+Y\+S. \\
+\hline
+{\em y} & Labyrintin y-\/koordinaatti. Pit‰‰ olla v‰lill‰ 1-\/\+L\+A\+B\+Y\+R\+I\+N\+T\+I\+N\+\_\+\+K\+O\+R\+K\+E\+U\+S. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Palauttaa labyrintin alkutilanteen ruudun (x, y) rotaation. Rotaatio on kokonaisluku v‰lill‰ 1-\/4. 
+\end{DoxyReturn}
+\hypertarget{class_alustaja_aca526de765bb68ae0e63dfb68e3ade9e}{}\index{Alustaja@{Alustaja}!anna\+Koordinaatin\+Ruututyyppi@{anna\+Koordinaatin\+Ruututyyppi}}
+\index{anna\+Koordinaatin\+Ruututyyppi@{anna\+Koordinaatin\+Ruututyyppi}!Alustaja@{Alustaja}}
+\subsubsection[{anna\+Koordinaatin\+Ruututyyppi(unsigned int x, unsigned int y) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alustaja\+::\+Ruututyyppi} Alustaja\+::anna\+Koordinaatin\+Ruututyyppi (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{x, }
+\item[{unsigned int}]{y}
+\end{DoxyParamCaption}
+) const}\label{class_alustaja_aca526de765bb68ae0e63dfb68e3ade9e}
+Alustaja-\/luokan origo (0,0) on {\itshape vasemmassa alanurkassa} ja y-\/suunta kasvaa ylˆsp‰in.
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Labyrintin x-\/koordinaatti. Pit‰‰ olla v‰lill‰ 1-\/\+L\+A\+B\+Y\+R\+I\+N\+T\+I\+N\+\_\+\+L\+E\+V\+E\+Y\+S. \\
+\hline
+{\em y} & Labyrintin y-\/koordinaatti. Pit‰‰ olla v‰lill‰ 1-\/\+L\+A\+B\+Y\+R\+I\+N\+T\+I\+N\+\_\+\+K\+O\+R\+K\+E\+U\+S. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Palauttaa labyrintin alkutilanteen ruudun (x, y) tyypin. 
+\end{DoxyReturn}
+\hypertarget{class_alustaja_a7e6ed8a1e9cf75ac5d3344f3037697f6}{}\index{Alustaja@{Alustaja}!anna\+Pelaajan\+Esinelista@{anna\+Pelaajan\+Esinelista}}
+\index{anna\+Pelaajan\+Esinelista@{anna\+Pelaajan\+Esinelista}!Alustaja@{Alustaja}}
+\subsubsection[{anna\+Pelaajan\+Esinelista(unsigned int pelaaja) const }]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ char $>$ Alustaja\+::anna\+Pelaajan\+Esinelista (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{pelaaja}
+\end{DoxyParamCaption}
+) const}\label{class_alustaja_a7e6ed8a1e9cf75ac5d3344f3037697f6}
+
+\begin{DoxyParams}{Parameters}
+{\em pelaaja} & Pelaajan numero. Pit‰‰ olla v‰lill‰ 0-\/(pelaajien\+\_\+lkm-\/1). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Palauttaa pelaajan etsitt‰vien esineiden listan. 
+\end{DoxyReturn}
+\hypertarget{class_alustaja_a6b1f3bba567b71268675aa7c3e6a6225}{}\index{Alustaja@{Alustaja}!anna\+Siemenluku@{anna\+Siemenluku}}
+\index{anna\+Siemenluku@{anna\+Siemenluku}!Alustaja@{Alustaja}}
+\subsubsection[{anna\+Siemenluku() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned long int Alustaja\+::anna\+Siemenluku (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_alustaja_a6b1f3bba567b71268675aa7c3e6a6225}
+\begin{DoxyReturn}{Returns}
+Palauttaa Alustajan satunnaislukugeneraattorin k‰ytt‰m‰n siemenluvun. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+valmiiden\+\_\+toteutus/include/\hyperlink{_alustaja_8hh}{Alustaja.\+hh}\item 
+valmiiden\+\_\+toteutus/\hyperlink{_alustaja_8cc}{Alustaja.\+cc}\end{DoxyCompactItemize}

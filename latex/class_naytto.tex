@@ -1,0 +1,413 @@
+\hypertarget{class_naytto}{}\section{Naytto Class Reference}
+\label{class_naytto}\index{Naytto@{Naytto}}
+
+
+Labyrintti-\/pelin tulostusluokka.  
+
+
+
+
+{\ttfamily \#include $<$naytto.\+hh$>$}
+
+Inheritance diagram for Naytto\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_naytto}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_naytto_1_1_p}{P}
+\begin{DoxyCompactList}\small\item\em Tulostuksessa avustava structi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_naytto_a10c88b8375ec0c4b88e55eb8005f1c9a}{Naytto} (\hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&mitat, unsigned int x, unsigned int y, bool debug\+\_\+naytto)
+\begin{DoxyCompactList}\small\item\em Näytönrakentaja. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_naytto_ac67aeac64dacc24f045210ab0b958768}{$\sim$\+Naytto} ()
+\begin{DoxyCompactList}\small\item\em Purkaja. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_naytto_a1be5a43b84f00c279e6e8f619d613de9}{on\+Tulostustilassa} () const 
+\begin{DoxyCompactList}\small\item\em Tulostustilan tarkistus. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_naytto_a1ad6d3eea578c82c6260bc59d04e17a1}{ilmoitus\+Esine\+Poimittu} (char esine, std\+::string const \&pelaaja)
+\item 
+virtual void \hyperlink{class_naytto_ae8f3bdaee4c802e33be17b0efb50a530}{ilmoitus\+Erikoispalaan\+Astuttu} (\hyperlink{namespace_julkinen_afc26052e09d0b2214f749492cc5fff19}{Julkinen\+::\+Erikoispala\+Tyyppi} tyyppi, std\+::string const \&pelaaja)
+\item 
+virtual void \hyperlink{class_naytto_aebc53e0348c5f5ba88424a0e2a39991d}{ilmoitus\+Vuorossa} (std\+::string const \&nimi)
+\begin{DoxyCompactList}\small\item\em Tulostaa tiedon vuorossa olevasta pelaajasta. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_naytto_ababf9b69de2295fe4eaccc3d95461943}{tulosta\+Pelaajantiedot} (std\+::string const \&nimi, std\+::string const \&keratytesineet, std\+::string const \&kerattavatesineet, std\+::string const \&edellinentoiminto)
+\item 
+virtual void \hyperlink{class_naytto_a01a422be1ca30135634914767c8cd633}{komento\+Aloita\+Rakennus} ()
+\begin{DoxyCompactList}\small\item\em Laittaa näytön pelialueen rakennustilaan. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_naytto_adc11e0eddc17bfe1b9aa6971969b8549}{pala\+Laudalle} (\hyperlink{namespace_julkinen_a272c70e0503191a485c8a9cd4281e6f5}{Julkinen\+::\+Pala\+Tyyppi} tyyppi, \hyperlink{namespace_julkinen_afc26052e09d0b2214f749492cc5fff19}{Julkinen\+::\+Erikoispala\+Tyyppi} etyyppi, unsigned int rotaatio, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&sijainti, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&kohde=\hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}())
+\item 
+virtual void \hyperlink{class_naytto_a2425a87d92478b0c86ffe698985b6c86}{pelaaja\+Laudalle} (char merkki, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&sijainti)
+\item 
+virtual void \hyperlink{class_naytto_a54c6a0f6fff0facbf4e769d77e80b341}{esine\+Laudalle} (char merkki, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&sijainti)
+\item 
+virtual void \hyperlink{class_naytto_aa3faa1f5dde0249c90530f0fdfb25d7b}{komento\+Lopeta\+Rakennus} ()
+\begin{DoxyCompactList}\small\item\em Lopeta laudanmuodostustila ja tulosta kartta, pelaajien tiedot ja irtopala. \end{DoxyCompactList}\item 
+void \hyperlink{class_naytto_aeed4659324edc4f043ff43b2042de759}{tulosta} (std\+::ostringstream \&virta)
+\begin{DoxyCompactList}\small\item\em Tulostaa virran. \end{DoxyCompactList}\item 
+\hypertarget{class_naytto_a546211154c2e5fbfe30b3f329c3cdabe}{}void \hyperlink{class_naytto_a546211154c2e5fbfe30b3f329c3cdabe}{tulosta\+Voittaja} ()\label{class_naytto_a546211154c2e5fbfe30b3f329c3cdabe}
+
+\begin{DoxyCompactList}\small\item\em Tulostaa ilmoituksen pelin voittajasta. \end{DoxyCompactList}\item 
+void \hyperlink{class_naytto_a606d18d37a41a1dd32e7e837ce45d6ca}{vuorossa} ()
+\begin{DoxyCompactList}\small\item\em Tulostaa vuorossa olevan pelaajan nimen ja kulman. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Labyrintti-\/pelin tulostusluokka. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_naytto_a10c88b8375ec0c4b88e55eb8005f1c9a}{}\index{Naytto@{Naytto}!Naytto@{Naytto}}
+\index{Naytto@{Naytto}!Naytto@{Naytto}}
+\subsubsection[{Naytto(\+Julkinen\+::\+Koordinaatti const \&mitat, unsigned int x, unsigned int y, bool debug\+\_\+naytto)}]{\setlength{\rightskip}{0pt plus 5cm}Naytto\+::\+Naytto (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{mitat, }
+\item[{unsigned int}]{x, }
+\item[{unsigned int}]{y, }
+\item[{bool}]{debug\+\_\+naytto}
+\end{DoxyParamCaption}
+)}\label{class_naytto_a10c88b8375ec0c4b88e55eb8005f1c9a}
+
+
+Näytönrakentaja. 
+
+Rakentaa näytön ja luo tarvittava {\ttfamily \hyperlink{class_bittikartta}{Bittikartta}} -\/oliot.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em mitat} & Pelialueen koko {\ttfamily Koordinaatti}-\/luokkana. \\
+\hline
+\mbox{\tt in}  & {\em x} & {\ttfamily \hyperlink{class_bittikartta}{Bittikartta}} -\/olion leveys. \\
+\hline
+\mbox{\tt in}  & {\em y} & {\ttfamily \hyperlink{class_bittikartta}{Bittikartta}} -\/olion korkeus. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_naytto_ac67aeac64dacc24f045210ab0b958768}{}\index{Naytto@{Naytto}!````~Naytto@{$\sim$\+Naytto}}
+\index{````~Naytto@{$\sim$\+Naytto}!Naytto@{Naytto}}
+\subsubsection[{$\sim$\+Naytto()}]{\setlength{\rightskip}{0pt plus 5cm}Naytto\+::$\sim$\+Naytto (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_naytto_ac67aeac64dacc24f045210ab0b958768}
+
+
+Purkaja. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw takuu. 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_naytto_a54c6a0f6fff0facbf4e769d77e80b341}{}\index{Naytto@{Naytto}!esine\+Laudalle@{esine\+Laudalle}}
+\index{esine\+Laudalle@{esine\+Laudalle}!Naytto@{Naytto}}
+\subsubsection[{esine\+Laudalle(char merkki, Julkinen\+::\+Koordinaatti const \&sijainti)}]{\setlength{\rightskip}{0pt plus 5cm}void Naytto\+::esine\+Laudalle (
+\begin{DoxyParamCaption}
+\item[{char}]{merkki, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{sijainti}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_naytto_a54c6a0f6fff0facbf4e769d77e80b341}
+
+
+
+
+\begin{DoxyPrecond}{Precondition}
+Nayttö on rakennustilassa. Esineen merkki, jokin \href{tyoohje.html}{\tt työohjeessa} annetuista merkeistä. Koordinaatti on pelialueen rajoissa.
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\hyperlink{class_esine}{Esine} on lisätty tulostettavalle kartalle. Poikkeusturvallisuus\+: Perustakuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em merkki} & \hyperlink{class_esine}{Esine} sijaintia esittävä merkki kartalla. \\
+\hline
+\mbox{\tt in}  & {\em sijainti} & \hyperlink{class_esine}{Esine} koordinaatti kartalla. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_julkinen_1_1_nayttorajapinta_a64f3acc155ec834b7d8661fd7b85c50a}{Julkinen\+::\+Nayttorajapinta}.
+
+\hypertarget{class_naytto_ae8f3bdaee4c802e33be17b0efb50a530}{}\index{Naytto@{Naytto}!ilmoitus\+Erikoispalaan\+Astuttu@{ilmoitus\+Erikoispalaan\+Astuttu}}
+\index{ilmoitus\+Erikoispalaan\+Astuttu@{ilmoitus\+Erikoispalaan\+Astuttu}!Naytto@{Naytto}}
+\subsubsection[{ilmoitus\+Erikoispalaan\+Astuttu(\+Julkinen\+::\+Erikoispala\+Tyyppi tyyppi, std\+::string const \&pelaaja)}]{\setlength{\rightskip}{0pt plus 5cm}void Naytto\+::ilmoitus\+Erikoispalaan\+Astuttu (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Erikoispala\+Tyyppi}}]{tyyppi, }
+\item[{std\+::string const \&}]{pelaaja}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_naytto_ae8f3bdaee4c802e33be17b0efb50a530}
+
+
+
+
+\begin{DoxyPrecond}{Precondition}
+Näyttö on tulostustilassa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ilmoitus palaan astumisesta tehty. Poikkeusturvallisuus\+: Vahvatakuu, jos Nayttovirhe. Muuten perustakuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em tyyppi} & Erikoispalan \hyperlink{namespace_julkinen}{Julkinen}\+:Erikoispala\+Tyyppi \\
+\hline
+\mbox{\tt in}  & {\em pelaaja} & Pelaajan nimi, joka astui erikoispalaan\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nayttovirhe} & Tulostus epäonnistui \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{class_julkinen_1_1_nayttorajapinta_a9211bba3c7c7ed215752b8e311a5253f}{Julkinen\+::\+Nayttorajapinta}.
+
+\hypertarget{class_naytto_a1ad6d3eea578c82c6260bc59d04e17a1}{}\index{Naytto@{Naytto}!ilmoitus\+Esine\+Poimittu@{ilmoitus\+Esine\+Poimittu}}
+\index{ilmoitus\+Esine\+Poimittu@{ilmoitus\+Esine\+Poimittu}!Naytto@{Naytto}}
+\subsubsection[{ilmoitus\+Esine\+Poimittu(char esine, std\+::string const \&pelaaja)}]{\setlength{\rightskip}{0pt plus 5cm}void Naytto\+::ilmoitus\+Esine\+Poimittu (
+\begin{DoxyParamCaption}
+\item[{char}]{esine, }
+\item[{std\+::string const \&}]{pelaaja}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_naytto_a1ad6d3eea578c82c6260bc59d04e17a1}
+
+
+
+
+
+
+Implements \hyperlink{class_julkinen_1_1_nayttorajapinta_afba451435164e30b22bd3060cdb09547}{Julkinen\+::\+Nayttorajapinta}.
+
+\hypertarget{class_naytto_aebc53e0348c5f5ba88424a0e2a39991d}{}\index{Naytto@{Naytto}!ilmoitus\+Vuorossa@{ilmoitus\+Vuorossa}}
+\index{ilmoitus\+Vuorossa@{ilmoitus\+Vuorossa}!Naytto@{Naytto}}
+\subsubsection[{ilmoitus\+Vuorossa(std\+::string const \&nimi)}]{\setlength{\rightskip}{0pt plus 5cm}void Naytto\+::ilmoitus\+Vuorossa (
+\begin{DoxyParamCaption}
+\item[{std\+::string const \&}]{nimi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_naytto_aebc53e0348c5f5ba88424a0e2a39991d}
+
+
+Tulostaa tiedon vuorossa olevasta pelaajasta. 
+
+Tulostaa vuorossa olevan pelaajan nimen ja $>$ merkin sen jälkeen. Metodi pitää ajaa Pelirajapinta\+::vaihda\+Vuoro() -\/metodi ajon jälkeen ja aina kun pelaajan antamassa komennossa on virhe.
+
+\begin{DoxyPrecond}{Precondition}
+Näyttö tulostustilassa 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Vuorossa olevan pelaajan nimi tulostettu. Poikkeustuvallisuus\+: Vahvatakuu, jos Nayttovirhe. Muuten perustakuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nimi} & Vuorossa olevan pelaajan nimi.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nayttovirhe} & Tulostus epäonnistui. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{class_julkinen_1_1_nayttorajapinta_a9c54e560196f0c7e001d8fa5ee3533f2}{Julkinen\+::\+Nayttorajapinta}.
+
+\hypertarget{class_naytto_a01a422be1ca30135634914767c8cd633}{}\index{Naytto@{Naytto}!komento\+Aloita\+Rakennus@{komento\+Aloita\+Rakennus}}
+\index{komento\+Aloita\+Rakennus@{komento\+Aloita\+Rakennus}!Naytto@{Naytto}}
+\subsubsection[{komento\+Aloita\+Rakennus()}]{\setlength{\rightskip}{0pt plus 5cm}void Naytto\+::komento\+Aloita\+Rakennus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_naytto_a01a422be1ca30135634914767c8cd633}
+
+
+Laittaa näytön pelialueen rakennustilaan. 
+
+Asettaa näytön tilan rakennustilaan. Tämä metodi on ajettava ennen \hyperlink{class_naytto_adc11e0eddc17bfe1b9aa6971969b8549}{pala\+Laudalle()}, \hyperlink{class_naytto_a2425a87d92478b0c86ffe698985b6c86}{pelaaja\+Laudalle()}, \hyperlink{class_naytto_a54c6a0f6fff0facbf4e769d77e80b341}{esine\+Laudalle()} ja \hyperlink{class_naytto_aa3faa1f5dde0249c90530f0fdfb25d7b}{komento\+Lopeta\+Rakennus()} metodeja.
+
+\begin{DoxyPrecond}{Precondition}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Näyttö on rakennustilassa ja pelilaudan kuva on tyhjä. Poikkeusturvallisuus\+: No-\/throw takuu. 
+\end{DoxyPostcond}
+
+
+Implements \hyperlink{class_julkinen_1_1_nayttorajapinta_a1a3335dcbda7cf2fb09f5e9319c42cea}{Julkinen\+::\+Nayttorajapinta}.
+
+\hypertarget{class_naytto_aa3faa1f5dde0249c90530f0fdfb25d7b}{}\index{Naytto@{Naytto}!komento\+Lopeta\+Rakennus@{komento\+Lopeta\+Rakennus}}
+\index{komento\+Lopeta\+Rakennus@{komento\+Lopeta\+Rakennus}!Naytto@{Naytto}}
+\subsubsection[{komento\+Lopeta\+Rakennus()}]{\setlength{\rightskip}{0pt plus 5cm}void Naytto\+::komento\+Lopeta\+Rakennus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_naytto_aa3faa1f5dde0249c90530f0fdfb25d7b}
+
+
+Lopeta laudanmuodostustila ja tulosta kartta, pelaajien tiedot ja irtopala. 
+
+\begin{DoxyPrecond}{Precondition}
+Näyttö on rakennustilassa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Näyttörajapinta on tulostustilassa ja pelilauta on tulostettu. Poikkeusturvallisuus\+: Perustakuu.
+\end{DoxyPostcond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Nayttovirhe} & Tulostaminen epäonnistui. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{class_julkinen_1_1_nayttorajapinta_ab0fb18db1b26b45f898e0580dbbb8921}{Julkinen\+::\+Nayttorajapinta}.
+
+\hypertarget{class_naytto_a1be5a43b84f00c279e6e8f619d613de9}{}\index{Naytto@{Naytto}!on\+Tulostustilassa@{on\+Tulostustilassa}}
+\index{on\+Tulostustilassa@{on\+Tulostustilassa}!Naytto@{Naytto}}
+\subsubsection[{on\+Tulostustilassa() const }]{\setlength{\rightskip}{0pt plus 5cm}bool Naytto\+::on\+Tulostustilassa (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_naytto_a1be5a43b84f00c279e6e8f619d613de9}
+
+
+Tulostustilan tarkistus. 
+
+Kertoo näytön käyttäjälle onko näyttö tulostustilassa vai rakennustilassa. \begin{DoxyPrecond}{Precondition}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Palautettu tieto laudan tilasta. Poikkeusturvallisuus\+: No-\/throw takuu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} jos näyttö on tulostustilassa, {\ttfamily false} jos näyttö on rakennustilassa. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_julkinen_1_1_nayttorajapinta_ae4d4cc62685de755e51aade02cc05424}{Julkinen\+::\+Nayttorajapinta}.
+
+\hypertarget{class_naytto_adc11e0eddc17bfe1b9aa6971969b8549}{}\index{Naytto@{Naytto}!pala\+Laudalle@{pala\+Laudalle}}
+\index{pala\+Laudalle@{pala\+Laudalle}!Naytto@{Naytto}}
+\subsubsection[{pala\+Laudalle(\+Julkinen\+::\+Pala\+Tyyppi tyyppi, Julkinen\+::\+Erikoispala\+Tyyppi etyyppi, unsigned int rotaatio, Julkinen\+::\+Koordinaatti const \&sijainti, Julkinen\+::\+Koordinaatti const \&kohde=\+Julkinen\+::\+Koordinaatti())}]{\setlength{\rightskip}{0pt plus 5cm}void Naytto\+::pala\+Laudalle (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Pala\+Tyyppi}}]{tyyppi, }
+\item[{{\bf Julkinen\+::\+Erikoispala\+Tyyppi}}]{etyyppi, }
+\item[{unsigned int}]{rotaatio, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{sijainti, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{kohde = {\ttfamily {\bf Julkinen\+::\+Koordinaatti}()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_naytto_adc11e0eddc17bfe1b9aa6971969b8549}
+
+
+
+
+
+
+Implements \hyperlink{class_julkinen_1_1_nayttorajapinta_aef4e3badfe7fa42dcfaba7bce4299301}{Julkinen\+::\+Nayttorajapinta}.
+
+\hypertarget{class_naytto_a2425a87d92478b0c86ffe698985b6c86}{}\index{Naytto@{Naytto}!pelaaja\+Laudalle@{pelaaja\+Laudalle}}
+\index{pelaaja\+Laudalle@{pelaaja\+Laudalle}!Naytto@{Naytto}}
+\subsubsection[{pelaaja\+Laudalle(char merkki, Julkinen\+::\+Koordinaatti const \&sijainti)}]{\setlength{\rightskip}{0pt plus 5cm}void Naytto\+::pelaaja\+Laudalle (
+\begin{DoxyParamCaption}
+\item[{char}]{merkki, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{sijainti}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_naytto_a2425a87d92478b0c86ffe698985b6c86}
+
+
+
+
+\begin{DoxyPrecond}{Precondition}
+Nayttö on rakennustilassa. Koordinaatti on pelialueen rajoissa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\hyperlink{class_pelaaja}{Pelaaja} on lisätty tulostettavalle kartalle. Poikkeusturvallisuus\+: Perustakuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em merkki} & Pelaajan sijaintia esittävä merkki kartalla. \\
+\hline
+\mbox{\tt in}  & {\em sijainti} & Pelaajan koordinaatti kartalla. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_julkinen_1_1_nayttorajapinta_aa5db9bb4d55b723a2818fa0ec6ccd84a}{Julkinen\+::\+Nayttorajapinta}.
+
+\hypertarget{class_naytto_aeed4659324edc4f043ff43b2042de759}{}\index{Naytto@{Naytto}!tulosta@{tulosta}}
+\index{tulosta@{tulosta}!Naytto@{Naytto}}
+\subsubsection[{tulosta(std\+::ostringstream \&virta)}]{\setlength{\rightskip}{0pt plus 5cm}void Naytto\+::tulosta (
+\begin{DoxyParamCaption}
+\item[{std\+::ostringstream \&}]{virta}
+\end{DoxyParamCaption}
+)}\label{class_naytto_aeed4659324edc4f043ff43b2042de759}
+
+
+Tulostaa virran. 
+
+Näyttö käyttää kaikeen tulostamiseen tätä funktiota.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em virta} & Tulostettava virta. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_naytto_ababf9b69de2295fe4eaccc3d95461943}{}\index{Naytto@{Naytto}!tulosta\+Pelaajantiedot@{tulosta\+Pelaajantiedot}}
+\index{tulosta\+Pelaajantiedot@{tulosta\+Pelaajantiedot}!Naytto@{Naytto}}
+\subsubsection[{tulosta\+Pelaajantiedot(std\+::string const \&nimi, std\+::string const \&keratytesineet, std\+::string const \&kerattavatesineet, std\+::string const \&edellinentoiminto)}]{\setlength{\rightskip}{0pt plus 5cm}void Naytto\+::tulosta\+Pelaajantiedot (
+\begin{DoxyParamCaption}
+\item[{std\+::string const \&}]{nimi, }
+\item[{std\+::string const \&}]{keratytesineet, }
+\item[{std\+::string const \&}]{kerattavatesineet, }
+\item[{std\+::string const \&}]{edellinentoiminto}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_naytto_ababf9b69de2295fe4eaccc3d95461943}
+
+
+
+
+\begin{DoxyPrecond}{Precondition}
+Näyttö on on rakennustilassa. Pelaajan nimen pituus on \href{tyoohje.html}{\tt työohjeen} rajoissa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Pelaajan tiedot on lisätty tulostettavaksi. Poikkeusturvallisuus\+: Perustakuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nimi} & Pelaajan, jonka tiedot tulostetaan, nimi. \\
+\hline
+\mbox{\tt in}  & {\em keratytesineet} & Pelaajan keräämät esineet. \\
+\hline
+\mbox{\tt in}  & {\em kerattavatesineet} & Pelaajan jäljellä olevat kerättävät esineet. \\
+\hline
+\mbox{\tt in}  & {\em edellinentoiminto} & Pelaajan edellinen toiminto. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_julkinen_1_1_nayttorajapinta_a22bcc0e0dc309960ad11a8bf232a87a7}{Julkinen\+::\+Nayttorajapinta}.
+
+\hypertarget{class_naytto_a606d18d37a41a1dd32e7e837ce45d6ca}{}\index{Naytto@{Naytto}!vuorossa@{vuorossa}}
+\index{vuorossa@{vuorossa}!Naytto@{Naytto}}
+\subsubsection[{vuorossa()}]{\setlength{\rightskip}{0pt plus 5cm}void Naytto\+::vuorossa (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_naytto_a606d18d37a41a1dd32e7e837ce45d6ca}
+
+
+Tulostaa vuorossa olevan pelaajan nimen ja kulman. 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_naytto_aebc53e0348c5f5ba88424a0e2a39991d}{ilmoitus\+Vuorossa()} metodi on ajettu ja naytto on tulostustilassa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+vuorossa olevan pelaajan nimi ja kulma on tulostettu. 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+valmiiden\+\_\+toteutus/include/\hyperlink{naytto_8hh}{naytto.\+hh}\item 
+valmiiden\+\_\+toteutus/\hyperlink{naytto_8cc}{naytto.\+cc}\end{DoxyCompactItemize}

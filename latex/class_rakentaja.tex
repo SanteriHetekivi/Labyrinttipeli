@@ -1,0 +1,154 @@
+\hypertarget{class_rakentaja}{}\section{Rakentaja Class Reference}
+\label{class_rakentaja}\index{Rakentaja@{Rakentaja}}
+
+
+Labyrintti pelin alustaja luokka.  
+
+
+
+
+{\ttfamily \#include $<$rakentaja.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_rakentaja_a2e7aaa6796fa565c9e47073342ff9e50}{Rakentaja} (std\+::shared\+\_\+ptr$<$ \hyperlink{class_julkinen_1_1_pelirajapinta}{Julkinen\+::\+Pelirajapinta} $>$ peli, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&pelialueenkoko, std\+::string tiedosto, std\+::shared\+\_\+ptr$<$ \hyperlink{class_naytto}{Naytto} $>$ naytto)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rakentaja}{Rakentaja}. \end{DoxyCompactList}\item 
+\hypertarget{class_rakentaja_a80573e6ecd811d0a57919ca7b42b9a1c}{}\hyperlink{class_rakentaja_a80573e6ecd811d0a57919ca7b42b9a1c}{$\sim$\+Rakentaja} ()\label{class_rakentaja_a80573e6ecd811d0a57919ca7b42b9a1c}
+
+\begin{DoxyCompactList}\small\item\em Purkaja. \end{DoxyCompactList}\item 
+\hypertarget{class_rakentaja_a46cd474f866e502ae5875016186bb784}{}void \hyperlink{class_rakentaja_a46cd474f866e502ae5875016186bb784}{lue\+Tiedosto} ()\label{class_rakentaja_a46cd474f866e502ae5875016186bb784}
+
+\begin{DoxyCompactList}\small\item\em metodi alustustiedoston luontiin. \end{DoxyCompactList}\item 
+void \hyperlink{class_rakentaja_a805354d144c0ee7c15228a0c7e6c69e7}{lisaa\+Palat} ()
+\begin{DoxyCompactList}\small\item\em Metodi joka lis‰‰ palat peliin. \end{DoxyCompactList}\item 
+void \hyperlink{class_rakentaja_a0fba64d81ecd621d2fe11e38950b2382}{lisaa\+Irtopala} ()
+\begin{DoxyCompactList}\small\item\em Metodi joka lis‰‰ ensimm‰isen irtopalan peliin. \end{DoxyCompactList}\item 
+void \hyperlink{class_rakentaja_af87048c78423cca1bc04aba7261fe3a6}{luo\+Pelaajat} ()
+\begin{DoxyCompactList}\small\item\em funktio joka luo pelaajat peliin, jos alustustiedostoa ei ole annettu. \end{DoxyCompactList}\item 
+void \hyperlink{class_rakentaja_ac879fae3c076adb7fddb095a19ecbc23}{lisaa\+Pelaajat} ()
+\begin{DoxyCompactList}\small\item\em Metodi joka lisaa pelaajat peliin. \end{DoxyCompactList}\item 
+void \hyperlink{class_rakentaja_acb1fe6710646f9b26b6d80eeda81e4b3}{lisaa\+Esineet} ()
+\begin{DoxyCompactList}\small\item\em Metodi joka lisaa esineet peliin. \end{DoxyCompactList}\item 
+\hypertarget{class_rakentaja_a160d4e0da5f858d8daa074e39f8c7657}{}void {\bfseries lisaa\+Erikoispalat} ()\label{class_rakentaja_a160d4e0da5f858d8daa074e39f8c7657}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Labyrintti pelin alustaja luokka. 
+
+Jos k‰‰nt‰j‰ on G\+N\+U\+G pohjainen esim. gcc tai tutg++ k‰ytet‰‰n tr1/memory kirjastoa. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_rakentaja_a2e7aaa6796fa565c9e47073342ff9e50}{}\index{Rakentaja@{Rakentaja}!Rakentaja@{Rakentaja}}
+\index{Rakentaja@{Rakentaja}!Rakentaja@{Rakentaja}}
+\subsubsection[{Rakentaja(std\+::shared\+\_\+ptr$<$ Julkinen\+::\+Pelirajapinta $>$ peli, Julkinen\+::\+Koordinaatti const \&pelialueenkoko, std\+::string tiedosto, std\+::shared\+\_\+ptr$<$ Naytto $>$ naytto)}]{\setlength{\rightskip}{0pt plus 5cm}Rakentaja\+::\+Rakentaja (
+\begin{DoxyParamCaption}
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Julkinen\+::\+Pelirajapinta} $>$}]{peli, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{pelialueenkoko, }
+\item[{std\+::string}]{tiedosto, }
+\item[{std\+::shared\+\_\+ptr$<$ {\bf Naytto} $>$}]{naytto}
+\end{DoxyParamCaption}
+)}\label{class_rakentaja_a2e7aaa6796fa565c9e47073342ff9e50}
+
+
+\hyperlink{class_rakentaja}{Rakentaja}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em peli} & Osoitin pelirajapintaan. \\
+\hline
+{\em alustaja} & Osoitin {\ttfamily \hyperlink{class_alustaja}{Alustaja}} -\/olioon. \\
+\hline
+{\em pelialueenkoko} & Koordinaatti joka sis‰lt‰‰ pelialueen koon. \\
+\hline
+{\em naytto} & Osoite tulostusrajapintaan. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_rakentaja_acb1fe6710646f9b26b6d80eeda81e4b3}{}\index{Rakentaja@{Rakentaja}!lisaa\+Esineet@{lisaa\+Esineet}}
+\index{lisaa\+Esineet@{lisaa\+Esineet}!Rakentaja@{Rakentaja}}
+\subsubsection[{lisaa\+Esineet()}]{\setlength{\rightskip}{0pt plus 5cm}void Rakentaja\+::lisaa\+Esineet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_rakentaja_acb1fe6710646f9b26b6d80eeda81e4b3}
+
+
+Metodi joka lisaa esineet peliin. 
+
+\begin{DoxyPostcond}{Postcondition}
+Esineet on lis‰tty peliin. 
+\end{DoxyPostcond}
+\hypertarget{class_rakentaja_a0fba64d81ecd621d2fe11e38950b2382}{}\index{Rakentaja@{Rakentaja}!lisaa\+Irtopala@{lisaa\+Irtopala}}
+\index{lisaa\+Irtopala@{lisaa\+Irtopala}!Rakentaja@{Rakentaja}}
+\subsubsection[{lisaa\+Irtopala()}]{\setlength{\rightskip}{0pt plus 5cm}void Rakentaja\+::lisaa\+Irtopala (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_rakentaja_a0fba64d81ecd621d2fe11e38950b2382}
+
+
+Metodi joka lis‰‰ ensimm‰isen irtopalan peliin. 
+
+\begin{DoxyPostcond}{Postcondition}
+Irtopala on lis‰tty peliin. Poikkeusturvallisuus\+: Perustakuu. 
+\end{DoxyPostcond}
+\hypertarget{class_rakentaja_a805354d144c0ee7c15228a0c7e6c69e7}{}\index{Rakentaja@{Rakentaja}!lisaa\+Palat@{lisaa\+Palat}}
+\index{lisaa\+Palat@{lisaa\+Palat}!Rakentaja@{Rakentaja}}
+\subsubsection[{lisaa\+Palat()}]{\setlength{\rightskip}{0pt plus 5cm}void Rakentaja\+::lisaa\+Palat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_rakentaja_a805354d144c0ee7c15228a0c7e6c69e7}
+
+
+Metodi joka lis‰‰ palat peliin. 
+
+\begin{DoxyPostcond}{Postcondition}
+Palat on lis‰tty peliin. Poikkeusturvallisuus\+: Perustakuu. 
+\end{DoxyPostcond}
+\hypertarget{class_rakentaja_ac879fae3c076adb7fddb095a19ecbc23}{}\index{Rakentaja@{Rakentaja}!lisaa\+Pelaajat@{lisaa\+Pelaajat}}
+\index{lisaa\+Pelaajat@{lisaa\+Pelaajat}!Rakentaja@{Rakentaja}}
+\subsubsection[{lisaa\+Pelaajat()}]{\setlength{\rightskip}{0pt plus 5cm}void Rakentaja\+::lisaa\+Pelaajat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_rakentaja_ac879fae3c076adb7fddb095a19ecbc23}
+
+
+Metodi joka lisaa pelaajat peliin. 
+
+\begin{DoxyPostcond}{Postcondition}
+Pelaajat on lis‰tty peliin. 
+\end{DoxyPostcond}
+\hypertarget{class_rakentaja_af87048c78423cca1bc04aba7261fe3a6}{}\index{Rakentaja@{Rakentaja}!luo\+Pelaajat@{luo\+Pelaajat}}
+\index{luo\+Pelaajat@{luo\+Pelaajat}!Rakentaja@{Rakentaja}}
+\subsubsection[{luo\+Pelaajat()}]{\setlength{\rightskip}{0pt plus 5cm}void Rakentaja\+::luo\+Pelaajat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_rakentaja_af87048c78423cca1bc04aba7261fe3a6}
+
+
+funktio joka luo pelaajat peliin, jos alustustiedostoa ei ole annettu. 
+
+\begin{DoxyPostcond}{Postcondition}
+Pelaajat lis‰tty peliin Poikkeusturvallisuus\+: Perustakuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em ihmispelaajia} & Ihmispelaajien m‰‰r‰. \\
+\hline
+{\em tietokonepelaajia} & Tietokonepelaajien m‰‰r‰. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+valmiiden\+\_\+toteutus/include/\hyperlink{rakentaja_8hh}{rakentaja.\+hh}\item 
+valmiiden\+\_\+toteutus/\hyperlink{rakentaja_8cc}{rakentaja.\+cc}\end{DoxyCompactItemize}

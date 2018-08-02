@@ -1,0 +1,474 @@
+\hypertarget{class_peli}{}\section{Peli Class Reference}
+\label{class_peli}\index{Peli@{Peli}}
+
+
+Labyrintti-\/pelin pelin toimintojen suorittava luokka.  
+
+
+
+
+{\ttfamily \#include $<$Peli.\+hpp$>$}
+
+Inheritance diagram for Peli\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_peli}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_peli_a468618c1872582a68f85a5ef34defc19}{onko\+Alustustilassa} () const 
+\begin{DoxyCompactList}\small\item\em Kertoo onko peli alustustilassa. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_peli_a3fabca61c1c2707cb3810043bffa71c2}{lisaa\+Naytto} (\hyperlink{class_julkinen_1_1_nayttorajapinta}{Julkinen\+::\+Nayttorajapinta} $\ast$naytto)
+\begin{DoxyCompactList}\small\item\em Lisaa tulostus olion peliin. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_peli_adc8656a5e41df3c1343b2fa21495fbff}{maarita\+Pelialueen\+Koko} (\hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&koko)
+\begin{DoxyCompactList}\small\item\em Maarittaa pelikentän koon. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_peli_a5061cb0a10052090128302e1619d1188}{lisaa\+Pelaaja} (\hyperlink{namespace_julkinen_ad9a0a9e01af78249f584a93b03db4329}{Julkinen\+::\+Pelaaja\+Tyyppi} tyyppi, std\+::string const \&nimi, char lyhenne, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&sijainti)
+\begin{DoxyCompactList}\small\item\em Pelin alustusfunktio, joka lisaa pelaajan peliin. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_peli_a2d53bbe19ae97fe59ae37c05c72f4e51}{lisaa\+Pala} (\hyperlink{namespace_julkinen_a272c70e0503191a485c8a9cd4281e6f5}{Julkinen\+::\+Pala\+Tyyppi} pala, unsigned int rotaatio, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&sijainti)
+\begin{DoxyCompactList}\small\item\em Pelin alustusfunktio, joka lisaa palan peliin. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_peli_a81f3587c603c96ddd127527f3772b19f}{lisaa\+Esine} (char merkki, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&sijainti, std\+::string const \&pelaaja)
+\begin{DoxyCompactList}\small\item\em Pelin alustusfunktio, joka lisaa esineen peliin. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_peli_a8045f08b5aa05114baced0541142e735}{aseta\+Palan\+Tyyppi} (\hyperlink{namespace_julkinen_afc26052e09d0b2214f749492cc5fff19}{Julkinen\+::\+Erikoispala\+Tyyppi} tyyppi, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&sijainti, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&kohde=\hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}())
+\begin{DoxyCompactList}\small\item\em Pelin alustusfunktio, joka asettaa palan erikoispalan tyypin. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_peli_a65eff799de42881efc08f7994b27968e}{alustus\+Lopeta} ()
+\begin{DoxyCompactList}\small\item\em Lopettaa pelin alustuksen. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_peli_a05f3cde8cc44cad1e083312d208721f3}{onko\+Pelitilassa} () const 
+\begin{DoxyCompactList}\small\item\em Kertoo onko peli pelitilassa. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_peli_a4093d9ae2c4b220a4da9bcc728f7d59b}{komento\+Tyonna} (\hyperlink{namespace_julkinen_acce0eefc4c90f907dd5fb319b0d05872}{Julkinen\+::\+Reuna} reuna, unsigned int paikka, unsigned int rotaatio)
+\begin{DoxyCompactList}\small\item\em Työntää irtopalan annettuun kohtaan. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_peli_ad721f34f1e12e0dae3e2f73de2d99d05}{komento\+Liiku} (\hyperlink{namespace_julkinen_a81b50e3c6f21c0c1c46e186592107c3c}{Julkinen\+::\+Suunta} suunta, unsigned int maara=0)
+\begin{DoxyCompactList}\small\item\em Liikuttaa vuorossa olevaa pelaajaa. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_peli_a6788584913d8417dd2fa0bf486e5a3b3}{vaihda\+Vuoro} ()
+\begin{DoxyCompactList}\small\item\em Vaihtaa vuoron seuraavalle pelaajalle ja ilmoittaa, jatketaanko peliä, vai onko jokin pelaaja voittanut pelin. {\bfseries Huom!} Raakilepalautuksessa tulkitaan, että kukaan ei voita peliä koskaan (koska kerättäviä esineitä ei ole). \end{DoxyCompactList}\item 
+virtual \hyperlink{namespace_julkinen_ad9a0a9e01af78249f584a93b03db4329}{Julkinen\+::\+Pelaaja\+Tyyppi} \hyperlink{class_peli_a43524af1c4c914acc5faf872b5dcf890}{hae\+Vuorossa} ()
+\begin{DoxyCompactList}\small\item\em Palauttaa vuorossa olevan pelaajan tyypin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Labyrintti-\/pelin pelin toimintojen suorittava luokka. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_peli_a65eff799de42881efc08f7994b27968e}{}\index{Peli@{Peli}!alustus\+Lopeta@{alustus\+Lopeta}}
+\index{alustus\+Lopeta@{alustus\+Lopeta}!Peli@{Peli}}
+\subsubsection[{alustus\+Lopeta()}]{\setlength{\rightskip}{0pt plus 5cm}void Peli\+::alustus\+Lopeta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_peli_a65eff799de42881efc08f7994b27968e}
+
+
+Lopettaa pelin alustuksen. 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_peli}{Peli} on alustettu. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\hyperlink{class_peli}{Peli} on pelitilassa. Poikkeustakuu\+: Perustakuu poikkeuksen sattuessa. 
+\end{DoxyPostcond}
+
+
+Implements \hyperlink{class_julkinen_1_1_pelirajapinta_afdcc11ea245937075026e82be6e9a874}{Julkinen\+::\+Pelirajapinta}.
+
+\hypertarget{class_peli_a8045f08b5aa05114baced0541142e735}{}\index{Peli@{Peli}!aseta\+Palan\+Tyyppi@{aseta\+Palan\+Tyyppi}}
+\index{aseta\+Palan\+Tyyppi@{aseta\+Palan\+Tyyppi}!Peli@{Peli}}
+\subsubsection[{aseta\+Palan\+Tyyppi(\+Julkinen\+::\+Erikoispala\+Tyyppi tyyppi, Julkinen\+::\+Koordinaatti const \&sijainti, Julkinen\+::\+Koordinaatti const \&kohde=\+Julkinen\+::\+Koordinaatti())}]{\setlength{\rightskip}{0pt plus 5cm}void Peli\+::aseta\+Palan\+Tyyppi (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Erikoispala\+Tyyppi}}]{tyyppi, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{sijainti, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{kohde = {\ttfamily {\bf Julkinen\+::\+Koordinaatti}()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_peli_a8045f08b5aa05114baced0541142e735}
+
+
+Pelin alustusfunktio, joka asettaa palan erikoispalan tyypin. 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_peli}{Peli} on alustustilassa. Pelilauta ja palat on alustettu. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Palan erikoisominaisuudet on luotu. Poikkeustakuu\+: Perustakuu poikkeuksen sattuessa.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em tyyppi} & Palan erikoistyyppi, joka kertoo onko pala normaali, teleportti, siunattu tai kirottu. \\
+\hline
+\mbox{\tt in}  & {\em sijainti} & Kertoo mitä labyrintin palaa käsitellään. \\
+\hline
+\mbox{\tt in}  & {\em kohde} & Teleportti-\/palan kohderuudun koordinaatti, muilla paloilla parametria ei anneta.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Alustusvirhe} & Annettu koordinaatti on pelialueen ulkopuolella. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{class_julkinen_1_1_pelirajapinta_a4de5389102fb5a479173cc3728b989dd}{Julkinen\+::\+Pelirajapinta}.
+
+\hypertarget{class_peli_a43524af1c4c914acc5faf872b5dcf890}{}\index{Peli@{Peli}!hae\+Vuorossa@{hae\+Vuorossa}}
+\index{hae\+Vuorossa@{hae\+Vuorossa}!Peli@{Peli}}
+\subsubsection[{hae\+Vuorossa()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Julkinen\+::\+Pelaaja\+Tyyppi} Peli\+::hae\+Vuorossa (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_peli_a43524af1c4c914acc5faf872b5dcf890}
+
+
+Palauttaa vuorossa olevan pelaajan tyypin. 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_peli}{Peli} on pelitilassa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\hyperlink{class_peli}{Peli} on pelitilassa ja vuorossa olevan pelaajan {\ttfamily Pelaaja\+Tyyppi} on palautettu. Poikkeustakuu\+: No-\/throw takuu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Palauttaa vuorossa olevan pelaajan {\ttfamily Pelaaja\+Tyyppi}. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_julkinen_1_1_pelirajapinta_aef0e254fd13ac8a44bb9db0908daa0e7}{Julkinen\+::\+Pelirajapinta}.
+
+\hypertarget{class_peli_ad721f34f1e12e0dae3e2f73de2d99d05}{}\index{Peli@{Peli}!komento\+Liiku@{komento\+Liiku}}
+\index{komento\+Liiku@{komento\+Liiku}!Peli@{Peli}}
+\subsubsection[{komento\+Liiku(\+Julkinen\+::\+Suunta suunta, unsigned int maara=0)}]{\setlength{\rightskip}{0pt plus 5cm}void Peli\+::komento\+Liiku (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Suunta}}]{suunta, }
+\item[{unsigned int}]{maara = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_peli_ad721f34f1e12e0dae3e2f73de2d99d05}
+
+
+Liikuttaa vuorossa olevaa pelaajaa. 
+
+Liikuttaa vuorossa olevaa pelaajaa annettuun suuntaan annetun määrän. Jos pelaaja ei pysty liikkumaan annettuun suuntaan annettua määrää heitetään Toimintovirhe. Toimintovirhe heitetään myös silloin jos pelaaja ei ole työntänyt palaa tällä vuorolla, paitsi jos suunta on A\+U\+T\+O\+M\+A\+A\+T\+T\+I. Raakilepalautuksessa liikkuminen suoritetaan, vaikka työntämistä ei olekaan suoritettu (eli poikkeusta ei heitetä).
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_peli}{Peli} on pelitilassa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\hyperlink{class_pelaaja}{Pelaaja} on liikutettu ja pelilauta on tulostettu uudestaan. Poikkeustakuu\+: Vahvatakuu Komentovirhe tai Toimintovirhe poikkeuksen sattuessa.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em suunta} & Suunta johon pelaajaa siirretään. \\
+\hline
+\mbox{\tt in}  & {\em maara} & Pelaajan liikkumien ruutujen määrä.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Toimintovirhe} & Vuorossa oleva pelaaja ei voi liikkua annettuun suuntaan annettua määrää. \\
+\hline
+{\em Toimintovirhe} & Vuorossa oleva pelaaja ei ole työntänyt irtopalaa. Ei heitetä jos suunta on A\+U\+T\+O\+M\+A\+A\+T\+T\+I. Ei heitetä raakilepalautuksessa. \\
+\hline
+{\em Komentovirhe} & maara on negatiivinen. \\
+\hline
+{\em Komentovirhe} & maara on 0, mutta suunta ei ole P\+A\+I\+K\+A\+L\+L\+A\+A\+N. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{class_julkinen_1_1_pelirajapinta_a3444c155143baff73521a0707712b36a}{Julkinen\+::\+Pelirajapinta}.
+
+\hypertarget{class_peli_a4093d9ae2c4b220a4da9bcc728f7d59b}{}\index{Peli@{Peli}!komento\+Tyonna@{komento\+Tyonna}}
+\index{komento\+Tyonna@{komento\+Tyonna}!Peli@{Peli}}
+\subsubsection[{komento\+Tyonna(\+Julkinen\+::\+Reuna reuna, unsigned int paikka, unsigned int rotaatio)}]{\setlength{\rightskip}{0pt plus 5cm}void Peli\+::komento\+Tyonna (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Reuna}}]{reuna, }
+\item[{unsigned int}]{paikka, }
+\item[{unsigned int}]{rotaatio}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_peli_a4093d9ae2c4b220a4da9bcc728f7d59b}
+
+
+Työntää irtopalan annettuun kohtaan. 
+
+Raakilepalautuksessa tätä operaatiota ei kutsuta.
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_peli}{Peli} on pelitilassa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Irtopala on asetettu annettuun kohtaan ja työntö kohdan työntösuunnan mukaisen vastapään pala on otettu uudeksi irtopalaksi. Pelilauta on tulostettu uudestaan. Poikkeustakuu\+: Vahvatakuu Komentovirhe poikkeuksen sattuessa.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reuna} & Reuna jolle pala työnnetään. \\
+\hline
+\mbox{\tt in}  & {\em rotaatio} & Työnnettävän palan rotaatio (1-\/4) \\
+\hline
+\mbox{\tt in}  & {\em paikka} & Mihin kohtaan reunaa pala työnnetään.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Toimintovirhe} & \hyperlink{class_pelaaja}{Pelaaja} on jo työntänyt palaa tällä vuorolla. \\
+\hline
+{\em Komentovirhe} & Paikka on virheellinen. \\
+\hline
+{\em Komentovirhe} & Rotaatio on virheellinen. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{class_julkinen_1_1_pelirajapinta_aea8cbb43bcf85664b97d17df1666ce9f}{Julkinen\+::\+Pelirajapinta}.
+
+\hypertarget{class_peli_a81f3587c603c96ddd127527f3772b19f}{}\index{Peli@{Peli}!lisaa\+Esine@{lisaa\+Esine}}
+\index{lisaa\+Esine@{lisaa\+Esine}!Peli@{Peli}}
+\subsubsection[{lisaa\+Esine(char merkki, Julkinen\+::\+Koordinaatti const \&sijainti, std\+::string const \&pelaaja)}]{\setlength{\rightskip}{0pt plus 5cm}void Peli\+::lisaa\+Esine (
+\begin{DoxyParamCaption}
+\item[{char}]{merkki, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{sijainti, }
+\item[{std\+::string const \&}]{pelaaja}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_peli_a81f3587c603c96ddd127527f3772b19f}
+
+
+Pelin alustusfunktio, joka lisaa esineen peliin. 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_peli}{Peli} on alustustilassa. Pelilauta ja pelaajat on alustettu. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\hyperlink{class_esine}{Esine} on lisatty peliin ja mahdollisesti annetulle pelaajalle, esine on lisätty kerättäviin esineisiin. Poikkeustakuu\+: Perustakuu poikkeuksen sattuessa.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em merkki} & Esinettä kuvaava merkki pelissä. \\
+\hline
+\mbox{\tt in}  & {\em sijainti} & Kertoo mihin labyrintin koordinaattiin esine laitetaan. \\
+\hline
+\mbox{\tt in}  & {\em pelaaja} & Pelaajan nimi jonka tehtävänä on poimia esine.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Alustusvirhe} & Pelaajaa ei ole lisatty peliin. \\
+\hline
+{\em Alustusvirhe} & Annettu koordinaatti on pelialueen ulkopuolella. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{class_julkinen_1_1_pelirajapinta_a998c0b644b8b1b73ac74390afea03da9}{Julkinen\+::\+Pelirajapinta}.
+
+\hypertarget{class_peli_a3fabca61c1c2707cb3810043bffa71c2}{}\index{Peli@{Peli}!lisaa\+Naytto@{lisaa\+Naytto}}
+\index{lisaa\+Naytto@{lisaa\+Naytto}!Peli@{Peli}}
+\subsubsection[{lisaa\+Naytto(\+Julkinen\+::\+Nayttorajapinta $\ast$naytto)}]{\setlength{\rightskip}{0pt plus 5cm}void Peli\+::lisaa\+Naytto (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Nayttorajapinta} $\ast$}]{naytto}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_peli_a3fabca61c1c2707cb3810043bffa71c2}
+
+
+Lisaa tulostus olion peliin. 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_peli}{Peli} on alustustilassa. Annettu parametri ei ole tyhjä. Näyttöä ei ole lisätty. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Tulostus-\/olio lisätty peliin. Poikkeustakuu\+: No-\/throw takuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in,out}  & {\em naytto} & osoitin Nayttorajapinta -\/luokan toteuttavaan olioon. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_julkinen_1_1_pelirajapinta_ad1597bf68505144431c62cc7c6e49bf6}{Julkinen\+::\+Pelirajapinta}.
+
+\hypertarget{class_peli_a2d53bbe19ae97fe59ae37c05c72f4e51}{}\index{Peli@{Peli}!lisaa\+Pala@{lisaa\+Pala}}
+\index{lisaa\+Pala@{lisaa\+Pala}!Peli@{Peli}}
+\subsubsection[{lisaa\+Pala(\+Julkinen\+::\+Pala\+Tyyppi pala, unsigned int rotaatio, Julkinen\+::\+Koordinaatti const \&sijainti)}]{\setlength{\rightskip}{0pt plus 5cm}void Peli\+::lisaa\+Pala (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Pala\+Tyyppi}}]{pala, }
+\item[{unsigned int}]{rotaatio, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{sijainti}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_peli_a2d53bbe19ae97fe59ae37c05c72f4e51}
+
+
+Pelin alustusfunktio, joka lisaa palan peliin. 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_peli}{Peli} on alustustilassa. Pelialueen koko on määritelty. Annettuun koordinaattiin ei vielä lisätty palaa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Pelilautaan on lisätty pala. Poikkeustakuu\+: Perustakuu poikkeuksen sattuessa.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pala} & Tieto siitä minkä laista palaa lisätään. \\
+\hline
+\mbox{\tt in}  & {\em rotaatio} & Lisättävän palan rotaatio (1-\/4). rotaatiota ei tarkasteta jos irtopala \\
+\hline
+\mbox{\tt in}  & {\em sijainti} & koordinaatti mihin pala lisätään. Jos sijainti.\+onko\+Irtopala() palautaa {\ttfamily true}, niin lisättävä pala on irtopala.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Alustusvirhe} & Annettu koordinaatti on pelialueen ulkopuolella. \\
+\hline
+{\em Alustusvirhe} & Annettu rotaatio on virheellinen. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{class_julkinen_1_1_pelirajapinta_a149820998333ec4d7fa9fd3ff5ea98fd}{Julkinen\+::\+Pelirajapinta}.
+
+\hypertarget{class_peli_a5061cb0a10052090128302e1619d1188}{}\index{Peli@{Peli}!lisaa\+Pelaaja@{lisaa\+Pelaaja}}
+\index{lisaa\+Pelaaja@{lisaa\+Pelaaja}!Peli@{Peli}}
+\subsubsection[{lisaa\+Pelaaja(\+Julkinen\+::\+Pelaaja\+Tyyppi tyyppi, std\+::string const \&nimi, char lyhenne, Julkinen\+::\+Koordinaatti const \&sijainti)}]{\setlength{\rightskip}{0pt plus 5cm}void Peli\+::lisaa\+Pelaaja (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Pelaaja\+Tyyppi}}]{tyyppi, }
+\item[{std\+::string const \&}]{nimi, }
+\item[{char}]{lyhenne, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{sijainti}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_peli_a5061cb0a10052090128302e1619d1188}
+
+
+Pelin alustusfunktio, joka lisaa pelaajan peliin. 
+
+\begin{DoxyPrecond}{Precondition}
+Pelialueen koko on määritelty. \hyperlink{class_peli}{Peli} on alustustilassa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\hyperlink{class_pelaaja}{Pelaaja} lisätty peliin. Poikkeustakuu\+: Perustakuu poikkeuksen sattuessa.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em tyyppi} & Tieto siitä minkälainen pelaaja lisätään. \\
+\hline
+\mbox{\tt in}  & {\em nimi} & Pelaajan nimi. \\
+\hline
+\mbox{\tt in}  & {\em lyhenne} & Pelaajaa kuvaava merkki pelissä. \\
+\hline
+\mbox{\tt in}  & {\em sijainti} & Kertoo mihin labyrintin koordinaattiin pelaaja laitetaan.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Alustusvirhe} & Annettu koordinaatti on pelialueen ulkopuolella. \\
+\hline
+{\em Alustusvirhe} & Annetussa koordinaatissa on jo pelaaja. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{class_julkinen_1_1_pelirajapinta_ac060096b71a764e75436c0dea146b1ef}{Julkinen\+::\+Pelirajapinta}.
+
+\hypertarget{class_peli_adc8656a5e41df3c1343b2fa21495fbff}{}\index{Peli@{Peli}!maarita\+Pelialueen\+Koko@{maarita\+Pelialueen\+Koko}}
+\index{maarita\+Pelialueen\+Koko@{maarita\+Pelialueen\+Koko}!Peli@{Peli}}
+\subsubsection[{maarita\+Pelialueen\+Koko(\+Julkinen\+::\+Koordinaatti const \&koko)}]{\setlength{\rightskip}{0pt plus 5cm}void Peli\+::maarita\+Pelialueen\+Koko (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{koko}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_peli_adc8656a5e41df3c1343b2fa21495fbff}
+
+
+Maarittaa pelikentän koon. 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_naytto}{Naytto} lisatty peliin. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Pelialueen koko on määritelty. Perustakuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em koko} & \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} joka määrittää pelialueen rajat eli kertoo pelialueen oikean alakulman koordinaatin. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_julkinen_1_1_pelirajapinta_aeaa98dab134d9345ef33fbf92224702e}{Julkinen\+::\+Pelirajapinta}.
+
+\hypertarget{class_peli_a468618c1872582a68f85a5ef34defc19}{}\index{Peli@{Peli}!onko\+Alustustilassa@{onko\+Alustustilassa}}
+\index{onko\+Alustustilassa@{onko\+Alustustilassa}!Peli@{Peli}}
+\subsubsection[{onko\+Alustustilassa() const }]{\setlength{\rightskip}{0pt plus 5cm}bool Peli\+::onko\+Alustustilassa (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_peli_a468618c1872582a68f85a5ef34defc19}
+
+
+Kertoo onko peli alustustilassa. 
+
+\begin{DoxyPrecond}{Precondition}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+On palauttanut tiedon onko peli alustustilassa. Poikkeustakuu\+: No-\/throw takuu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Palauttaa {\ttfamily true} jos peli on alustustilassa. Palauttaa {\ttfamily false} jos peli ei ole alustustilassa. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_julkinen_1_1_pelirajapinta_a8e1aafabbb4bd5803d10672d8ad33450}{Julkinen\+::\+Pelirajapinta}.
+
+\hypertarget{class_peli_a05f3cde8cc44cad1e083312d208721f3}{}\index{Peli@{Peli}!onko\+Pelitilassa@{onko\+Pelitilassa}}
+\index{onko\+Pelitilassa@{onko\+Pelitilassa}!Peli@{Peli}}
+\subsubsection[{onko\+Pelitilassa() const }]{\setlength{\rightskip}{0pt plus 5cm}bool Peli\+::onko\+Pelitilassa (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_peli_a05f3cde8cc44cad1e083312d208721f3}
+
+
+Kertoo onko peli pelitilassa. 
+
+\begin{DoxyPrecond}{Precondition}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+On palauttanut tiedon onko peli pelitilassa. Poikkeustakuu\+: No-\/throw takuu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Palauttaa {\ttfamily true} jos peli on pelitilassa. Palauttaa {\ttfamily false} jos peli ei ole pelitilassa. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_julkinen_1_1_pelirajapinta_a3f8d4b6037d2370242f3018c3919c4e2}{Julkinen\+::\+Pelirajapinta}.
+
+\hypertarget{class_peli_a6788584913d8417dd2fa0bf486e5a3b3}{}\index{Peli@{Peli}!vaihda\+Vuoro@{vaihda\+Vuoro}}
+\index{vaihda\+Vuoro@{vaihda\+Vuoro}!Peli@{Peli}}
+\subsubsection[{vaihda\+Vuoro()}]{\setlength{\rightskip}{0pt plus 5cm}bool Peli\+::vaihda\+Vuoro (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_peli_a6788584913d8417dd2fa0bf486e5a3b3}
+
+
+Vaihtaa vuoron seuraavalle pelaajalle ja ilmoittaa, jatketaanko peliä, vai onko jokin pelaaja voittanut pelin. {\bfseries Huom!} Raakilepalautuksessa tulkitaan, että kukaan ei voita peliä koskaan (koska kerättäviä esineitä ei ole). 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_peli}{Peli} on pelitilassa ja pelaajan toimminnot suoritettu. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\hyperlink{class_peli}{Peli} on loppu tai valmis ottamaan komennon vastaan vuorossa olevalta pelaajalta. Poikkeustakuu\+: Vahvatakuu Toimintovirhe poikkeuksen sattuessa.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+{\ttfamily false}, mikäli peli loppui jonkin pelaajan voittoon, {\ttfamily true} jos peli vielä jatkuu.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Toimintovirhe} & Pelaajaa ei ole liikkunut ennen vuoron vaihdon kutsua. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \hyperlink{class_julkinen_1_1_pelirajapinta_a873b4d57d698b82df131246df85c3193}{Julkinen\+::\+Pelirajapinta}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_peli_8hpp}{Peli.\+hpp}\item 
+Peli.\+cpp\end{DoxyCompactItemize}

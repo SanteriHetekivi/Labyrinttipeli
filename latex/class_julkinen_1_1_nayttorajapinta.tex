@@ -1,0 +1,405 @@
+\hypertarget{class_julkinen_1_1_nayttorajapinta}{}\section{Julkinen\+:\+:Nayttorajapinta Class Reference}
+\label{class_julkinen_1_1_nayttorajapinta}\index{Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}}
+
+
+Labyrintti-\/pelin tulostusrajapinta.  
+
+
+
+
+{\ttfamily \#include $<$nayttorajapinta.\+hh$>$}
+
+Inheritance diagram for Julkinen\+:\+:Nayttorajapinta\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_julkinen_1_1_nayttorajapinta}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_julkinen_1_1_nayttorajapinta_a65c9201e902d59cdb9a089ca74670bf7}{Nayttorajapinta} ()
+\begin{DoxyCompactList}\small\item\em Oletusrakentaja. \end{DoxyCompactList}\item 
+virtual \hyperlink{class_julkinen_1_1_nayttorajapinta_ac38d827aa661d9c77fccb22b9bf25c9f}{$\sim$\+Nayttorajapinta} ()
+\begin{DoxyCompactList}\small\item\em Oletuspurkaja. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{class_julkinen_1_1_nayttorajapinta_ae4d4cc62685de755e51aade02cc05424}{on\+Tulostustilassa} () const  =0
+\begin{DoxyCompactList}\small\item\em Tulostustilan tarkistus. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_julkinen_1_1_nayttorajapinta_afba451435164e30b22bd3060cdb09547}{ilmoitus\+Esine\+Poimittu} (char esine, std\+::string const \&pelaaja)=0
+\begin{DoxyCompactList}\small\item\em Tulostaa ilmoituksen esineen poimisesta. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_julkinen_1_1_nayttorajapinta_a9211bba3c7c7ed215752b8e311a5253f}{ilmoitus\+Erikoispalaan\+Astuttu} (\hyperlink{namespace_julkinen_afc26052e09d0b2214f749492cc5fff19}{Julkinen\+::\+Erikoispala\+Tyyppi} tyyppi, std\+::string const \&pelaaja)=0
+\begin{DoxyCompactList}\small\item\em Tulostaa ilmoituksen erikoispalaan astumisesta. Tulostaa ilmoituksen, jossa kerrotaan että annettu pelaaja on astunut erikoispalaan, jonka tyyppi on annettu. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_julkinen_1_1_nayttorajapinta_a9c54e560196f0c7e001d8fa5ee3533f2}{ilmoitus\+Vuorossa} (std\+::string const \&nimi)=0
+\begin{DoxyCompactList}\small\item\em Tulostaa tiedon vuorossa olevasta pelaajasta. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_julkinen_1_1_nayttorajapinta_a22bcc0e0dc309960ad11a8bf232a87a7}{tulosta\+Pelaajantiedot} (std\+::string const \&nimi, std\+::string const \&keratytesineet, std\+::string const \&kerattavatesineet, std\+::string const \&edellinentoiminto)=0
+\begin{DoxyCompactList}\small\item\em Lisää yksittäisen pelaajan tiedot kartan alle tulostusta varten. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_julkinen_1_1_nayttorajapinta_a1a3335dcbda7cf2fb09f5e9319c42cea}{komento\+Aloita\+Rakennus} ()=0
+\begin{DoxyCompactList}\small\item\em Laittaa näytön pelialueen rakennustilaan. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_julkinen_1_1_nayttorajapinta_aef4e3badfe7fa42dcfaba7bce4299301}{pala\+Laudalle} (\hyperlink{namespace_julkinen_a272c70e0503191a485c8a9cd4281e6f5}{Julkinen\+::\+Pala\+Tyyppi} tyyppi, \hyperlink{namespace_julkinen_afc26052e09d0b2214f749492cc5fff19}{Julkinen\+::\+Erikoispala\+Tyyppi} etyyppi, unsigned int rotaatio, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&sijainti, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&kohde=\hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}())=0
+\begin{DoxyCompactList}\small\item\em Lisää palan tulostettavaan karttaan. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_julkinen_1_1_nayttorajapinta_aa5db9bb4d55b723a2818fa0ec6ccd84a}{pelaaja\+Laudalle} (char merkki, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&sijainti)=0
+\begin{DoxyCompactList}\small\item\em Lisää pelaajan merkin tulostettavaan karttaan. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_julkinen_1_1_nayttorajapinta_a64f3acc155ec834b7d8661fd7b85c50a}{esine\+Laudalle} (char merkki, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&sijainti)=0
+\begin{DoxyCompactList}\small\item\em Lisää esineen tulostettavaan lautaan. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_julkinen_1_1_nayttorajapinta_ab0fb18db1b26b45f898e0580dbbb8921}{komento\+Lopeta\+Rakennus} ()=0
+\begin{DoxyCompactList}\small\item\em Lopeta laudanmuodostustila ja tulosta kartta, pelaajien tiedot ja irtopala. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Labyrintti-\/pelin tulostusrajapinta. 
+
+Labyrintti pelin toiminnalisuuden toteuttava kirjasto tekee kaikki tulostukset tämän rajapinnan läpi. Rajapinnan toteutus on pääohjelman vastuulla.
+
+Nayttorajapinnan toteutus voi olla kahdessa eri tilassa, tulostustilassa tai rakennustilassa. Oletuksena näyttö on tulostustilassa, jossa näyttö tulostaa ilmoitukset ja tiedot. Kutsumalla \hyperlink{class_julkinen_1_1_nayttorajapinta_a1a3335dcbda7cf2fb09f5e9319c42cea}{komento\+Aloita\+Rakennus()} metodia näyttö siirtyy rakennustilaan. Rakennustilassa näyttö alkaa odottamaan pelialueen rakennusta. Pelialue rakennetaan kutsumalla \hyperlink{class_julkinen_1_1_nayttorajapinta_aef4e3badfe7fa42dcfaba7bce4299301}{pala\+Laudalle()}, \hyperlink{class_julkinen_1_1_nayttorajapinta_aa5db9bb4d55b723a2818fa0ec6ccd84a}{pelaaja\+Laudalle()} ja \hyperlink{class_julkinen_1_1_nayttorajapinta_a64f3acc155ec834b7d8661fd7b85c50a}{esine\+Laudalle()} -\/metodeja. Rakennus tilassa pitää kutsua myös \hyperlink{class_julkinen_1_1_nayttorajapinta_a22bcc0e0dc309960ad11a8bf232a87a7}{tulosta\+Pelaajantiedot()} -\/metodia jokaiselle pelaajalle. Pelialueen rakennus lopetetaan kutsumalla \hyperlink{class_julkinen_1_1_nayttorajapinta_ab0fb18db1b26b45f898e0580dbbb8921}{komento\+Lopeta\+Rakennus()} -\/metodia.
+
+Kaikki ei No-\/throw metodit heittävät std\+::bad\+\_\+alloc poikkeuksen, jos muisti loppuu. bac\+\_\+alloc\+:n yhteydessä luokka tarjoaa minimitakuun. bad\+\_\+alloc saa vuotaa ulos, eli muistin loppumiseen ei tarvitse erikseen varautua. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_julkinen_1_1_nayttorajapinta_a65c9201e902d59cdb9a089ca74670bf7}{}\index{Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}!Nayttorajapinta@{Nayttorajapinta}}
+\index{Nayttorajapinta@{Nayttorajapinta}!Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}}
+\subsubsection[{Nayttorajapinta()}]{\setlength{\rightskip}{0pt plus 5cm}Julkinen\+::\+Nayttorajapinta\+::\+Nayttorajapinta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_julkinen_1_1_nayttorajapinta_a65c9201e902d59cdb9a089ca74670bf7}
+
+
+Oletusrakentaja. 
+
+Tämä on määritelty vain, jotta voitaisiin määritellä olion tila heti luomisen jälkeen. \begin{DoxyPrecond}{Precondition}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Näyttörajapinta on tulostustilassa. Poikkeustakuu\+: Poikkeuksen sattuessa Pelirajapinta-\/olion luontiepäonnistui, mistä syytä oliolla ei ole sisäistä tilaa jolle voisi antaa takuita 
+\end{DoxyPostcond}
+\hypertarget{class_julkinen_1_1_nayttorajapinta_ac38d827aa661d9c77fccb22b9bf25c9f}{}\index{Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}!````~Nayttorajapinta@{$\sim$\+Nayttorajapinta}}
+\index{````~Nayttorajapinta@{$\sim$\+Nayttorajapinta}!Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}}
+\subsubsection[{$\sim$\+Nayttorajapinta()}]{\setlength{\rightskip}{0pt plus 5cm}virtual Julkinen\+::\+Nayttorajapinta\+::$\sim$\+Nayttorajapinta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_julkinen_1_1_nayttorajapinta_ac38d827aa661d9c77fccb22b9bf25c9f}
+
+
+Oletuspurkaja. 
+
+\begin{DoxyPrecond}{Precondition}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw -\/takuu. 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_julkinen_1_1_nayttorajapinta_a64f3acc155ec834b7d8661fd7b85c50a}{}\index{Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}!esine\+Laudalle@{esine\+Laudalle}}
+\index{esine\+Laudalle@{esine\+Laudalle}!Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}}
+\subsubsection[{esine\+Laudalle(char merkki, Julkinen\+::\+Koordinaatti const \&sijainti)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Julkinen\+::\+Nayttorajapinta\+::esine\+Laudalle (
+\begin{DoxyParamCaption}
+\item[{char}]{merkki, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{sijainti}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_julkinen_1_1_nayttorajapinta_a64f3acc155ec834b7d8661fd7b85c50a}
+
+
+Lisää esineen tulostettavaan lautaan. 
+
+\begin{DoxyPrecond}{Precondition}
+Nayttö on rakennustilassa. Esineen merkki, jokin \href{tyoohje.html}{\tt työohjeessa} annetuista merkeistä. \hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti} on pelialueen rajoissa.
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\hyperlink{class_esine}{Esine} on lisätty tulostettavalle kartalle. Poikkeusturvallisuus\+: Perustakuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em merkki} & \hyperlink{class_esine}{Esine} sijaintia esittävä merkki kartalla. \\
+\hline
+\mbox{\tt in}  & {\em sijainti} & \hyperlink{class_esine}{Esine} koordinaatti kartalla. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_naytto_a54c6a0f6fff0facbf4e769d77e80b341}{Naytto}.
+
+\hypertarget{class_julkinen_1_1_nayttorajapinta_a9211bba3c7c7ed215752b8e311a5253f}{}\index{Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}!ilmoitus\+Erikoispalaan\+Astuttu@{ilmoitus\+Erikoispalaan\+Astuttu}}
+\index{ilmoitus\+Erikoispalaan\+Astuttu@{ilmoitus\+Erikoispalaan\+Astuttu}!Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}}
+\subsubsection[{ilmoitus\+Erikoispalaan\+Astuttu(\+Julkinen\+::\+Erikoispala\+Tyyppi tyyppi, std\+::string const \&pelaaja)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Julkinen\+::\+Nayttorajapinta\+::ilmoitus\+Erikoispalaan\+Astuttu (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Erikoispala\+Tyyppi}}]{tyyppi, }
+\item[{std\+::string const \&}]{pelaaja}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_julkinen_1_1_nayttorajapinta_a9211bba3c7c7ed215752b8e311a5253f}
+
+
+Tulostaa ilmoituksen erikoispalaan astumisesta. Tulostaa ilmoituksen, jossa kerrotaan että annettu pelaaja on astunut erikoispalaan, jonka tyyppi on annettu. 
+
+\begin{DoxyPrecond}{Precondition}
+Näyttö on tulostustilassa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ilmoitus palaan astumisesta tehty. Poikkeusturvallisuus\+: Vahvatakuu, jos \hyperlink{class_julkinen_1_1_nayttovirhe}{Nayttovirhe}. Muuten perustakuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em tyyppi} & Erikoispalan \hyperlink{namespace_julkinen}{Julkinen}\+:Erikoispala\+Tyyppi \\
+\hline
+\mbox{\tt in}  & {\em pelaaja} & Pelaajan nimi, joka astui erikoispalaan\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_julkinen_1_1_nayttovirhe}{Nayttovirhe}} & Tulostus epäonnistui \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{class_naytto_ae8f3bdaee4c802e33be17b0efb50a530}{Naytto}.
+
+\hypertarget{class_julkinen_1_1_nayttorajapinta_afba451435164e30b22bd3060cdb09547}{}\index{Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}!ilmoitus\+Esine\+Poimittu@{ilmoitus\+Esine\+Poimittu}}
+\index{ilmoitus\+Esine\+Poimittu@{ilmoitus\+Esine\+Poimittu}!Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}}
+\subsubsection[{ilmoitus\+Esine\+Poimittu(char esine, std\+::string const \&pelaaja)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Julkinen\+::\+Nayttorajapinta\+::ilmoitus\+Esine\+Poimittu (
+\begin{DoxyParamCaption}
+\item[{char}]{esine, }
+\item[{std\+::string const \&}]{pelaaja}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_julkinen_1_1_nayttorajapinta_afba451435164e30b22bd3060cdb09547}
+
+
+Tulostaa ilmoituksen esineen poimisesta. 
+
+Tulostaa ilmoituksen jossa kerrotaan että annettu pelaaja on poiminut annetun esineen.
+
+\begin{DoxyPrecond}{Precondition}
+Näyttö tulostustilassa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Ilmoitus esineen poimisesta tehty. Poikkeusturvallisuus\+: Vahvatakuu, jos \hyperlink{class_julkinen_1_1_nayttovirhe}{Nayttovirhe}. Muuten perustakuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em esine} & Poimitun esineen merkki. \\
+\hline
+\mbox{\tt in}  & {\em pelaaja} & Pelaajan nimi, joka poimi esineen.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_julkinen_1_1_nayttovirhe}{Nayttovirhe}} & Tulostus epäonnistui. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{class_naytto_a1ad6d3eea578c82c6260bc59d04e17a1}{Naytto}.
+
+\hypertarget{class_julkinen_1_1_nayttorajapinta_a9c54e560196f0c7e001d8fa5ee3533f2}{}\index{Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}!ilmoitus\+Vuorossa@{ilmoitus\+Vuorossa}}
+\index{ilmoitus\+Vuorossa@{ilmoitus\+Vuorossa}!Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}}
+\subsubsection[{ilmoitus\+Vuorossa(std\+::string const \&nimi)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Julkinen\+::\+Nayttorajapinta\+::ilmoitus\+Vuorossa (
+\begin{DoxyParamCaption}
+\item[{std\+::string const \&}]{nimi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_julkinen_1_1_nayttorajapinta_a9c54e560196f0c7e001d8fa5ee3533f2}
+
+
+Tulostaa tiedon vuorossa olevasta pelaajasta. 
+
+Tulostaa vuorossa olevan pelaajan nimen ja $>$ merkin sen jälkeen. Metodi pitää ajaa \hyperlink{class_julkinen_1_1_pelirajapinta_a873b4d57d698b82df131246df85c3193}{Pelirajapinta\+::vaihda\+Vuoro()} -\/metodi ajon jälkeen ja aina kun pelaajan antamassa komennossa on virhe.
+
+\begin{DoxyPrecond}{Precondition}
+Näyttö tulostustilassa 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Vuorossa olevan pelaajan nimi tulostettu. Poikkeustuvallisuus\+: Vahvatakuu, jos \hyperlink{class_julkinen_1_1_nayttovirhe}{Nayttovirhe}. Muuten perustakuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nimi} & Vuorossa olevan pelaajan nimi.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_julkinen_1_1_nayttovirhe}{Nayttovirhe}} & Tulostus epäonnistui. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{class_naytto_aebc53e0348c5f5ba88424a0e2a39991d}{Naytto}.
+
+\hypertarget{class_julkinen_1_1_nayttorajapinta_a1a3335dcbda7cf2fb09f5e9319c42cea}{}\index{Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}!komento\+Aloita\+Rakennus@{komento\+Aloita\+Rakennus}}
+\index{komento\+Aloita\+Rakennus@{komento\+Aloita\+Rakennus}!Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}}
+\subsubsection[{komento\+Aloita\+Rakennus()=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Julkinen\+::\+Nayttorajapinta\+::komento\+Aloita\+Rakennus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_julkinen_1_1_nayttorajapinta_a1a3335dcbda7cf2fb09f5e9319c42cea}
+
+
+Laittaa näytön pelialueen rakennustilaan. 
+
+Asettaa näytön tilan rakennustilaan. Tämä metodi on ajettava ennen \hyperlink{class_julkinen_1_1_nayttorajapinta_aef4e3badfe7fa42dcfaba7bce4299301}{pala\+Laudalle()}, \hyperlink{class_julkinen_1_1_nayttorajapinta_aa5db9bb4d55b723a2818fa0ec6ccd84a}{pelaaja\+Laudalle()}, \hyperlink{class_julkinen_1_1_nayttorajapinta_a64f3acc155ec834b7d8661fd7b85c50a}{esine\+Laudalle()} ja \hyperlink{class_julkinen_1_1_nayttorajapinta_ab0fb18db1b26b45f898e0580dbbb8921}{komento\+Lopeta\+Rakennus()} metodeja.
+
+\begin{DoxyPrecond}{Precondition}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Näyttö on rakennustilassa ja pelilaudan kuva on tyhjä. Poikkeusturvallisuus\+: No-\/throw takuu. 
+\end{DoxyPostcond}
+
+
+Implemented in \hyperlink{class_naytto_a01a422be1ca30135634914767c8cd633}{Naytto}.
+
+\hypertarget{class_julkinen_1_1_nayttorajapinta_ab0fb18db1b26b45f898e0580dbbb8921}{}\index{Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}!komento\+Lopeta\+Rakennus@{komento\+Lopeta\+Rakennus}}
+\index{komento\+Lopeta\+Rakennus@{komento\+Lopeta\+Rakennus}!Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}}
+\subsubsection[{komento\+Lopeta\+Rakennus()=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Julkinen\+::\+Nayttorajapinta\+::komento\+Lopeta\+Rakennus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_julkinen_1_1_nayttorajapinta_ab0fb18db1b26b45f898e0580dbbb8921}
+
+
+Lopeta laudanmuodostustila ja tulosta kartta, pelaajien tiedot ja irtopala. 
+
+\begin{DoxyPrecond}{Precondition}
+Näyttö on rakennustilassa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Näyttörajapinta on tulostustilassa ja pelilauta on tulostettu. Poikkeusturvallisuus\+: Perustakuu.
+\end{DoxyPostcond}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_julkinen_1_1_nayttovirhe}{Nayttovirhe}} & Tulostaminen epäonnistui. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{class_naytto_aa3faa1f5dde0249c90530f0fdfb25d7b}{Naytto}.
+
+\hypertarget{class_julkinen_1_1_nayttorajapinta_ae4d4cc62685de755e51aade02cc05424}{}\index{Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}!on\+Tulostustilassa@{on\+Tulostustilassa}}
+\index{on\+Tulostustilassa@{on\+Tulostustilassa}!Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}}
+\subsubsection[{on\+Tulostustilassa() const  =0}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Julkinen\+::\+Nayttorajapinta\+::on\+Tulostustilassa (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_julkinen_1_1_nayttorajapinta_ae4d4cc62685de755e51aade02cc05424}
+
+
+Tulostustilan tarkistus. 
+
+Kertoo näytön käyttäjälle onko näyttö tulostustilassa vai rakennustilassa. \begin{DoxyPrecond}{Precondition}
+-\/ 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Palautettu tieto laudan tilasta. Poikkeusturvallisuus\+: No-\/throw takuu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} jos näyttö on tulostustilassa, {\ttfamily false} jos näyttö on rakennustilassa. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_naytto_a1be5a43b84f00c279e6e8f619d613de9}{Naytto}.
+
+\hypertarget{class_julkinen_1_1_nayttorajapinta_aef4e3badfe7fa42dcfaba7bce4299301}{}\index{Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}!pala\+Laudalle@{pala\+Laudalle}}
+\index{pala\+Laudalle@{pala\+Laudalle}!Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}}
+\subsubsection[{pala\+Laudalle(\+Julkinen\+::\+Pala\+Tyyppi tyyppi, Julkinen\+::\+Erikoispala\+Tyyppi etyyppi, unsigned int rotaatio, Julkinen\+::\+Koordinaatti const \&sijainti, Julkinen\+::\+Koordinaatti const \&kohde=\+Julkinen\+::\+Koordinaatti())=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Julkinen\+::\+Nayttorajapinta\+::pala\+Laudalle (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Pala\+Tyyppi}}]{tyyppi, }
+\item[{{\bf Julkinen\+::\+Erikoispala\+Tyyppi}}]{etyyppi, }
+\item[{unsigned int}]{rotaatio, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{sijainti, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{kohde = {\ttfamily {\bf Julkinen\+::\+Koordinaatti}()}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_julkinen_1_1_nayttorajapinta_aef4e3badfe7fa42dcfaba7bce4299301}
+
+
+Lisää palan tulostettavaan karttaan. 
+
+\begin{DoxyPrecond}{Precondition}
+Nayttö on rakennustilassa. \hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti} on pelialueen rajoissa. Rotaatio on 1-\/4. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\hyperlink{class_pala}{Pala} on lisatty tulostettavassa bittikartassa annettuun sijaintiin. Poikkeusturvallisuus\+: Perustakuu. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em tyyppi} & Lisättävän palan tyyppi. \\
+\hline
+\mbox{\tt in}  & {\em etyyppi} & palaan liitetty \hyperlink{namespace_julkinen_afc26052e09d0b2214f749492cc5fff19}{Julkinen\+::\+Erikoispala\+Tyyppi}, käytetään -\/n vivun tulostuksen apuna. \\
+\hline
+\mbox{\tt in}  & {\em rotaatio} & Lisättävän palan rotaatio.\\
+\hline
+\mbox{\tt in}  & {\em sijainti} & koordinaatti mihin pala lisätään. Jos sijainti.\+onko\+Irtopala() palautaa {\ttfamily true}, niin palasta tehdään irtopala -\/kartta.\\
+\hline
+\mbox{\tt in}  & {\em kohde} & Teleporttipalan kohteen koordinaatti. Muilla paloilla parametria ei anneta. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_naytto_adc11e0eddc17bfe1b9aa6971969b8549}{Naytto}.
+
+\hypertarget{class_julkinen_1_1_nayttorajapinta_aa5db9bb4d55b723a2818fa0ec6ccd84a}{}\index{Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}!pelaaja\+Laudalle@{pelaaja\+Laudalle}}
+\index{pelaaja\+Laudalle@{pelaaja\+Laudalle}!Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}}
+\subsubsection[{pelaaja\+Laudalle(char merkki, Julkinen\+::\+Koordinaatti const \&sijainti)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Julkinen\+::\+Nayttorajapinta\+::pelaaja\+Laudalle (
+\begin{DoxyParamCaption}
+\item[{char}]{merkki, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{sijainti}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_julkinen_1_1_nayttorajapinta_aa5db9bb4d55b723a2818fa0ec6ccd84a}
+
+
+Lisää pelaajan merkin tulostettavaan karttaan. 
+
+\begin{DoxyPrecond}{Precondition}
+Nayttö on rakennustilassa. \hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti} on pelialueen rajoissa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+\hyperlink{class_pelaaja}{Pelaaja} on lisätty tulostettavalle kartalle. Poikkeusturvallisuus\+: Perustakuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em merkki} & Pelaajan sijaintia esittävä merkki kartalla. \\
+\hline
+\mbox{\tt in}  & {\em sijainti} & Pelaajan koordinaatti kartalla. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_naytto_a2425a87d92478b0c86ffe698985b6c86}{Naytto}.
+
+\hypertarget{class_julkinen_1_1_nayttorajapinta_a22bcc0e0dc309960ad11a8bf232a87a7}{}\index{Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}!tulosta\+Pelaajantiedot@{tulosta\+Pelaajantiedot}}
+\index{tulosta\+Pelaajantiedot@{tulosta\+Pelaajantiedot}!Julkinen\+::\+Nayttorajapinta@{Julkinen\+::\+Nayttorajapinta}}
+\subsubsection[{tulosta\+Pelaajantiedot(std\+::string const \&nimi, std\+::string const \&keratytesineet, std\+::string const \&kerattavatesineet, std\+::string const \&edellinentoiminto)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Julkinen\+::\+Nayttorajapinta\+::tulosta\+Pelaajantiedot (
+\begin{DoxyParamCaption}
+\item[{std\+::string const \&}]{nimi, }
+\item[{std\+::string const \&}]{keratytesineet, }
+\item[{std\+::string const \&}]{kerattavatesineet, }
+\item[{std\+::string const \&}]{edellinentoiminto}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_julkinen_1_1_nayttorajapinta_a22bcc0e0dc309960ad11a8bf232a87a7}
+
+
+Lisää yksittäisen pelaajan tiedot kartan alle tulostusta varten. 
+
+\begin{DoxyPrecond}{Precondition}
+Näyttö on on rakennustilassa. Pelaajan nimen pituus on \href{tyoohje.html}{\tt työohjeen} rajoissa. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+Pelaajan tiedot on lisätty tulostettavaksi. Poikkeusturvallisuus\+: Perustakuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nimi} & Pelaajan, jonka tiedot tulostetaan, nimi. \\
+\hline
+\mbox{\tt in}  & {\em keratytesineet} & Pelaajan keräämät esineet. \\
+\hline
+\mbox{\tt in}  & {\em kerattavatesineet} & Pelaajan jäljellä olevat kerättävät esineet. \\
+\hline
+\mbox{\tt in}  & {\em edellinentoiminto} & Pelaajan edellinen toiminto. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_naytto_ababf9b69de2295fe4eaccc3d95461943}{Naytto}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{nayttorajapinta_8hh}{nayttorajapinta.\+hh}\end{DoxyCompactItemize}

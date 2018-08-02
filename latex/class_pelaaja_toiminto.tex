@@ -1,0 +1,189 @@
+\hypertarget{class_pelaaja_toiminto}{}\section{Pelaaja\+Toiminto Class Reference}
+\label{class_pelaaja_toiminto}\index{Pelaaja\+Toiminto@{Pelaaja\+Toiminto}}
+
+
+Labyrintti-\/pelin pelaajan toimintojen suoritus luokka.  
+
+
+
+
+{\ttfamily \#include $<$Pelaaja\+Toiminto.\+hpp$>$}
+
+Inheritance diagram for Pelaaja\+Toiminto\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_pelaaja_toiminto}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_pelaaja_toiminto_af435c652c81b413af351e84e98ca4027}{Pelaaja\+Toiminto} (\hyperlink{class_julkinen_1_1_nayttorajapinta}{Julkinen\+::\+Nayttorajapinta} $\ast$naytto, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&koko, \hyperlink{class_data}{Data} $\ast$data)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_pelaaja_toiminto}{Pelaaja\+Toiminto} luokan rakentaja. \end{DoxyCompactList}\item 
+\hyperlink{class_pelaaja_toiminto_a8a27af3770a1fbf0148a75ed51fe3f0e}{$\sim$\+Pelaaja\+Toiminto} ()
+\begin{DoxyCompactList}\small\item\em Purkaja. \end{DoxyCompactList}\item 
+void \hyperlink{class_pelaaja_toiminto_aa9015f6a8af946a3139eaed1de6555f3}{aseta\+Koko} (\hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&koko)
+\begin{DoxyCompactList}\small\item\em Koon asettaja. \end{DoxyCompactList}\item 
+bool \hyperlink{class_pelaaja_toiminto_a59e41355414eabee8fbbb8ebfbe94d64}{Tyonna} (\hyperlink{namespace_julkinen_acce0eefc4c90f907dd5fb319b0d05872}{Julkinen\+::\+Reuna} reuna, unsigned int paikka, unsigned int rotaatio, \hyperlink{class_pelaaja}{Pelaaja} $\ast$pelaaja)
+\begin{DoxyCompactList}\small\item\em Pelaajan liikuttaja. \end{DoxyCompactList}\item 
+bool \hyperlink{class_pelaaja_toiminto_afd40ede2b643b2e51bb101b1790903b2}{Liiku} (\hyperlink{namespace_julkinen_a81b50e3c6f21c0c1c46e186592107c3c}{Julkinen\+::\+Suunta} suunta, unsigned int maara, \hyperlink{class_pelaaja}{Pelaaja} $\ast$pelaaja)
+\begin{DoxyCompactList}\small\item\em Pelaajan liikuttaja. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Labyrintti-\/pelin pelaajan toimintojen suoritus luokka. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_pelaaja_toiminto_af435c652c81b413af351e84e98ca4027}{}\index{Pelaaja\+Toiminto@{Pelaaja\+Toiminto}!Pelaaja\+Toiminto@{Pelaaja\+Toiminto}}
+\index{Pelaaja\+Toiminto@{Pelaaja\+Toiminto}!Pelaaja\+Toiminto@{Pelaaja\+Toiminto}}
+\subsubsection[{Pelaaja\+Toiminto(\+Julkinen\+::\+Nayttorajapinta $\ast$naytto, Julkinen\+::\+Koordinaatti const \&koko, Data $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}Pelaaja\+Toiminto\+::\+Pelaaja\+Toiminto (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Nayttorajapinta} $\ast$}]{naytto, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{koko, }
+\item[{{\bf Data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\label{class_pelaaja_toiminto_af435c652c81b413af351e84e98ca4027}
+
+
+\hyperlink{class_pelaaja_toiminto}{Pelaaja\+Toiminto} luokan rakentaja. 
+
+\begin{DoxyPrecond}{Precondition}
+Annettu naytto ja data ovat oikeita osoitteita.
+\end{DoxyPrecond}
+Asettaa käytettävän näytön, koon ja datan.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em naytto} & Käytettävä näyttö {\ttfamily \hyperlink{class_julkinen_1_1_nayttorajapinta}{Julkinen\+::\+Nayttorajapinta}}-\/luokkan osoitteena. \\
+\hline
+\mbox{\tt in}  & {\em koko} & Näytön koko {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}}-\/luokkana. \\
+\hline
+\mbox{\tt in}  & {\em data} & Käytettävä data {\ttfamily \hyperlink{class_data}{Data}}-\/luokkan osoitteena. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pelaaja_toiminto_a8a27af3770a1fbf0148a75ed51fe3f0e}{}\index{Pelaaja\+Toiminto@{Pelaaja\+Toiminto}!````~Pelaaja\+Toiminto@{$\sim$\+Pelaaja\+Toiminto}}
+\index{````~Pelaaja\+Toiminto@{$\sim$\+Pelaaja\+Toiminto}!Pelaaja\+Toiminto@{Pelaaja\+Toiminto}}
+\subsubsection[{$\sim$\+Pelaaja\+Toiminto()}]{\setlength{\rightskip}{0pt plus 5cm}Pelaaja\+Toiminto\+::$\sim$\+Pelaaja\+Toiminto (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_pelaaja_toiminto_a8a27af3770a1fbf0148a75ed51fe3f0e}
+
+
+Purkaja. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw takuu. 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_pelaaja_toiminto_aa9015f6a8af946a3139eaed1de6555f3}{}\index{Pelaaja\+Toiminto@{Pelaaja\+Toiminto}!aseta\+Koko@{aseta\+Koko}}
+\index{aseta\+Koko@{aseta\+Koko}!Pelaaja\+Toiminto@{Pelaaja\+Toiminto}}
+\subsubsection[{aseta\+Koko(\+Julkinen\+::\+Koordinaatti const \&koko)}]{\setlength{\rightskip}{0pt plus 5cm}void Pelaaja\+Toiminto\+::aseta\+Koko (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{koko}
+\end{DoxyParamCaption}
+)}\label{class_pelaaja_toiminto_aa9015f6a8af946a3139eaed1de6555f3}
+
+
+Koon asettaja. 
+
+Asettaa yksityisen kentän kokoa säilyttävän {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}} luokan \+\_\+koko
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em koko} & Pelialueen koko {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}}-\/luokkana. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_pelaaja_toiminto_afd40ede2b643b2e51bb101b1790903b2}{}\index{Pelaaja\+Toiminto@{Pelaaja\+Toiminto}!Liiku@{Liiku}}
+\index{Liiku@{Liiku}!Pelaaja\+Toiminto@{Pelaaja\+Toiminto}}
+\subsubsection[{Liiku(\+Julkinen\+::\+Suunta suunta, unsigned int maara, Pelaaja $\ast$pelaaja)}]{\setlength{\rightskip}{0pt plus 5cm}bool Pelaaja\+Toiminto\+::\+Liiku (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Suunta}}]{suunta, }
+\item[{unsigned int}]{maara, }
+\item[{{\bf Pelaaja} $\ast$}]{pelaaja}
+\end{DoxyParamCaption}
+)}\label{class_pelaaja_toiminto_afd40ede2b643b2e51bb101b1790903b2}
+
+
+Pelaajan liikuttaja. 
+
+\begin{DoxyPrecond}{Precondition}
+Osoite {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokaan on oikea.
+\end{DoxyPrecond}
+Hoitaa pelaajan työntö käskyn suorituksen. Tätä kutsutaan {\ttfamily \hyperlink{class_peli}{Peli}} luokassa, kun {\ttfamily \hyperlink{class_komentotulkki}{Komentotulkki}} luokka antaa työntö komennon
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em reuna} & Laudan työntö reuna {\ttfamily \hyperlink{namespace_julkinen_acce0eefc4c90f907dd5fb319b0d05872}{Julkinen\+::\+Reuna}}-\/luokkana. \\
+\hline
+\mbox{\tt in}  & {\em paikka} & {\ttfamily Työnnön} paikka reunalta. \\
+\hline
+\mbox{\tt in}  & {\em rotaatio} & {\ttfamily Työnnettävän} palan rotaatio. \\
+\hline
+\mbox{\tt in}  & {\em pelaaja} & Työntävä pelaaja {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokan osoitteena.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Toimintovirhe} & pelaaja ei ole työntänyt irtopalaa vuorollansa. \\
+\hline
+{\em Toimintovirhe} & pelaaja on jo liikkunut vuorollansa. \\
+\hline
+{\em Toimintovirhe} & liikkeen suunta on virheellinen. \\
+\hline
+{\em Toimintovirhe} & pelaaja ei voi liikkua annettua määrää.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Tieto siitä onnistuko liikkuminen 
+\end{DoxyPostcond}
+\hypertarget{class_pelaaja_toiminto_a59e41355414eabee8fbbb8ebfbe94d64}{}\index{Pelaaja\+Toiminto@{Pelaaja\+Toiminto}!Tyonna@{Tyonna}}
+\index{Tyonna@{Tyonna}!Pelaaja\+Toiminto@{Pelaaja\+Toiminto}}
+\subsubsection[{Tyonna(\+Julkinen\+::\+Reuna reuna, unsigned int paikka, unsigned int rotaatio, Pelaaja $\ast$pelaaja)}]{\setlength{\rightskip}{0pt plus 5cm}bool Pelaaja\+Toiminto\+::\+Tyonna (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Reuna}}]{reuna, }
+\item[{unsigned int}]{paikka, }
+\item[{unsigned int}]{rotaatio, }
+\item[{{\bf Pelaaja} $\ast$}]{pelaaja}
+\end{DoxyParamCaption}
+)}\label{class_pelaaja_toiminto_a59e41355414eabee8fbbb8ebfbe94d64}
+
+
+Pelaajan liikuttaja. 
+
+\begin{DoxyPrecond}{Precondition}
+Osoite {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokaan on oikea.
+\end{DoxyPrecond}
+Hoitaa pelaajan liikuttamisen. Tätä kutsutaan {\ttfamily \hyperlink{class_peli}{Peli}} luokassa, kun {\ttfamily \hyperlink{class_komentotulkki}{Komentotulkki}} luokka antaa liikkumis komennon tai oma {\ttfamily suorita\+Automaatti\+Liike} metodi suorittaa liikeen.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em suunta} & Liikkeen suunta {\ttfamily \hyperlink{namespace_julkinen_a81b50e3c6f21c0c1c46e186592107c3c}{Julkinen\+::\+Suunta}}-\/luokkana. \\
+\hline
+\mbox{\tt in}  & {\em maara} & {\ttfamily Liikkeen} määrä. \\
+\hline
+\mbox{\tt in}  & {\em pelaaja} & Liikutettava pelaaja {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokan osoitteena.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Toimintovirhe} & irtopalan reuna on virheellinen. \\
+\hline
+{\em Toimintovirhe} & irtopalan paikka on virheellinen. \\
+\hline
+{\em Toimintovirhe} & irtopalan rotaatio on virheellinen. \\
+\hline
+{\em Toimintovirhe} & pelaaja on jo työntänyt vuorollansa.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Tieto siitä onnistuko työntö 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_pelaaja_toiminto_8hpp}{Pelaaja\+Toiminto.\+hpp}\item 
+Pelaaja\+Toiminto.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,186 @@
+\hypertarget{class_julkinen_1_1_alustusvirhe}{}\section{Julkinen\+:\+:Alustusvirhe Class Reference}
+\label{class_julkinen_1_1_alustusvirhe}\index{Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}}
+
+
+Alustuksessa tapahtuvaa virhettä kuvaava poikkeus.  
+
+
+
+
+{\ttfamily \#include $<$alustusvirhe.\+hh$>$}
+
+Inheritance diagram for Julkinen\+:\+:Alustusvirhe\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_julkinen_1_1_alustusvirhe}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_julkinen_1_1_alustusvirhe_a6c27ff51ee369cf37028b8a7ea0eafc0}{Virhekoodi} \{ \\*
+\hyperlink{class_julkinen_1_1_alustusvirhe_a6c27ff51ee369cf37028b8a7ea0eafc0aec9736ad2af67e08e50b87117617f4d6}{V\+I\+R\+H\+E\+\_\+\+P\+A\+L\+A\+S\+S\+A\+\_\+\+O\+N\+\_\+\+J\+O\+\_\+\+E\+S\+I\+N\+E}, 
+\hyperlink{class_julkinen_1_1_alustusvirhe_a6c27ff51ee369cf37028b8a7ea0eafc0a733522f56cfb8984ea41adc51baf8741}{V\+I\+R\+H\+E\+E\+L\+L\+I\+N\+E\+N\+\_\+\+S\+I\+J\+A\+I\+N\+T\+I}, 
+\hyperlink{class_julkinen_1_1_alustusvirhe_a6c27ff51ee369cf37028b8a7ea0eafc0ac9bd1b203cef3970b61807a7c8d1e004}{V\+I\+R\+H\+E\+E\+L\+L\+I\+N\+E\+N\+\_\+\+R\+O\+T\+A\+A\+T\+I\+O}, 
+{\bfseries V\+I\+R\+H\+E\+\_\+\+A\+N\+N\+E\+T\+T\+U\+A\+\_\+\+P\+E\+L\+A\+A\+J\+A\+A\+\_\+\+E\+I\+\_\+\+L\+O\+Y\+T\+Y\+N\+Y\+T}, 
+\\*
+{\bfseries V\+I\+R\+H\+E\+\_\+\+L\+I\+I\+K\+A\+A\+\_\+\+P\+A\+R\+A\+M\+E\+T\+R\+E\+J\+A}, 
+\hyperlink{class_julkinen_1_1_alustusvirhe_a6c27ff51ee369cf37028b8a7ea0eafc0a37797a3ef54020c869caea8d10b51e46}{V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N}
+ \}\begin{DoxyCompactList}\small\item\em Tunnisteet esimääritellyille virhetilanteille käyttäjän antamissa komennoissa. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_julkinen_1_1_alustusvirhe_aab6d2164d8c55d404febff382556a8fd}{Alustusvirhe} (std\+::string const \&virheviesti)
+\begin{DoxyCompactList}\small\item\em Tunnistamaton virhetilanne kopioidulla viestillä. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_alustusvirhe_a46f9b253c9ce0336c12bad1d2f3a93a1}{Alustusvirhe} (\hyperlink{class_julkinen_1_1_alustusvirhe_a6c27ff51ee369cf37028b8a7ea0eafc0}{Julkinen\+::\+Alustusvirhe\+::\+Virhekoodi} virhekoodi)
+\begin{DoxyCompactList}\small\item\em Esimääritelty virhetilanne. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_alustusvirhe_a03dbadc97b43077338d874c899c9da1d}{Alustusvirhe} (\hyperlink{class_julkinen_1_1_alustusvirhe}{Julkinen\+::\+Alustusvirhe} const \&toinen)
+\begin{DoxyCompactList}\small\item\em Kopiorakentaja. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_alustusvirhe}{Alustusvirhe} \& \hyperlink{class_julkinen_1_1_alustusvirhe_a520656e118da9c9e7baf1baeeacb972e}{operator=} (\hyperlink{class_julkinen_1_1_alustusvirhe}{Julkinen\+::\+Alustusvirhe} const \&toinen)
+\begin{DoxyCompactList}\small\item\em Sijoitusoperaattori. \end{DoxyCompactList}\item 
+\hypertarget{class_julkinen_1_1_alustusvirhe_af9a610132f2dccefe4b3ba2bf241cd2d}{}\hyperlink{class_julkinen_1_1_alustusvirhe_a6c27ff51ee369cf37028b8a7ea0eafc0}{Virhekoodi} \hyperlink{class_julkinen_1_1_alustusvirhe_af9a610132f2dccefe4b3ba2bf241cd2d}{virhe} () const \label{class_julkinen_1_1_alustusvirhe_af9a610132f2dccefe4b3ba2bf241cd2d}
+
+\begin{DoxyCompactList}\small\item\em Sattuneen virhetilanteen virhekoodi. \end{DoxyCompactList}\item 
+virtual std\+::basic\+\_\+ostream$<$ char $>$ \& \hyperlink{class_julkinen_1_1_alustusvirhe_a22b50252a516b339d126261978fb62c1}{tulosta} (std\+::basic\+\_\+ostream$<$ char $>$ \&tuloste) const 
+\begin{DoxyCompactList}\small\item\em Tulosta virheen viesti virtaan. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Alustuksessa tapahtuvaa virhettä kuvaava poikkeus. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_julkinen_1_1_alustusvirhe_a6c27ff51ee369cf37028b8a7ea0eafc0}{}\index{Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}!Virhekoodi@{Virhekoodi}}
+\index{Virhekoodi@{Virhekoodi}!Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}}
+\subsubsection[{Virhekoodi}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Julkinen\+::\+Alustusvirhe\+::\+Virhekoodi}}\label{class_julkinen_1_1_alustusvirhe_a6c27ff51ee369cf37028b8a7ea0eafc0}
+
+
+Tunnisteet esimääritellyille virhetilanteille käyttäjän antamissa komennoissa. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{V\+I\+R\+H\+E\+\_\+\+P\+A\+L\+A\+S\+S\+A\+\_\+\+O\+N\+\_\+\+J\+O\+\_\+\+E\+S\+I\+N\+E@{V\+I\+R\+H\+E\+\_\+\+P\+A\+L\+A\+S\+S\+A\+\_\+\+O\+N\+\_\+\+J\+O\+\_\+\+E\+S\+I\+N\+E}!Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}}\index{Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}!V\+I\+R\+H\+E\+\_\+\+P\+A\+L\+A\+S\+S\+A\+\_\+\+O\+N\+\_\+\+J\+O\+\_\+\+E\+S\+I\+N\+E@{V\+I\+R\+H\+E\+\_\+\+P\+A\+L\+A\+S\+S\+A\+\_\+\+O\+N\+\_\+\+J\+O\+\_\+\+E\+S\+I\+N\+E}}\item[{\em 
+\hypertarget{class_julkinen_1_1_alustusvirhe_a6c27ff51ee369cf37028b8a7ea0eafc0aec9736ad2af67e08e50b87117617f4d6}{}V\+I\+R\+H\+E\+\_\+\+P\+A\+L\+A\+S\+S\+A\+\_\+\+O\+N\+\_\+\+J\+O\+\_\+\+E\+S\+I\+N\+E\label{class_julkinen_1_1_alustusvirhe_a6c27ff51ee369cf37028b8a7ea0eafc0aec9736ad2af67e08e50b87117617f4d6}
+}]Irtopala on jo työnnetty tällä vuorolla ja pelaaja yrittää työntää sitä uudestaan. \index{V\+I\+R\+H\+E\+E\+L\+L\+I\+N\+E\+N\+\_\+\+S\+I\+J\+A\+I\+N\+T\+I@{V\+I\+R\+H\+E\+E\+L\+L\+I\+N\+E\+N\+\_\+\+S\+I\+J\+A\+I\+N\+T\+I}!Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}}\index{Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}!V\+I\+R\+H\+E\+E\+L\+L\+I\+N\+E\+N\+\_\+\+S\+I\+J\+A\+I\+N\+T\+I@{V\+I\+R\+H\+E\+E\+L\+L\+I\+N\+E\+N\+\_\+\+S\+I\+J\+A\+I\+N\+T\+I}}\item[{\em 
+\hypertarget{class_julkinen_1_1_alustusvirhe_a6c27ff51ee369cf37028b8a7ea0eafc0a733522f56cfb8984ea41adc51baf8741}{}V\+I\+R\+H\+E\+E\+L\+L\+I\+N\+E\+N\+\_\+\+S\+I\+J\+A\+I\+N\+T\+I\label{class_julkinen_1_1_alustusvirhe_a6c27ff51ee369cf37028b8a7ea0eafc0a733522f56cfb8984ea41adc51baf8741}
+}]Annettu sijainti on virheellinen. \index{V\+I\+R\+H\+E\+E\+L\+L\+I\+N\+E\+N\+\_\+\+R\+O\+T\+A\+A\+T\+I\+O@{V\+I\+R\+H\+E\+E\+L\+L\+I\+N\+E\+N\+\_\+\+R\+O\+T\+A\+A\+T\+I\+O}!Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}}\index{Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}!V\+I\+R\+H\+E\+E\+L\+L\+I\+N\+E\+N\+\_\+\+R\+O\+T\+A\+A\+T\+I\+O@{V\+I\+R\+H\+E\+E\+L\+L\+I\+N\+E\+N\+\_\+\+R\+O\+T\+A\+A\+T\+I\+O}}\item[{\em 
+\hypertarget{class_julkinen_1_1_alustusvirhe_a6c27ff51ee369cf37028b8a7ea0eafc0ac9bd1b203cef3970b61807a7c8d1e004}{}V\+I\+R\+H\+E\+E\+L\+L\+I\+N\+E\+N\+\_\+\+R\+O\+T\+A\+A\+T\+I\+O\label{class_julkinen_1_1_alustusvirhe_a6c27ff51ee369cf37028b8a7ea0eafc0ac9bd1b203cef3970b61807a7c8d1e004}
+}]Annettu rotaatio on virheellinen. \index{V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N@{V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N}!Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}}\index{Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}!V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N@{V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N}}\item[{\em 
+\hypertarget{class_julkinen_1_1_alustusvirhe_a6c27ff51ee369cf37028b8a7ea0eafc0a37797a3ef54020c869caea8d10b51e46}{}V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N\label{class_julkinen_1_1_alustusvirhe_a6c27ff51ee369cf37028b8a7ea0eafc0a37797a3ef54020c869caea8d10b51e46}
+}]Tunnistamaton virhe. \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_julkinen_1_1_alustusvirhe_aab6d2164d8c55d404febff382556a8fd}{}\index{Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}!Alustusvirhe@{Alustusvirhe}}
+\index{Alustusvirhe@{Alustusvirhe}!Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}}
+\subsubsection[{Alustusvirhe(std\+::string const \&virheviesti)}]{\setlength{\rightskip}{0pt plus 5cm}Alustusvirhe\+::\+Alustusvirhe (
+\begin{DoxyParamCaption}
+\item[{std\+::string const \&}]{virheviesti}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_julkinen_1_1_alustusvirhe_aab6d2164d8c55d404febff382556a8fd}
+
+
+Tunnistamaton virhetilanne kopioidulla viestillä. 
+
+Käytä tätä vain, jos kyseessä ei ole mikään esimääritellyistä virheistä.
+
+\begin{DoxyPostcond}{Postcondition}
+Perustakuu poikkeuksen sattuessa. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em virheviesti} & Merkkijono, joka kopioidaan poikkeuksen viestiksi. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & Ei saatu varattua muistia viestiä varten. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_julkinen_1_1_alustusvirhe_a46f9b253c9ce0336c12bad1d2f3a93a1}{}\index{Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}!Alustusvirhe@{Alustusvirhe}}
+\index{Alustusvirhe@{Alustusvirhe}!Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}}
+\subsubsection[{Alustusvirhe(\+Julkinen\+::\+Alustusvirhe\+::\+Virhekoodi virhekoodi)}]{\setlength{\rightskip}{0pt plus 5cm}Alustusvirhe\+::\+Alustusvirhe (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Alustusvirhe\+::\+Virhekoodi}}]{virhekoodi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_julkinen_1_1_alustusvirhe_a46f9b253c9ce0336c12bad1d2f3a93a1}
+
+
+Esimääritelty virhetilanne. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw -\/takuu. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em virhekoodi} & Virhetilanteen tunniste. Mikäli koodi on V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N, tulee viestiksi \char`\"{}\+Tunnistamaton virhe.\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_julkinen_1_1_alustusvirhe_a03dbadc97b43077338d874c899c9da1d}{}\index{Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}!Alustusvirhe@{Alustusvirhe}}
+\index{Alustusvirhe@{Alustusvirhe}!Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}}
+\subsubsection[{Alustusvirhe(\+Julkinen\+::\+Alustusvirhe const \&toinen)}]{\setlength{\rightskip}{0pt plus 5cm}Alustusvirhe\+::\+Alustusvirhe (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Alustusvirhe} const \&}]{toinen}
+\end{DoxyParamCaption}
+)}\label{class_julkinen_1_1_alustusvirhe_a03dbadc97b43077338d874c899c9da1d}
+
+
+Kopiorakentaja. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw -\/takuu. 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_julkinen_1_1_alustusvirhe_a520656e118da9c9e7baf1baeeacb972e}{}\index{Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}!operator=@{operator=}}
+\index{operator=@{operator=}!Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}}
+\subsubsection[{operator=(\+Julkinen\+::\+Alustusvirhe const \&toinen)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Alustusvirhe} \& Alustusvirhe\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Alustusvirhe} const \&}]{toinen}
+\end{DoxyParamCaption}
+)}\label{class_julkinen_1_1_alustusvirhe_a520656e118da9c9e7baf1baeeacb972e}
+
+
+Sijoitusoperaattori. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw -\/takuu. 
+\end{DoxyPostcond}
+\hypertarget{class_julkinen_1_1_alustusvirhe_a22b50252a516b339d126261978fb62c1}{}\index{Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}!tulosta@{tulosta}}
+\index{tulosta@{tulosta}!Julkinen\+::\+Alustusvirhe@{Julkinen\+::\+Alustusvirhe}}
+\subsubsection[{tulosta(std\+::basic\+\_\+ostream$<$ char $>$ \&tuloste) const }]{\setlength{\rightskip}{0pt plus 5cm}basic\+\_\+ostream$<$ char $>$ \& Alustusvirhe\+::tulosta (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+ostream$<$ char $>$ \&}]{tuloste}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_julkinen_1_1_alustusvirhe_a22b50252a516b339d126261978fb62c1}
+
+
+Tulosta virheen viesti virtaan. 
+
+Tulostaa virheen viestin virtaan, eikä tee muuta.
+
+\begin{DoxyPostcond}{Postcondition}
+Vahva poikkeustakuu. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em tuloste} & Virta, jonne viesti tulostetaan. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily tuloste} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_julkinen_1_1_virhe_a36a2644943038f9760b5d76a1960b00d}{Julkinen\+::\+Virhe}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{alustusvirhe_8hh}{alustusvirhe.\+hh}\item 
+valmiiden\+\_\+toteutus/\hyperlink{alustusvirhe_8cc}{alustusvirhe.\+cc}\end{DoxyCompactItemize}

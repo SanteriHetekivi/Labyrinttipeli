@@ -1,0 +1,126 @@
+\hypertarget{vaittama_8hh}{}\section{vaittama.\+hh File Reference}
+\label{vaittama_8hh}\index{vaittama.\+hh@{vaittama.\+hh}}
+
+
+Väittämien tarkistustyökalujen esittelyt.  
+
+
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_julkinen}{Julkinen}
+\begin{DoxyCompactList}\small\item\em Luo instanssi pelirajapinnasta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vaittama_8hh_a6b096e740ddb310436f150269693aed8}{V\+A\+I\+T\+T\+A\+M\+A}(tyyppi,  lauseke)                                                                      
+\begin{DoxyCompactList}\small\item\em Kutsu \hyperlink{namespace_julkinen_ad6f59e70f19f914c38369d67c20a0ea5}{vaittama\+Toteutus()}-\/funktiota sopivin parametrein. \end{DoxyCompactList}\item 
+\#define \hyperlink{vaittama_8hh_a0aeb6df8d7b8888c097af8cea604afb5}{I\+N\+V\+A\+R\+I\+A\+N\+T\+T\+I}(lauseke)                                                                                ~\hyperlink{vaittama_8hh_a6b096e740ddb310436f150269693aed8}{V\+A\+I\+T\+T\+A\+M\+A}(Julkinen\+::\+I\+N\+V\+A\+R\+I\+A\+N\+T\+T\+I\+V\+A\+I\+T\+T\+A\+M\+A, lauseke)
+\begin{DoxyCompactList}\small\item\em Varmista luokkainvariantti. \end{DoxyCompactList}\item 
+\#define \hyperlink{vaittama_8hh_aeee94f72ed67ad120c1b012609d6aa34}{E\+S\+I\+E\+H\+T\+O}(lauseke)                                                                                        ~\hyperlink{vaittama_8hh_a6b096e740ddb310436f150269693aed8}{V\+A\+I\+T\+T\+A\+M\+A}(Julkinen\+::\+E\+S\+I\+E\+H\+T\+O\+V\+A\+I\+T\+T\+A\+M\+A, lauseke)
+\begin{DoxyCompactList}\small\item\em Varmista esiehto. \end{DoxyCompactList}\item 
+\#define \hyperlink{vaittama_8hh_ac7dd8221a0b8c27d42ec91610bc4632e}{J\+A\+L\+K\+I\+E\+H\+T\+O}(lauseke)                                                                                    ~\hyperlink{vaittama_8hh_a6b096e740ddb310436f150269693aed8}{V\+A\+I\+T\+T\+A\+M\+A}(Julkinen\+::\+J\+A\+L\+K\+I\+E\+H\+T\+O\+V\+A\+I\+T\+T\+A\+M\+A, lauseke)
+\begin{DoxyCompactList}\small\item\em varmista jälkiehto. \end{DoxyCompactList}\item 
+\hypertarget{vaittama_8hh_ab33be5ce915422889f1084ad272c1171}{}\#define \hyperlink{vaittama_8hh_ab33be5ce915422889f1084ad272c1171}{V\+A\+I\+T\+T\+A\+M\+A\+F\+U\+N\+K\+T\+I\+O}~(0)\label{vaittama_8hh_ab33be5ce915422889f1084ad272c1171}
+
+\begin{DoxyCompactList}\small\item\em Funktion nimi ei ole saatavilla tällä kääntäjällä. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{namespace_julkinen_a2a2bfc4f2a56fb3f3fa143103534a14f}{}enum \hyperlink{namespace_julkinen_a2a2bfc4f2a56fb3f3fa143103534a14f}{Julkinen\+::\+Vaittama\+Tyyppi} \{ {\bfseries I\+N\+V\+A\+R\+I\+A\+N\+T\+T\+I\+V\+A\+I\+T\+T\+A\+M\+A}, 
+{\bfseries E\+S\+I\+E\+H\+T\+O\+V\+A\+I\+T\+T\+A\+M\+A}, 
+{\bfseries J\+A\+L\+K\+I\+E\+H\+T\+O\+V\+A\+I\+T\+T\+A\+M\+A}
+ \}\label{namespace_julkinen_a2a2bfc4f2a56fb3f3fa143103534a14f}
+\begin{DoxyCompactList}\small\item\em Luettelotyyppi julkisenrajpinnan assertioille. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{namespace_julkinen_ad6f59e70f19f914c38369d67c20a0ea5}{Julkinen\+::vaittama\+Toteutus} (Vaittama\+Tyyppi tyyppi, bool vaite, char const $\ast$lauseke, char const $\ast$tiedosto, unsigned int rivi, char const $\ast$funktio)
+\begin{DoxyCompactList}\small\item\em Väittämien tarkistamiseen käytettävä funktio. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Väittämien tarkistustyökalujen esittelyt. 
+
+\begin{DoxyAuthor}{Author}
+©2010 Jarmo Jaakkola \href{mailto:jarmo.jaakkola@tut.fi}{\tt jarmo.\+jaakkola@tut.\+fi}, T\+T\+Y Ohjelmistotekniikka 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{vaittama_8hh_aeee94f72ed67ad120c1b012609d6aa34}{}\index{vaittama.\+hh@{vaittama.\+hh}!E\+S\+I\+E\+H\+T\+O@{E\+S\+I\+E\+H\+T\+O}}
+\index{E\+S\+I\+E\+H\+T\+O@{E\+S\+I\+E\+H\+T\+O}!vaittama.\+hh@{vaittama.\+hh}}
+\subsubsection[{E\+S\+I\+E\+H\+T\+O}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+S\+I\+E\+H\+T\+O(
+\begin{DoxyParamCaption}
+\item[{}]{lauseke}
+\end{DoxyParamCaption}
+)~{\bf V\+A\+I\+T\+T\+A\+M\+A}(Julkinen\+::\+E\+S\+I\+E\+H\+T\+O\+V\+A\+I\+T\+T\+A\+M\+A, lauseke)}\label{vaittama_8hh_aeee94f72ed67ad120c1b012609d6aa34}
+
+
+Varmista esiehto. 
+
+\begin{DoxyPrecond}{Precondition}
+Lauseke on tosi, ts. jos väittämä ei pidä paikkaansa, mitä vain voi tapahtua, ohjelmas voidaan vaikka kaataa ;-\/) 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em lauseke} & Tarkistettavan esiehdon lauseke. \\
+\hline
+\end{DoxyParams}
+\hypertarget{vaittama_8hh_a0aeb6df8d7b8888c097af8cea604afb5}{}\index{vaittama.\+hh@{vaittama.\+hh}!I\+N\+V\+A\+R\+I\+A\+N\+T\+T\+I@{I\+N\+V\+A\+R\+I\+A\+N\+T\+T\+I}}
+\index{I\+N\+V\+A\+R\+I\+A\+N\+T\+T\+I@{I\+N\+V\+A\+R\+I\+A\+N\+T\+T\+I}!vaittama.\+hh@{vaittama.\+hh}}
+\subsubsection[{I\+N\+V\+A\+R\+I\+A\+N\+T\+T\+I}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+V\+A\+R\+I\+A\+N\+T\+T\+I(
+\begin{DoxyParamCaption}
+\item[{}]{lauseke}
+\end{DoxyParamCaption}
+)~{\bf V\+A\+I\+T\+T\+A\+M\+A}(Julkinen\+::\+I\+N\+V\+A\+R\+I\+A\+N\+T\+T\+I\+V\+A\+I\+T\+T\+A\+M\+A, lauseke)}\label{vaittama_8hh_a0aeb6df8d7b8888c097af8cea604afb5}
+
+
+Varmista luokkainvariantti. 
+
+\begin{DoxyPrecond}{Precondition}
+Lauseke on tosi, ts. jos väittämä ei pidä paikkaansa, mitä vain voi tapahtua, ohjelmas voidaan vaikka kaataa ;-\/) 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em lauseke} & Tarkistettavan luokkainvariantin lauseke. \\
+\hline
+\end{DoxyParams}
+\hypertarget{vaittama_8hh_ac7dd8221a0b8c27d42ec91610bc4632e}{}\index{vaittama.\+hh@{vaittama.\+hh}!J\+A\+L\+K\+I\+E\+H\+T\+O@{J\+A\+L\+K\+I\+E\+H\+T\+O}}
+\index{J\+A\+L\+K\+I\+E\+H\+T\+O@{J\+A\+L\+K\+I\+E\+H\+T\+O}!vaittama.\+hh@{vaittama.\+hh}}
+\subsubsection[{J\+A\+L\+K\+I\+E\+H\+T\+O}]{\setlength{\rightskip}{0pt plus 5cm}\#define J\+A\+L\+K\+I\+E\+H\+T\+O(
+\begin{DoxyParamCaption}
+\item[{}]{lauseke}
+\end{DoxyParamCaption}
+)~{\bf V\+A\+I\+T\+T\+A\+M\+A}(Julkinen\+::\+J\+A\+L\+K\+I\+E\+H\+T\+O\+V\+A\+I\+T\+T\+A\+M\+A, lauseke)}\label{vaittama_8hh_ac7dd8221a0b8c27d42ec91610bc4632e}
+
+
+varmista jälkiehto. 
+
+\begin{DoxyPrecond}{Precondition}
+Lauseke on tosi, ts. jos väittämä ei pidä paikkaansa, mitä vain voi tapahtua, ohjelmas voidaan vaikka kaataa ;-\/) 
+\end{DoxyPrecond}
+
+\begin{DoxyParams}{Parameters}
+{\em lauseke} & Tarkistettavan jälkiehdon lauseke. \\
+\hline
+\end{DoxyParams}
+\hypertarget{vaittama_8hh_a6b096e740ddb310436f150269693aed8}{}\index{vaittama.\+hh@{vaittama.\+hh}!V\+A\+I\+T\+T\+A\+M\+A@{V\+A\+I\+T\+T\+A\+M\+A}}
+\index{V\+A\+I\+T\+T\+A\+M\+A@{V\+A\+I\+T\+T\+A\+M\+A}!vaittama.\+hh@{vaittama.\+hh}}
+\subsubsection[{V\+A\+I\+T\+T\+A\+M\+A}]{\setlength{\rightskip}{0pt plus 5cm}\#define V\+A\+I\+T\+T\+A\+M\+A(
+\begin{DoxyParamCaption}
+\item[{}]{tyyppi, }
+\item[{}]{lauseke}
+\end{DoxyParamCaption}
+)}\label{vaittama_8hh_a6b096e740ddb310436f150269693aed8}
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\hyperlink{namespace_julkinen_ad6f59e70f19f914c38369d67c20a0ea5}{Julkinen::vaittamaToteutus}(tyyppi, lauseke, #lauseke,               \(\backslash\)
+            \_\_FILE\_\_, \_\_LINE\_\_, \hyperlink{vaittama_8hh_ab33be5ce915422889f1084ad272c1171}{VAITTAMAFUNKTIO})
+\end{DoxyCode}
+
+
+Kutsu \hyperlink{namespace_julkinen_ad6f59e70f19f914c38369d67c20a0ea5}{vaittama\+Toteutus()}-\/funktiota sopivin parametrein. 
+
+Ei ole tarkoitettu kutsuttavaksi suoraan. 

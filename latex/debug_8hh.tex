@@ -1,0 +1,62 @@
+\hypertarget{debug_8hh}{}\section{debug.\+hh File Reference}
+\label{debug_8hh}\index{debug.\+hh@{debug.\+hh}}
+
+
+Debuggauksen apumakro.  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{debug_8hh_a3dad2c39ac6dc7758661440350fabb11}{D\+E\+B\+U\+G\+\_\+\+O\+U\+T\+P\+U\+T}(stuff)~if (\hyperlink{labyrintti_8cc_ab9eefb6ae2797c531d0b6e8c8264cdfa}{debug\+\_\+output}) \{  stuff ; \}
+\begin{DoxyCompactList}\small\item\em Makro, jolla voi tulostaa debug-\/tulosteita. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{debug_8hh_ab9eefb6ae2797c531d0b6e8c8264cdfa}{debug\+\_\+output}
+\begin{DoxyCompactList}\small\item\em Globaali debug-\/lippu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Debuggauksen apumakro. 
+
+\begin{DoxyAuthor}{Author}
+©2011 Matti Rintala \href{mailto:bitti@cs.tut.fi}{\tt bitti@cs.\+tut.\+fi}, T\+T\+Y Ohjelmistotekniikka 
+\end{DoxyAuthor}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{debug_8hh_a3dad2c39ac6dc7758661440350fabb11}{}\index{debug.\+hh@{debug.\+hh}!D\+E\+B\+U\+G\+\_\+\+O\+U\+T\+P\+U\+T@{D\+E\+B\+U\+G\+\_\+\+O\+U\+T\+P\+U\+T}}
+\index{D\+E\+B\+U\+G\+\_\+\+O\+U\+T\+P\+U\+T@{D\+E\+B\+U\+G\+\_\+\+O\+U\+T\+P\+U\+T}!debug.\+hh@{debug.\+hh}}
+\subsubsection[{D\+E\+B\+U\+G\+\_\+\+O\+U\+T\+P\+U\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+B\+U\+G\+\_\+\+O\+U\+T\+P\+U\+T(
+\begin{DoxyParamCaption}
+\item[{}]{stuff}
+\end{DoxyParamCaption}
+)~if ({\bf debug\+\_\+output}) \{  stuff ; \}}\label{debug_8hh_a3dad2c39ac6dc7758661440350fabb11}
+
+
+Makro, jolla voi tulostaa debug-\/tulosteita. 
+
+{\bfseries Tämän makron toteutus on vielä kesken!}
+
+Käytetään seuraavasti\+: 
+\begin{DoxyCode}
+1 DEBUG\_OUTPUT("Kääk" << std::endl);
+\end{DoxyCode}
+
+
+\begin{DoxyPostcond}{Postcondition}
+Jos ohjelma on käännetty debug-\/tilassa, tulostus tulostuu ruudulle. Muussa tapauksessa mitään ei tapahdu. 
+\end{DoxyPostcond}
+
+
+\subsection{Variable Documentation}
+\hypertarget{debug_8hh_ab9eefb6ae2797c531d0b6e8c8264cdfa}{}\index{debug.\+hh@{debug.\+hh}!debug\+\_\+output@{debug\+\_\+output}}
+\index{debug\+\_\+output@{debug\+\_\+output}!debug.\+hh@{debug.\+hh}}
+\subsubsection[{debug\+\_\+output}]{\setlength{\rightskip}{0pt plus 5cm}bool debug\+\_\+output}\label{debug_8hh_ab9eefb6ae2797c531d0b6e8c8264cdfa}
+
+
+Globaali debug-\/lippu. 
+
+Pääohjelma asettaa tämän lipun, jos ohjelma on käynnistetty debug-\/optiolla 

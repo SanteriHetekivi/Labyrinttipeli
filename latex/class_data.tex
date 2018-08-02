@@ -1,0 +1,558 @@
+\hypertarget{class_data}{}\section{Data Class Reference}
+\label{class_data}\index{Data@{Data}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_data_af11f741cb7f587e2e495452a8905a22a}{Data} ()
+\begin{DoxyCompactList}\small\item\em Datan rakentaja. \end{DoxyCompactList}\item 
+\hyperlink{class_data_aab31956423290f0d62dcca47ab4d16dd}{$\sim$\+Data} ()
+\begin{DoxyCompactList}\small\item\em Purkaja. \end{DoxyCompactList}\item 
+\hyperlink{class_pelaaja}{Pelaaja} $\ast$ \hyperlink{class_data_a6f101f9a140fab0da6bac6dec96e491d}{hae\+Pelaaja} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Pelaajan osoitteen nimestä hakija. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} \hyperlink{class_data_a8edef6853dc63d894651b5413b9da87b}{hae\+Esine} (char merkki) const 
+\begin{DoxyCompactList}\small\item\em Esineen kordinaattien hakija. \end{DoxyCompactList}\item 
+\hyperlink{class_esine}{Esine} $\ast$ \hyperlink{class_data_a1d86d15d120a5451f2dfdf2b1644056e}{hae\+Esine} (\hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&kordinaatit)
+\begin{DoxyCompactList}\small\item\em Esineen osoitteen hakija. \end{DoxyCompactList}\item 
+\hyperlink{class_pala}{Pala} $\ast$ \hyperlink{class_data_a05494446c31564a36f0b6a09a743420c}{hae\+Pala} (\hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&kordinaatit)
+\begin{DoxyCompactList}\small\item\em Palan osoitteen hakija. \end{DoxyCompactList}\item 
+\hyperlink{class_pelaaja}{Pelaaja} $\ast$ \hyperlink{class_data_ac46ff8a55f904bcbabf22861036b27b6}{hae\+Pelaaja} (\hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&kordinaatit)
+\begin{DoxyCompactList}\small\item\em Pelaajan osoitteen hakija. \end{DoxyCompactList}\item 
+\hyperlink{class_pala}{Pala} $\ast$ \hyperlink{class_data_af715df1467da7242a96b2b3f1f288216}{hae\+Irtopala} ()
+\begin{DoxyCompactList}\small\item\em Irtopalan osoitteen hakija. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} \hyperlink{class_data_ad409f9569c098e68308efb7dc92395ac}{hae\+Pelaajan\+Sijainti} (\hyperlink{class_pelaaja}{Pelaaja} pelaaja) const 
+\begin{DoxyCompactList}\small\item\em Pelaajan sijainnin hakija. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} \hyperlink{class_data_a0cc383355bf597282393b629646add61}{hae\+Esineen\+Sijainti} (\hyperlink{class_esine}{Esine} esine) const 
+\begin{DoxyCompactList}\small\item\em Esineen sijainnin hakija. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_esine}{Esine} $>$ \hyperlink{class_data_ab233c0e1b05e62bb05ac03c44412ded2}{hae\+Kaikki\+Esineet} () const 
+\begin{DoxyCompactList}\small\item\em Kaikkien esineiden hakija. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_pala}{Pala} $>$ \hyperlink{class_data_a3eefbad880fce0532156b1606dceb590}{hae\+Kaikki\+Palat} () const 
+\begin{DoxyCompactList}\small\item\em Kaikkien palojen hakija. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_pelaaja}{Pelaaja} $>$ \hyperlink{class_data_a2b22700aa0ab25293f1cbe7430bea8c0}{hae\+Kaikki\+Pelaajat} () const 
+\begin{DoxyCompactList}\small\item\em Kaikkien pelaajien hakija. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_pala}{Pala} $\ast$ $>$ \hyperlink{class_data_ad4c590c292ffe3c1ab7fd5d7d18d9a03}{hae\+Kaikki\+Pala\+Osoitteet} ()
+\begin{DoxyCompactList}\small\item\em Kaikkien palojen osoitteiden hakija. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{class_pelaaja}{Pelaaja} $\ast$ $>$ \hyperlink{class_data_a74e2cf4cbcff5ea1159b91a2b40819bc}{hae\+Kaikki\+Pelaajat\+Osoitteet} ()
+\begin{DoxyCompactList}\small\item\em Kaikkien pelaajien osoitteiden hakija. \end{DoxyCompactList}\item 
+\hyperlink{class_pelaaja}{Pelaaja} $\ast$ \hyperlink{class_data_a81cc329ff5e8eda227acebd612147e2e}{lisaa\+Pelaaja} (\hyperlink{class_pelaaja}{Pelaaja} data, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&kordinaatit)
+\begin{DoxyCompactList}\small\item\em Pelaajan lisääjä \end{DoxyCompactList}\item 
+\hyperlink{class_esine}{Esine} $\ast$ \hyperlink{class_data_ad9d038278b49a80ef5bb571a5eff248f}{lisaa\+Esine} (\hyperlink{class_esine}{Esine} data, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&kordinaatit)
+\begin{DoxyCompactList}\small\item\em Esineen lisääjä \end{DoxyCompactList}\item 
+\hyperlink{class_pala}{Pala} $\ast$ \hyperlink{class_data_a7d19ebd5e1eb95e001c516ad9807ce74}{lisaa\+Pala} (\hyperlink{class_pala}{Pala} data, bool paivita\+Pala=false)
+\begin{DoxyCompactList}\small\item\em Palan lisääjä \end{DoxyCompactList}\item 
+\hyperlink{class_pala}{Pala} $\ast$ \hyperlink{class_data_a8d0b2dddb62271a7d69008d19bec6f3b}{lisaa\+Irtopala} (\hyperlink{class_pala}{Pala} data)
+\begin{DoxyCompactList}\small\item\em Iropalan lisääjä \end{DoxyCompactList}\item 
+bool \hyperlink{class_data_af9fb5d0de7876cc689baf4a396157fd2}{liikuta\+Pelaajaa} (std\+::string nimi, \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} const \&kordinaatit)
+\begin{DoxyCompactList}\small\item\em Pelaajan liikuttaja. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti} \hyperlink{class_data_a1c6055ce5037e81ca1b7caaa5bb6f6b7}{pelaajan\+Seuraavan\+Esineen\+Sijainti} (const \hyperlink{class_pelaaja}{Pelaaja} pelaaja) const 
+\begin{DoxyCompactList}\small\item\em Pelaajan seuraavan haettavan esineen sijainnin hakija. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_data_af11f741cb7f587e2e495452a8905a22a}{}\index{Data@{Data}!Data@{Data}}
+\index{Data@{Data}!Data@{Data}}
+\subsubsection[{Data()}]{\setlength{\rightskip}{0pt plus 5cm}Data\+::\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_data_af11f741cb7f587e2e495452a8905a22a}
+
+
+Datan rakentaja. 
+
+Alustaa muuttujat.
+
+\begin{DoxyPostcond}{Postcondition}
+Muuttujat on alustettu. 
+\end{DoxyPostcond}
+\hypertarget{class_data_aab31956423290f0d62dcca47ab4d16dd}{}\index{Data@{Data}!````~Data@{$\sim$\+Data}}
+\index{````~Data@{$\sim$\+Data}!Data@{Data}}
+\subsubsection[{$\sim$\+Data()}]{\setlength{\rightskip}{0pt plus 5cm}Data\+::$\sim$\+Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_data_aab31956423290f0d62dcca47ab4d16dd}
+
+
+Purkaja. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw takuu. 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_data_a8edef6853dc63d894651b5413b9da87b}{}\index{Data@{Data}!hae\+Esine@{hae\+Esine}}
+\index{hae\+Esine@{hae\+Esine}!Data@{Data}}
+\subsubsection[{hae\+Esine(char merkki) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Julkinen\+::\+Koordinaatti} Data\+::hae\+Esine (
+\begin{DoxyParamCaption}
+\item[{char}]{merkki}
+\end{DoxyParamCaption}
+) const}\label{class_data_a8edef6853dc63d894651b5413b9da87b}
+
+
+Esineen kordinaattien hakija. 
+
+Hakee merkkiä vastaavan {\ttfamily \hyperlink{class_esine}{Esine}}-\/luokan kordinaatit.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em merkki} & {\ttfamily Haettavan} esineen merkki.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Esineen sijainti on haettu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Merkkiä vastaavan {\ttfamily \hyperlink{class_esine}{Esine}}-\/luokan kordinaatit {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}}-\/luokkana. 
+\end{DoxyReturn}
+\hypertarget{class_data_a1d86d15d120a5451f2dfdf2b1644056e}{}\index{Data@{Data}!hae\+Esine@{hae\+Esine}}
+\index{hae\+Esine@{hae\+Esine}!Data@{Data}}
+\subsubsection[{hae\+Esine(\+Julkinen\+::\+Koordinaatti const \&kordinaatit)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Esine} $\ast$ Data\+::hae\+Esine (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{kordinaatit}
+\end{DoxyParamCaption}
+)}\label{class_data_a1d86d15d120a5451f2dfdf2b1644056e}
+
+
+Esineen osoitteen hakija. 
+
+Hakee {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}}-\/luokkaa vastaavan {\ttfamily \hyperlink{class_esine}{Esine}}-\/luokan osoitteen.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em kordinaatit} & Haettavan esineen kordinaatit {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}}-\/luokkana.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Esineen osoite on haettu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Merkkiä vastaavan {\ttfamily \hyperlink{class_esine}{Esine}}-\/luokan osoite. 
+\end{DoxyReturn}
+\hypertarget{class_data_a0cc383355bf597282393b629646add61}{}\index{Data@{Data}!hae\+Esineen\+Sijainti@{hae\+Esineen\+Sijainti}}
+\index{hae\+Esineen\+Sijainti@{hae\+Esineen\+Sijainti}!Data@{Data}}
+\subsubsection[{hae\+Esineen\+Sijainti(\+Esine esine) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Julkinen\+::\+Koordinaatti} Data\+::hae\+Esineen\+Sijainti (
+\begin{DoxyParamCaption}
+\item[{{\bf Esine}}]{esine}
+\end{DoxyParamCaption}
+) const}\label{class_data_a0cc383355bf597282393b629646add61}
+
+
+Esineen sijainnin hakija. 
+
+Hakee {\ttfamily \hyperlink{class_esine}{Esine}}-\/luokkaa vastaavan {\ttfamily \hyperlink{class_esine}{Esine}}-\/luokan kordinaatit.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em esine} & Haettava esine {\ttfamily \hyperlink{class_esine}{Esine}}-\/luokkana.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Esineen sijainti on haettu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Merkkiä vastaavan {\ttfamily \hyperlink{class_esine}{Esine}}-\/luokan kordinaatit {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}}-\/luokkana. 
+\end{DoxyReturn}
+\hypertarget{class_data_af715df1467da7242a96b2b3f1f288216}{}\index{Data@{Data}!hae\+Irtopala@{hae\+Irtopala}}
+\index{hae\+Irtopala@{hae\+Irtopala}!Data@{Data}}
+\subsubsection[{hae\+Irtopala()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pala} $\ast$ Data\+::hae\+Irtopala (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_data_af715df1467da7242a96b2b3f1f288216}
+
+
+Irtopalan osoitteen hakija. 
+
+Hakee irtopalan osoitteen.
+
+\begin{DoxyPostcond}{Postcondition}
+Irtopalan osoite on haettu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Irtopalaksi merkityn {\ttfamily \hyperlink{class_pala}{Pala}}-\/luokan osoite. 
+\end{DoxyReturn}
+\hypertarget{class_data_ab233c0e1b05e62bb05ac03c44412ded2}{}\index{Data@{Data}!hae\+Kaikki\+Esineet@{hae\+Kaikki\+Esineet}}
+\index{hae\+Kaikki\+Esineet@{hae\+Kaikki\+Esineet}!Data@{Data}}
+\subsubsection[{hae\+Kaikki\+Esineet() const }]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Esine} $>$ Data\+::hae\+Kaikki\+Esineet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_data_ab233c0e1b05e62bb05ac03c44412ded2}
+
+
+Kaikkien esineiden hakija. 
+
+Hakee kaikki pelilaudalla olevat esineet {\ttfamily \hyperlink{class_esine}{Esine}}-\/luokkina.
+
+\begin{DoxyPostcond}{Postcondition}
+Kaikki esineet on haettu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Vektori joka sisältää kaikki esineet {\ttfamily \hyperlink{class_esine}{Esine}}-\/luokkina. 
+\end{DoxyReturn}
+\hypertarget{class_data_ad4c590c292ffe3c1ab7fd5d7d18d9a03}{}\index{Data@{Data}!hae\+Kaikki\+Pala\+Osoitteet@{hae\+Kaikki\+Pala\+Osoitteet}}
+\index{hae\+Kaikki\+Pala\+Osoitteet@{hae\+Kaikki\+Pala\+Osoitteet}!Data@{Data}}
+\subsubsection[{hae\+Kaikki\+Pala\+Osoitteet()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Pala} $\ast$ $>$ Data\+::hae\+Kaikki\+Pala\+Osoitteet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_data_ad4c590c292ffe3c1ab7fd5d7d18d9a03}
+
+
+Kaikkien palojen osoitteiden hakija. 
+
+Hakee kaikki pelilaudalla olevat palat {\ttfamily \hyperlink{class_pala}{Pala}}-\/luokkien osoitteina.
+
+\begin{DoxyPostcond}{Postcondition}
+Kaikkien pelaajien osoitteet on haettu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Vektori joka sisältää kaikki palat {\ttfamily \hyperlink{class_pala}{Pala}}-\/luokan osoitteina. 
+\end{DoxyReturn}
+\hypertarget{class_data_a3eefbad880fce0532156b1606dceb590}{}\index{Data@{Data}!hae\+Kaikki\+Palat@{hae\+Kaikki\+Palat}}
+\index{hae\+Kaikki\+Palat@{hae\+Kaikki\+Palat}!Data@{Data}}
+\subsubsection[{hae\+Kaikki\+Palat() const }]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Pala} $>$ Data\+::hae\+Kaikki\+Palat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_data_a3eefbad880fce0532156b1606dceb590}
+
+
+Kaikkien palojen hakija. 
+
+Hakee kaikki pelilaudalla olevat palat {\ttfamily \hyperlink{class_pala}{Pala}}-\/luokkina.
+
+\begin{DoxyPostcond}{Postcondition}
+Kaikki palat on haettu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Vektori joka sisältää kaikki palat {\ttfamily \hyperlink{class_pala}{Pala}}-\/luokkina. 
+\end{DoxyReturn}
+\hypertarget{class_data_a2b22700aa0ab25293f1cbe7430bea8c0}{}\index{Data@{Data}!hae\+Kaikki\+Pelaajat@{hae\+Kaikki\+Pelaajat}}
+\index{hae\+Kaikki\+Pelaajat@{hae\+Kaikki\+Pelaajat}!Data@{Data}}
+\subsubsection[{hae\+Kaikki\+Pelaajat() const }]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Pelaaja} $>$ Data\+::hae\+Kaikki\+Pelaajat (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_data_a2b22700aa0ab25293f1cbe7430bea8c0}
+
+
+Kaikkien pelaajien hakija. 
+
+Hakee kaikki pelilaudalla olevat pelaajat {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokkina.
+
+\begin{DoxyPostcond}{Postcondition}
+Kaikki pelaajat on haettu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Vektori joka sisältää kaikki pelaajat {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokkina. 
+\end{DoxyReturn}
+\hypertarget{class_data_a74e2cf4cbcff5ea1159b91a2b40819bc}{}\index{Data@{Data}!hae\+Kaikki\+Pelaajat\+Osoitteet@{hae\+Kaikki\+Pelaajat\+Osoitteet}}
+\index{hae\+Kaikki\+Pelaajat\+Osoitteet@{hae\+Kaikki\+Pelaajat\+Osoitteet}!Data@{Data}}
+\subsubsection[{hae\+Kaikki\+Pelaajat\+Osoitteet()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf Pelaaja} $\ast$ $>$ Data\+::hae\+Kaikki\+Pelaajat\+Osoitteet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_data_a74e2cf4cbcff5ea1159b91a2b40819bc}
+
+
+Kaikkien pelaajien osoitteiden hakija. 
+
+Hakee kaikki pelilaudalla olevat pelaajat {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokkien osoitteina.
+
+\begin{DoxyPostcond}{Postcondition}
+Kaikkien palojen osoitteet on haettu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Vektori joka sisältää kaikki pelaajat {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokan osoitteina. 
+\end{DoxyReturn}
+\hypertarget{class_data_a05494446c31564a36f0b6a09a743420c}{}\index{Data@{Data}!hae\+Pala@{hae\+Pala}}
+\index{hae\+Pala@{hae\+Pala}!Data@{Data}}
+\subsubsection[{hae\+Pala(\+Julkinen\+::\+Koordinaatti const \&kordinaatit)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pala} $\ast$ Data\+::hae\+Pala (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{kordinaatit}
+\end{DoxyParamCaption}
+)}\label{class_data_a05494446c31564a36f0b6a09a743420c}
+
+
+Palan osoitteen hakija. 
+
+Hakee {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}}-\/luokkaa vastaavan {\ttfamily \hyperlink{class_pala}{Pala}}-\/luokan osoitteen.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em kordinaatit} & Haettavan palan kordinaatit {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}}-\/luokkana.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Palan osoite on haettu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Merkkiä vastaavan {\ttfamily \hyperlink{class_pala}{Pala}}-\/luokan osoite. 
+\end{DoxyReturn}
+\hypertarget{class_data_a6f101f9a140fab0da6bac6dec96e491d}{}\index{Data@{Data}!hae\+Pelaaja@{hae\+Pelaaja}}
+\index{hae\+Pelaaja@{hae\+Pelaaja}!Data@{Data}}
+\subsubsection[{hae\+Pelaaja(std\+::string name)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pelaaja} $\ast$ Data\+::hae\+Pelaaja (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{name}
+\end{DoxyParamCaption}
+)}\label{class_data_a6f101f9a140fab0da6bac6dec96e491d}
+
+
+Pelaajan osoitteen nimestä hakija. 
+
+Hakee nimeä vastaavan {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokan osoitteen.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em name} & {\ttfamily Haettavan} pelaajan nimi.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Alustusvirhe} & pelaajaa ei löytynyt.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+Pelaajan osoite on haettu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Osoite haluttuun pelaajaan 
+\end{DoxyReturn}
+\hypertarget{class_data_ac46ff8a55f904bcbabf22861036b27b6}{}\index{Data@{Data}!hae\+Pelaaja@{hae\+Pelaaja}}
+\index{hae\+Pelaaja@{hae\+Pelaaja}!Data@{Data}}
+\subsubsection[{hae\+Pelaaja(\+Julkinen\+::\+Koordinaatti const \&kordinaatit)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pelaaja} $\ast$ Data\+::hae\+Pelaaja (
+\begin{DoxyParamCaption}
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{kordinaatit}
+\end{DoxyParamCaption}
+)}\label{class_data_ac46ff8a55f904bcbabf22861036b27b6}
+
+
+Pelaajan osoitteen hakija. 
+
+Hakee {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}}-\/luokkaa vastaavan {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokan osoitteen.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em kordinaatit} & Haettavan pelaajan kordinaatit {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}}-\/luokkana.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Pelaajan osoite on haettu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Merkkiä vastaavan {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokan osoite. 
+\end{DoxyReturn}
+\hypertarget{class_data_ad409f9569c098e68308efb7dc92395ac}{}\index{Data@{Data}!hae\+Pelaajan\+Sijainti@{hae\+Pelaajan\+Sijainti}}
+\index{hae\+Pelaajan\+Sijainti@{hae\+Pelaajan\+Sijainti}!Data@{Data}}
+\subsubsection[{hae\+Pelaajan\+Sijainti(\+Pelaaja pelaaja) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Julkinen\+::\+Koordinaatti} Data\+::hae\+Pelaajan\+Sijainti (
+\begin{DoxyParamCaption}
+\item[{{\bf Pelaaja}}]{pelaaja}
+\end{DoxyParamCaption}
+) const}\label{class_data_ad409f9569c098e68308efb7dc92395ac}
+
+
+Pelaajan sijainnin hakija. 
+
+Hakee {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokkaa vastaavan {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokan kordinaatit.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pelaaja} & Haettava pelaaja {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokkana.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Pelaajan sijainti on haettu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Merkkiä vastaavan {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokan kordinaatit {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}}-\/luokkana. 
+\end{DoxyReturn}
+\hypertarget{class_data_af9fb5d0de7876cc689baf4a396157fd2}{}\index{Data@{Data}!liikuta\+Pelaajaa@{liikuta\+Pelaajaa}}
+\index{liikuta\+Pelaajaa@{liikuta\+Pelaajaa}!Data@{Data}}
+\subsubsection[{liikuta\+Pelaajaa(std\+::string nimi, Julkinen\+::\+Koordinaatti const \&kordinaatit)}]{\setlength{\rightskip}{0pt plus 5cm}bool Data\+::liikuta\+Pelaajaa (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{nimi, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{kordinaatit}
+\end{DoxyParamCaption}
+)}\label{class_data_af9fb5d0de7876cc689baf4a396157fd2}
+
+
+Pelaajan liikuttaja. 
+
+Asettaa pelaajan palalta toiselle.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em nimi} & {\ttfamily liikutettavan} pelaajan nimi. \\
+\hline
+\mbox{\tt in}  & {\em kordinaatit} & Kohde kordinaatit {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}}-\/luokkana.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Alustusvirhe} & pelaajaa ei löytynyt.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_pelaaja}{Pelaaja} on liikutettu, jos se on mahdollista ja siitä on ilmoitettu.
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+Palauttaa {\ttfamily true} jos liikutus onnistui. Palauttaa {\ttfamily false} jos liikutus epäonnistui. 
+\end{DoxyReturn}
+\hypertarget{class_data_ad9d038278b49a80ef5bb571a5eff248f}{}\index{Data@{Data}!lisaa\+Esine@{lisaa\+Esine}}
+\index{lisaa\+Esine@{lisaa\+Esine}!Data@{Data}}
+\subsubsection[{lisaa\+Esine(\+Esine data, Julkinen\+::\+Koordinaatti const \&kordinaatit)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Esine} $\ast$ Data\+::lisaa\+Esine (
+\begin{DoxyParamCaption}
+\item[{{\bf Esine}}]{data, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{kordinaatit}
+\end{DoxyParamCaption}
+)}\label{class_data_ad9d038278b49a80ef5bb571a5eff248f}
+
+
+Esineen lisääjä 
+
+Lisää annetun esineen peliin ja palauttaa sen osoitteen.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & Lisättävä esine {\ttfamily \hyperlink{class_esine}{Esine}}-\/luokkana. \\
+\hline
+\mbox{\tt in}  & {\em kordinaatit} & Lisättävän esineen kordinaatit {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}}-\/luokkana.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Alustusvirhe} & virheellinen sijainti. \\
+\hline
+{\em Alustusvirhe} & palassa on jo esine. \\
+\hline
+{\em Alustusvirhe} & pelaajaa ei löytynyt.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+\hyperlink{class_esine}{Esine} on lisätty.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Osoite lisättyyn {\ttfamily \hyperlink{class_esine}{Esine}}-\/luokkaan. 
+\end{DoxyReturn}
+\hypertarget{class_data_a8d0b2dddb62271a7d69008d19bec6f3b}{}\index{Data@{Data}!lisaa\+Irtopala@{lisaa\+Irtopala}}
+\index{lisaa\+Irtopala@{lisaa\+Irtopala}!Data@{Data}}
+\subsubsection[{lisaa\+Irtopala(\+Pala data)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pala} $\ast$ Data\+::lisaa\+Irtopala (
+\begin{DoxyParamCaption}
+\item[{{\bf Pala}}]{data}
+\end{DoxyParamCaption}
+)}\label{class_data_a8d0b2dddb62271a7d69008d19bec6f3b}
+
+
+Iropalan lisääjä 
+
+Lisää tai päivittää annetun palan pelin irtopalaksi
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & Lisättävä irtopala {\ttfamily \hyperlink{class_pala}{Pala}}-\/luokkana.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Irtopala on lisätty
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Osoite lisättyyn irtopalaan {\ttfamily \hyperlink{class_pala}{Pala}}-\/luokkana. 
+\end{DoxyReturn}
+\hypertarget{class_data_a7d19ebd5e1eb95e001c516ad9807ce74}{}\index{Data@{Data}!lisaa\+Pala@{lisaa\+Pala}}
+\index{lisaa\+Pala@{lisaa\+Pala}!Data@{Data}}
+\subsubsection[{lisaa\+Pala(\+Pala data, bool paivita\+Pala=false)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pala} $\ast$ Data\+::lisaa\+Pala (
+\begin{DoxyParamCaption}
+\item[{{\bf Pala}}]{data, }
+\item[{bool}]{paivita\+Pala = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_data_a7d19ebd5e1eb95e001c516ad9807ce74}
+
+
+Palan lisääjä 
+
+Lisää annetun palan peliin ja palauttaa sen osoitteen.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & Lisättävä pala {\ttfamily \hyperlink{class_pala}{Pala}}-\/luokkana. \\
+\hline
+\mbox{\tt in}  & {\em kordinaatit} & Lisättävän palan kordinaatit {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}}-\/luokkana.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Alustusvirhe} & virheellinen sijainti. \\
+\hline
+{\em Alustusvirhe} & virheellinen rotaatio.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+\hyperlink{class_pala}{Pala} on lisätty.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Osoite lisättyyn {\ttfamily \hyperlink{class_pala}{Pala}}-\/luokkaan. 
+\end{DoxyReturn}
+\hypertarget{class_data_a81cc329ff5e8eda227acebd612147e2e}{}\index{Data@{Data}!lisaa\+Pelaaja@{lisaa\+Pelaaja}}
+\index{lisaa\+Pelaaja@{lisaa\+Pelaaja}!Data@{Data}}
+\subsubsection[{lisaa\+Pelaaja(\+Pelaaja data, Julkinen\+::\+Koordinaatti const \&kordinaatit)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Pelaaja} $\ast$ Data\+::lisaa\+Pelaaja (
+\begin{DoxyParamCaption}
+\item[{{\bf Pelaaja}}]{data, }
+\item[{{\bf Julkinen\+::\+Koordinaatti} const \&}]{kordinaatit}
+\end{DoxyParamCaption}
+)}\label{class_data_a81cc329ff5e8eda227acebd612147e2e}
+
+
+Pelaajan lisääjä 
+
+Lisää annetun pelaajan peliin ja palauttaa sen osoitteen.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & Lisättävä pelaaja {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokkana. \\
+\hline
+\mbox{\tt in}  & {\em kordinaatit} & Lisättävän pelaajan kordinaatit {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}}-\/luokkana.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Alustusvirhe} & virheellinen sijainti. Kordinaateissa on jo pelaaja tai kordinaatit eivät ole käytössä.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyPostcond}{Postcondition}
+\hyperlink{class_pelaaja}{Pelaaja} on lisätty.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Osoite lisättyyn {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokkaan. 
+\end{DoxyReturn}
+\hypertarget{class_data_a1c6055ce5037e81ca1b7caaa5bb6f6b7}{}\index{Data@{Data}!pelaajan\+Seuraavan\+Esineen\+Sijainti@{pelaajan\+Seuraavan\+Esineen\+Sijainti}}
+\index{pelaajan\+Seuraavan\+Esineen\+Sijainti@{pelaajan\+Seuraavan\+Esineen\+Sijainti}!Data@{Data}}
+\subsubsection[{pelaajan\+Seuraavan\+Esineen\+Sijainti(const Pelaaja pelaaja) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Julkinen\+::\+Koordinaatti} Data\+::pelaajan\+Seuraavan\+Esineen\+Sijainti (
+\begin{DoxyParamCaption}
+\item[{const {\bf Pelaaja}}]{pelaaja}
+\end{DoxyParamCaption}
+) const}\label{class_data_a1c6055ce5037e81ca1b7caaa5bb6f6b7}
+
+
+Pelaajan seuraavan haettavan esineen sijainnin hakija. 
+
+Hakee pelaajan seuraavan esineen sijainnin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em pelaaja} & Valittu pelaaja {\ttfamily \hyperlink{class_pelaaja}{Pelaaja}}-\/luokkana.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Esineen sijainti on löytynyt
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+Esineen sijainti {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Julkinen\+::\+Koordinaatti}}-\/luokkana. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_data_8hpp}{Data.\+hpp}\item 
+Data.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,188 @@
+\hypertarget{class_julkinen_1_1_nayttovirhe}{}\section{Julkinen\+:\+:Nayttovirhe Class Reference}
+\label{class_julkinen_1_1_nayttovirhe}\index{Julkinen\+::\+Nayttovirhe@{Julkinen\+::\+Nayttovirhe}}
+
+
+Näyttörajapinnan tulostusoperaatio ei onnistunut.  
+
+
+
+
+{\ttfamily \#include $<$nayttovirhe.\+hh$>$}
+
+Inheritance diagram for Julkinen\+:\+:Nayttovirhe\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_julkinen_1_1_nayttovirhe}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_julkinen_1_1_nayttovirhe_a13d43d49006dab024b0d3ac20a9fb8fa}{Virhekoodi} \{ \hyperlink{class_julkinen_1_1_nayttovirhe_a13d43d49006dab024b0d3ac20a9fb8faa26e7e527083430befdfdcd45f270514b}{V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N}
+ \}\begin{DoxyCompactList}\small\item\em Tunnisteet esimääritellyille virhetilanteille käyttäjän antamissa komennoissa. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_julkinen_1_1_nayttovirhe_a7e86d0fcc83269a4cfc34d487498e904}{Nayttovirhe} (std\+::string const \&virheviesti)
+\begin{DoxyCompactList}\small\item\em Tunnistamaton virhetilanne kopioidulla viestillä. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_nayttovirhe_a02d21e4b5ddfdff5890742d05a0e81b7}{Nayttovirhe} (\hyperlink{class_julkinen_1_1_nayttovirhe_a13d43d49006dab024b0d3ac20a9fb8fa}{Virhekoodi} virhekoodi)
+\begin{DoxyCompactList}\small\item\em Esimääritelty virhetilanne. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_nayttovirhe_a7765c49657111506d7b25a1720b21640}{Nayttovirhe} (\hyperlink{class_julkinen_1_1_nayttovirhe}{Nayttovirhe} const \&toinen)
+\begin{DoxyCompactList}\small\item\em Kopiorakentaja. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_nayttovirhe}{Nayttovirhe} \& \hyperlink{class_julkinen_1_1_nayttovirhe_a3ced8ea4fdc6e72da15f6f480057c613}{operator=} (\hyperlink{class_julkinen_1_1_nayttovirhe}{Nayttovirhe} const \&toinen)
+\begin{DoxyCompactList}\small\item\em Sijoitusoperaattori. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_nayttovirhe_a13d43d49006dab024b0d3ac20a9fb8fa}{Virhekoodi} \hyperlink{class_julkinen_1_1_nayttovirhe_a5ca5953148a213a4ffd79c191b0ab651}{virhe} () const 
+\begin{DoxyCompactList}\small\item\em Sattuneen virhetilanteen virhekoodi. \end{DoxyCompactList}\item 
+virtual std\+::basic\+\_\+ostream$<$ char $>$ \& \hyperlink{class_julkinen_1_1_nayttovirhe_ae8e4d0a5f98c3f61afc72dfed2af967f}{tulosta} (std\+::basic\+\_\+ostream$<$ char $>$ \&tuloste) const 
+\begin{DoxyCompactList}\small\item\em Tulosta virheen viesti virtaan. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Näyttörajapinnan tulostusoperaatio ei onnistunut. 
+
+\hyperlink{class_julkinen_1_1_virhe}{Virhe} jolla kerrotaan, jos näytön toiminnassa on tapahtunut jokin virhe 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_julkinen_1_1_nayttovirhe_a13d43d49006dab024b0d3ac20a9fb8fa}{}\index{Julkinen\+::\+Nayttovirhe@{Julkinen\+::\+Nayttovirhe}!Virhekoodi@{Virhekoodi}}
+\index{Virhekoodi@{Virhekoodi}!Julkinen\+::\+Nayttovirhe@{Julkinen\+::\+Nayttovirhe}}
+\subsubsection[{Virhekoodi}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Julkinen\+::\+Nayttovirhe\+::\+Virhekoodi}}\label{class_julkinen_1_1_nayttovirhe_a13d43d49006dab024b0d3ac20a9fb8fa}
+
+
+Tunnisteet esimääritellyille virhetilanteille käyttäjän antamissa komennoissa. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N@{V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N}!Julkinen\+::\+Nayttovirhe@{Julkinen\+::\+Nayttovirhe}}\index{Julkinen\+::\+Nayttovirhe@{Julkinen\+::\+Nayttovirhe}!V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N@{V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N}}\item[{\em 
+\hypertarget{class_julkinen_1_1_nayttovirhe_a13d43d49006dab024b0d3ac20a9fb8faa26e7e527083430befdfdcd45f270514b}{}V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N\label{class_julkinen_1_1_nayttovirhe_a13d43d49006dab024b0d3ac20a9fb8faa26e7e527083430befdfdcd45f270514b}
+}]Tunnistamaton virhe. \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_julkinen_1_1_nayttovirhe_a7e86d0fcc83269a4cfc34d487498e904}{}\index{Julkinen\+::\+Nayttovirhe@{Julkinen\+::\+Nayttovirhe}!Nayttovirhe@{Nayttovirhe}}
+\index{Nayttovirhe@{Nayttovirhe}!Julkinen\+::\+Nayttovirhe@{Julkinen\+::\+Nayttovirhe}}
+\subsubsection[{Nayttovirhe(std\+::string const \&virheviesti)}]{\setlength{\rightskip}{0pt plus 5cm}Nayttovirhe\+::\+Nayttovirhe (
+\begin{DoxyParamCaption}
+\item[{std\+::string const \&}]{virheviesti}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_julkinen_1_1_nayttovirhe_a7e86d0fcc83269a4cfc34d487498e904}
+
+
+Tunnistamaton virhetilanne kopioidulla viestillä. 
+
+Käytä tätä vain, jos kyseessä ei ole mikään esimääritellyistä virheistä.
+
+\begin{DoxyPostcond}{Postcondition}
+Perustakuu poikkeuksen sattuessa. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em virheviesti} & Merkkijono, joka kopioidaan poikkeuksen viestiksi. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::bad\+\_\+alloc} & Ei saatu varattua muistia viestiä varten. \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_julkinen_1_1_nayttovirhe_a02d21e4b5ddfdff5890742d05a0e81b7}{}\index{Julkinen\+::\+Nayttovirhe@{Julkinen\+::\+Nayttovirhe}!Nayttovirhe@{Nayttovirhe}}
+\index{Nayttovirhe@{Nayttovirhe}!Julkinen\+::\+Nayttovirhe@{Julkinen\+::\+Nayttovirhe}}
+\subsubsection[{Nayttovirhe(\+Virhekoodi virhekoodi)}]{\setlength{\rightskip}{0pt plus 5cm}Nayttovirhe\+::\+Nayttovirhe (
+\begin{DoxyParamCaption}
+\item[{{\bf Virhekoodi}}]{virhekoodi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_julkinen_1_1_nayttovirhe_a02d21e4b5ddfdff5890742d05a0e81b7}
+
+
+Esimääritelty virhetilanne. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw -\/takuu. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em virhekoodi} & Virhetilanteen tunniste. Mikäli koodi on V\+I\+R\+H\+E\+\_\+\+T\+U\+N\+N\+I\+S\+T\+A\+M\+A\+T\+O\+N, tulee viestiksi \char`\"{}\+Tunnistamaton virhe.\char`\"{}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_julkinen_1_1_nayttovirhe_a7765c49657111506d7b25a1720b21640}{}\index{Julkinen\+::\+Nayttovirhe@{Julkinen\+::\+Nayttovirhe}!Nayttovirhe@{Nayttovirhe}}
+\index{Nayttovirhe@{Nayttovirhe}!Julkinen\+::\+Nayttovirhe@{Julkinen\+::\+Nayttovirhe}}
+\subsubsection[{Nayttovirhe(\+Nayttovirhe const \&toinen)}]{\setlength{\rightskip}{0pt plus 5cm}Nayttovirhe\+::\+Nayttovirhe (
+\begin{DoxyParamCaption}
+\item[{{\bf Nayttovirhe} const \&}]{toinen}
+\end{DoxyParamCaption}
+)}\label{class_julkinen_1_1_nayttovirhe_a7765c49657111506d7b25a1720b21640}
+
+
+Kopiorakentaja. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw -\/takuu. 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_julkinen_1_1_nayttovirhe_a3ced8ea4fdc6e72da15f6f480057c613}{}\index{Julkinen\+::\+Nayttovirhe@{Julkinen\+::\+Nayttovirhe}!operator=@{operator=}}
+\index{operator=@{operator=}!Julkinen\+::\+Nayttovirhe@{Julkinen\+::\+Nayttovirhe}}
+\subsubsection[{operator=(\+Nayttovirhe const \&toinen)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nayttovirhe} \& Nayttovirhe\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Nayttovirhe} const \&}]{toinen}
+\end{DoxyParamCaption}
+)}\label{class_julkinen_1_1_nayttovirhe_a3ced8ea4fdc6e72da15f6f480057c613}
+
+
+Sijoitusoperaattori. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw -\/takuu. 
+\end{DoxyPostcond}
+\hypertarget{class_julkinen_1_1_nayttovirhe_ae8e4d0a5f98c3f61afc72dfed2af967f}{}\index{Julkinen\+::\+Nayttovirhe@{Julkinen\+::\+Nayttovirhe}!tulosta@{tulosta}}
+\index{tulosta@{tulosta}!Julkinen\+::\+Nayttovirhe@{Julkinen\+::\+Nayttovirhe}}
+\subsubsection[{tulosta(std\+::basic\+\_\+ostream$<$ char $>$ \&tuloste) const }]{\setlength{\rightskip}{0pt plus 5cm}basic\+\_\+ostream$<$ char $>$ \& Nayttovirhe\+::tulosta (
+\begin{DoxyParamCaption}
+\item[{std\+::basic\+\_\+ostream$<$ char $>$ \&}]{tuloste}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_julkinen_1_1_nayttovirhe_ae8e4d0a5f98c3f61afc72dfed2af967f}
+
+
+Tulosta virheen viesti virtaan. 
+
+Tulostaa virheen viestin virtaan, eikä tee muuta.
+
+\begin{DoxyPostcond}{Postcondition}
+Vahva poikkeustakuu. 
+\end{DoxyPostcond}
+
+\begin{DoxyParams}{Parameters}
+{\em tuloste} & Virta, jonne viesti tulostetaan. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily tuloste} 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_julkinen_1_1_virhe_a36a2644943038f9760b5d76a1960b00d}{Julkinen\+::\+Virhe}.
+
+\hypertarget{class_julkinen_1_1_nayttovirhe_a5ca5953148a213a4ffd79c191b0ab651}{}\index{Julkinen\+::\+Nayttovirhe@{Julkinen\+::\+Nayttovirhe}!virhe@{virhe}}
+\index{virhe@{virhe}!Julkinen\+::\+Nayttovirhe@{Julkinen\+::\+Nayttovirhe}}
+\subsubsection[{virhe() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Nayttovirhe\+::\+Virhekoodi} Nayttovirhe\+::virhe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_julkinen_1_1_nayttovirhe_a5ca5953148a213a4ffd79c191b0ab651}
+
+
+Sattuneen virhetilanteen virhekoodi. 
+
+\begin{DoxyReturn}{Returns}
+Palauttaa virheen {\ttfamily Virhekoodi}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{nayttovirhe_8hh}{nayttovirhe.\+hh}\item 
+valmiiden\+\_\+toteutus/\hyperlink{nayttovirhe_8cc}{nayttovirhe.\+cc}\end{DoxyCompactItemize}

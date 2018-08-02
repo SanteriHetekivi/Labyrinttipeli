@@ -1,0 +1,256 @@
+\hypertarget{class_julkinen_1_1_koordinaatti}{}\section{Julkinen\+:\+:Koordinaatti Class Reference}
+\label{class_julkinen_1_1_koordinaatti}\index{Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}}
+
+
+Luokka pelin sijainti tietojen esittämiseen.  
+
+
+
+
+{\ttfamily \#include $<$koordinaatti.\+hh$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_julkinen_1_1_koordinaatti_a92d3b7f8413ed5658d63792288a2499b}{Koordinaatti} (unsigned int xkoord, unsigned int ykoord)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_rakentaja}{Rakentaja} koordinaattille, jolla annetaan koordinaatin x ja y sijainnit. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_koordinaatti_a37ffaf231dcf9e03627fb8cc994dae8b}{Koordinaatti} ()
+\begin{DoxyCompactList}\small\item\em Irtopalan koordinaatin rakentaja ja samalla koordinaatti -\/luokan oletusrakentaja. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_koordinaatti_a45f76044b43df8a5561206f3fdd8f0ad}{Koordinaatti} (\hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti} const \&koordinaatti)
+\begin{DoxyCompactList}\small\item\em Kopiorakentaja. \end{DoxyCompactList}\item 
+\hyperlink{class_julkinen_1_1_koordinaatti_a70f00df4c581696cf14692bd717bbef6}{$\sim$\+Koordinaatti} ()
+\begin{DoxyCompactList}\small\item\em Tuhoaja. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_julkinen_1_1_koordinaatti_ae5b96350846feb6b86a2f7cf72c7e429}{hae\+Xkoordinaatti} () const 
+\begin{DoxyCompactList}\small\item\em Palautaa X-\/koordinaatin. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_julkinen_1_1_koordinaatti_ae3a0a3a5e26abb272fe30ad4b93dc877}{hae\+Ykoordinaatti} () const 
+\begin{DoxyCompactList}\small\item\em Palautaa Y-\/koordinaatin. \end{DoxyCompactList}\item 
+bool \hyperlink{class_julkinen_1_1_koordinaatti_ab899c7324a877d548d8a56fa72c23215}{onko\+Irtopala} () const 
+\begin{DoxyCompactList}\small\item\em Kertoo onko kyseessä irtopala. \end{DoxyCompactList}\item 
+void \hyperlink{class_julkinen_1_1_koordinaatti_a272385b2697ff7103c10fc0fd803db8a}{operator=} (\hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti} const \&koordinaatti)
+\begin{DoxyCompactList}\small\item\em Sijoitusoperaattori. \end{DoxyCompactList}\item 
+bool \hyperlink{class_julkinen_1_1_koordinaatti_af11091ff70b93768ddb1490767ccb222}{operator==} (\hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti} const \&koordinaatti) const 
+\begin{DoxyCompactList}\small\item\em Yhtäsuuruusoperaattori. \end{DoxyCompactList}\item 
+bool \hyperlink{class_julkinen_1_1_koordinaatti_a0dc3f61b2c006ac687deb92a0b89867c}{operator$<$} (\hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti} const \&koordinaatti) const 
+\begin{DoxyCompactList}\small\item\em Pienemmyysvertailuoperaattori. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Luokka pelin sijainti tietojen esittämiseen. 
+
+\hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti} luokka sisältää X-\/ ja Y-\/koordinaattin ja tiedon siitä että onko kyseessä irtopala.
+
+\hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti} -\/luokasta tehtyyn olioon ei voi sijoittaa uusia arvoja, muuten kuin toisen koordinaatin sijoittamalla.
+
+\hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti} -\/luokasta tehdyt oliot tarjoavat sisältämiinsä arvoihin hae metodit, mutta arvoihin itseensä ei pääse suoraan käsiksi. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_julkinen_1_1_koordinaatti_a92d3b7f8413ed5658d63792288a2499b}{}\index{Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}!Koordinaatti@{Koordinaatti}}
+\index{Koordinaatti@{Koordinaatti}!Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}}
+\subsubsection[{Koordinaatti(unsigned int xkoord, unsigned int ykoord)}]{\setlength{\rightskip}{0pt plus 5cm}Julkinen\+::\+Koordinaatti\+::\+Koordinaatti (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{xkoord, }
+\item[{unsigned int}]{ykoord}
+\end{DoxyParamCaption}
+)}\label{class_julkinen_1_1_koordinaatti_a92d3b7f8413ed5658d63792288a2499b}
+
+
+\hyperlink{class_rakentaja}{Rakentaja} koordinaattille, jolla annetaan koordinaatin x ja y sijainnit. 
+
+Perusrakentaja koordinaatin käyttämiseksi. {\bfseries Huom!} Tästä rakentajasta poistettiin x-\/ ja y-\/koordinaattien oletusarvot 24.\+3. (Eli ennen Koordinaatin oletusrakentaja tuotti tyhmästi koordinaatin (0,0), nyt irtopalan.)
+
+\begin{DoxyPostcond}{Postcondition}
+{\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti}} -\/olio luotu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em xkoord} & Leveys koordinaatti. \\
+\hline
+\mbox{\tt in}  & {\em ykoord} & Korkeus koordinaatti. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_julkinen_1_1_koordinaatti_a37ffaf231dcf9e03627fb8cc994dae8b}{}\index{Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}!Koordinaatti@{Koordinaatti}}
+\index{Koordinaatti@{Koordinaatti}!Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}}
+\subsubsection[{Koordinaatti()}]{\setlength{\rightskip}{0pt plus 5cm}Julkinen\+::\+Koordinaatti\+::\+Koordinaatti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_julkinen_1_1_koordinaatti_a37ffaf231dcf9e03627fb8cc994dae8b}
+
+
+Irtopalan koordinaatin rakentaja ja samalla koordinaatti -\/luokan oletusrakentaja. 
+
+Tekee koordinaatin jolla pystytään tunnistamaan irtopala. {\bfseries Huom!} Tästä rakentajasta tehtiin oletusrakentaja 24.\+3. ja {\ttfamily bool}-\/parametri poistettiin (koska ainoa järkevä rakentajan käyttö oli parametrilla {\ttfamily true}).
+
+\begin{DoxyPostcond}{Postcondition}
+{\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti}} -\/olio luotu. 
+\end{DoxyPostcond}
+\hypertarget{class_julkinen_1_1_koordinaatti_a45f76044b43df8a5561206f3fdd8f0ad}{}\index{Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}!Koordinaatti@{Koordinaatti}}
+\index{Koordinaatti@{Koordinaatti}!Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}}
+\subsubsection[{Koordinaatti(\+Koordinaatti const \&koordinaatti)}]{\setlength{\rightskip}{0pt plus 5cm}Julkinen\+::\+Koordinaatti\+::\+Koordinaatti (
+\begin{DoxyParamCaption}
+\item[{{\bf Koordinaatti} const \&}]{koordinaatti}
+\end{DoxyParamCaption}
+)}\label{class_julkinen_1_1_koordinaatti_a45f76044b43df8a5561206f3fdd8f0ad}
+
+
+Kopiorakentaja. 
+
+Kopiorakentaja, jotta koordinaatin kopioiminen onnistuisi.
+
+\begin{DoxyPostcond}{Postcondition}
+Kopio {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti}} -\/oliosta luotu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em koordinaatti} & {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti}} josta kopio halutaan tehdä. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_julkinen_1_1_koordinaatti_a70f00df4c581696cf14692bd717bbef6}{}\index{Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}!````~Koordinaatti@{$\sim$\+Koordinaatti}}
+\index{````~Koordinaatti@{$\sim$\+Koordinaatti}!Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}}
+\subsubsection[{$\sim$\+Koordinaatti()}]{\setlength{\rightskip}{0pt plus 5cm}Julkinen\+::\+Koordinaatti\+::$\sim$\+Koordinaatti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_julkinen_1_1_koordinaatti_a70f00df4c581696cf14692bd717bbef6}
+
+
+Tuhoaja. 
+
+\begin{DoxyPostcond}{Postcondition}
+No-\/throw -\/takuu. 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_julkinen_1_1_koordinaatti_ae5b96350846feb6b86a2f7cf72c7e429}{}\index{Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}!hae\+Xkoordinaatti@{hae\+Xkoordinaatti}}
+\index{hae\+Xkoordinaatti@{hae\+Xkoordinaatti}!Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}}
+\subsubsection[{hae\+Xkoordinaatti() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Julkinen\+::\+Koordinaatti\+::hae\+Xkoordinaatti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_julkinen_1_1_koordinaatti_ae5b96350846feb6b86a2f7cf72c7e429}
+
+
+Palautaa X-\/koordinaatin. 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti} onko\+Irtopala on {\ttfamily false}. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+palauttaa X-\/koordinaatin arvon. Poikkeusturvallisuus\+: No-\/throw takuu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+palauttaa X-\/koordinaatin. 
+\end{DoxyReturn}
+\hypertarget{class_julkinen_1_1_koordinaatti_ae3a0a3a5e26abb272fe30ad4b93dc877}{}\index{Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}!hae\+Ykoordinaatti@{hae\+Ykoordinaatti}}
+\index{hae\+Ykoordinaatti@{hae\+Ykoordinaatti}!Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}}
+\subsubsection[{hae\+Ykoordinaatti() const }]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Julkinen\+::\+Koordinaatti\+::hae\+Ykoordinaatti (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_julkinen_1_1_koordinaatti_ae3a0a3a5e26abb272fe30ad4b93dc877}
+
+
+Palautaa Y-\/koordinaatin. 
+
+\begin{DoxyPrecond}{Precondition}
+\hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti} onko\+Irtopala on {\ttfamily false}. 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondition}
+palauttaa Y-\/koordinaatin arvon. Poikkeusturvallisuus\+: No-\/throw takuu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+palauttaa Y-\/koordinaatin. 
+\end{DoxyReturn}
+\hypertarget{class_julkinen_1_1_koordinaatti_ab899c7324a877d548d8a56fa72c23215}{}\index{Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}!onko\+Irtopala@{onko\+Irtopala}}
+\index{onko\+Irtopala@{onko\+Irtopala}!Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}}
+\subsubsection[{onko\+Irtopala() const }]{\setlength{\rightskip}{0pt plus 5cm}bool Julkinen\+::\+Koordinaatti\+::onko\+Irtopala (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\label{class_julkinen_1_1_koordinaatti_ab899c7324a877d548d8a56fa72c23215}
+
+
+Kertoo onko kyseessä irtopala. 
+
+\begin{DoxyPostcond}{Postcondition}
+palauttaa tiedon siitä onko irtopala. Poikkeusturvallisuus\+: No-\/throw takuu.
+\end{DoxyPostcond}
+\begin{DoxyReturn}{Returns}
+Palauttaa {\ttfamily true} jos kyseessä on irtopala. Palauttaa {\ttfamily false} jos kyseessä ei ole irtopala. 
+\end{DoxyReturn}
+\hypertarget{class_julkinen_1_1_koordinaatti_a0dc3f61b2c006ac687deb92a0b89867c}{}\index{Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}}
+\subsubsection[{operator$<$(\+Koordinaatti const \&koordinaatti) const }]{\setlength{\rightskip}{0pt plus 5cm}bool Julkinen\+::\+Koordinaatti\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Koordinaatti} const \&}]{koordinaatti}
+\end{DoxyParamCaption}
+) const}\label{class_julkinen_1_1_koordinaatti_a0dc3f61b2c006ac687deb92a0b89867c}
+
+
+Pienemmyysvertailuoperaattori. 
+
+Vertaa kohde koordinaatin arvoja omiin arvoihinsa.
+
+\begin{DoxyPostcond}{Postcondition}
+Palauttanut tiedon siitä onko olio \char`\"{}pienempi\char`\"{} kuin parametri. Pienemmyydessä vertaillaan ensin X-\/ ja sitten Y-\/koordinaatteja, ja irtopala on kaikkein pienin. (Vertailu tarvitaan, jos Koordinaatteja haluaa käyttää esim. {\ttfamily map}\+:n avaimina.) Poikkeusturvallisuus\+: No-\/throw takuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em koordinaatti} & Verrattava {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Palauttaa {\ttfamily true} jos olio on \char`\"{}pienempi\char`\"{} kuin parametri. Palautaa {\ttfamily false} muuten. 
+\end{DoxyReturn}
+\hypertarget{class_julkinen_1_1_koordinaatti_a272385b2697ff7103c10fc0fd803db8a}{}\index{Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}!operator=@{operator=}}
+\index{operator=@{operator=}!Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}}
+\subsubsection[{operator=(\+Koordinaatti const \&koordinaatti)}]{\setlength{\rightskip}{0pt plus 5cm}void Julkinen\+::\+Koordinaatti\+::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Koordinaatti} const \&}]{koordinaatti}
+\end{DoxyParamCaption}
+)}\label{class_julkinen_1_1_koordinaatti_a272385b2697ff7103c10fc0fd803db8a}
+
+
+Sijoitusoperaattori. 
+
+Sijoittaa olemassa olevaan koordinaattiin toisen koordinaatin arvot.
+
+\begin{DoxyPostcond}{Postcondition}
+Annetun koordinaatin arvot on sijoitettu. Poikkeusturvallisuus\+: No-\/throw takuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em koordinaatti} & Sijoitettava {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti}}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_julkinen_1_1_koordinaatti_af11091ff70b93768ddb1490767ccb222}{}\index{Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}!operator==@{operator==}}
+\index{operator==@{operator==}!Julkinen\+::\+Koordinaatti@{Julkinen\+::\+Koordinaatti}}
+\subsubsection[{operator==(\+Koordinaatti const \&koordinaatti) const }]{\setlength{\rightskip}{0pt plus 5cm}bool Julkinen\+::\+Koordinaatti\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Koordinaatti} const \&}]{koordinaatti}
+\end{DoxyParamCaption}
+) const}\label{class_julkinen_1_1_koordinaatti_af11091ff70b93768ddb1490767ccb222}
+
+
+Yhtäsuuruusoperaattori. 
+
+Vertaa kohde koordinaatin arvoja omiin arvoihinsa.
+
+\begin{DoxyPostcond}{Postcondition}
+Palauttanut tiedon siitä onko koordinaatit samat. Poikkeusturvallisuus\+: No-\/throw takuu.
+\end{DoxyPostcond}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em koordinaatti} & Verrattava {\ttfamily \hyperlink{class_julkinen_1_1_koordinaatti}{Koordinaatti}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Palauttaa {\ttfamily true} jos arvot yhtäsuuret. Palautaa {\ttfamily false} jos arvot poikkeavat. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{koordinaatti_8hh}{koordinaatti.\+hh}\item 
+valmiiden\+\_\+toteutus/\hyperlink{koordinaatti_8cc}{koordinaatti.\+cc}\end{DoxyCompactItemize}
